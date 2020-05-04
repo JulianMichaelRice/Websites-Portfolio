@@ -1,0 +1,132 @@
+body {
+    background-color: black;
+}
+html {
+    scroll-behavior: smooth;
+}
+.hider::-webkit-scrollbar {
+    display: none;
+}
+.hider {
+    -ms-overflow-style: none;
+}
+h1, h2, h3, h4 {
+    font-family: 'Staatliches', sans-serif;
+    color: #FA8800;
+}
+.orange {
+    color: #FA8800;
+}
+h2, h4 {
+    color: white;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+nav, a {
+    font-family: 'Staatliches', sans-serif;
+}
+.ban > img {
+    opacity: 0.4;
+    transition: ease 1.5s;
+}
+.ban > img:hover {
+    opacity: 0.8;
+    transition: ease 1.5s;
+}
+.spacer-s {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.spacer-l {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.spacer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+.orange-button {
+    color: #FA8800;
+    padding: 33px;
+    border-radius: 20px;
+    background-color: white;
+    transition: ease 0.5s;
+    font-size: 120%;
+}
+.orange-button:hover {
+    color: white;
+    background-color: #FA8800;
+    text-decoration: none;
+    transition: ease 0.5s;
+    font-size: 120%;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+.booknow {
+    padding: 2px;
+    background: #FA8800;
+    border-radius: 5px;
+}
+nav .navbar-nav li a {
+    color: white !important;
+    font-weight: 300;
+    margin-left: 22px;
+    margin-right: 22px;
+    transition: ease 1s;
+}
+nav .navbar-nav li a:hover {
+    color: #FA8800 !important;
+    transition: ease 1s;
+}
+nav .navbar-nav li .booknow {
+    color: white !important;
+}
+nav .navbar-nav li .booknow:hover {
+    color: black !important;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centered-down {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.lefter {
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+.righter {
+    position: absolute;
+    top: 65%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+.ban {
+    position: relative;
+    text-align: center;
+}
+.tit {
+    text-shadow: 3px 4px 2px black;
+}
+.jumbotron {
+    background: linear-gradient(215deg, #FA8800, rgb(250, 83, 0));
+}

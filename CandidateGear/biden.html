@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Muli:200,500&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <title>Candidate Gear | Official Store</title>
+    </head>
+    <body>
+        <img src="img/cover.jpg" width="100%" class="dropbelow">
+        <nav class="navbar navbar-expand-lg navbar-light goup2">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" target="_blank">ALL</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="biden.html" target="_blank">BIDEN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="buttigieg.html" target="_blank">BUTTIGIEG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="beto.html" target="_blank">BETO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="other.html" target="_blank">OTHER</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- ==================================================================
+            ¡Don't touch the stuff above! 
+        ======================================================================= -->
+        <div class="container-fluid goup overall">
+            <div class="flexbox">
+                <!-- ==============================
+                ==== ROW 1: Biden =================
+                =================================== -->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul><li><div class="imageBox"><figure>
+                            <img src="img/joe_ridenwithbiden.jpg">
+                            <figcaption>
+                                <h1>Picture 1</h1>
+                                <p>Buy this now</p>
+                                <a href="">BUY!</a>
+                            </figcaption>
+                        </figure></div></li></ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <ul><li><div class="imageBox"><figure>
+                            <img src="img/joe_tricolor.jpg">
+                            <figcaption>
+                                <h1>Picture 1</h1>
+                                <p>Buy this now</p>
+                                <a href="">BUY!</a>
+                            </figcaption>
+                        </figure></div></li></ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <ul><li><div class="imageBox"><figure>
+                            <img src="img/joe_color.jpg">
+                            <figcaption>
+                                <h1>Picture 1</h1>
+                                <p>Buy this now</p>
+                                <a href="">BUY!</a>
+                            </figcaption>
+                        </figure></div></li></ul>
+                    </div>
+                </div>
+
+                <!-- ==============================
+                ==== ROW 2: Biden =================
+                =================================== -->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul><li><div class="imageBox"><figure>
+                            <img src="img/joe_coverR.png">
+                            <figcaption>
+                                <h1>Picture 1</h1>
+                                <p>Buy this now</p>
+                                <a href="">BUY!</a>
+                            </figcaption>
+                        </figure></div></li></ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul><li><div class="imageBox"><figure>
+                            <img src="img/joe_coverL.png">
+                            <figcaption>
+                                <h1>Picture 1</h1>
+                                <p>Buy this now</p>
+                                <a href="">BUY!</a>
+                            </figcaption>
+                        </figure></div></li></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ==================================================================
+            ¡Don't touch the stuff below! 
+        ======================================================================= -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>
+            function toggleDiv(nm) {
+                var divs = document.getElementsByTagName('img');
+
+                var toggle = function() {    
+                    for (var i = 0, l = divs.length; i < l; i++) {
+                        if (divs[i].getAttribute('class') == nm) {
+                            console.log(nm);
+                            console.log(divs[i].getAttribute('class'));
+                            if (divs[i].style.display == 'none') 
+                                divs[i].style.display = '';
+                            else 
+                                divs[i].style.display = 'none';
+                        }
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

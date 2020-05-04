@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Flash Broz Official Website | Lawn Care, Junk Removal, and Moving Services company based in Lawrenceville, GA.">
+    <meta name="keywords" content="flash, broz, lawn, care, junk, removal, moving, services, lawrenceville, georgia">
+    <meta name="author" content="Flash Broz">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/fav.png">
+    <title>Flash Broz Lawn Care | Official Website</title>
+    <script>
+        function displayNextImage() {
+            x = (x === images.length - 1) ? 0 : x + 1;
+            document.getElementById("banner").src = images[x];
+        }
+  
+        function displayPreviousImage() {
+            x = (x <= 0) ? images.length - 1 : x - 1;
+            document.getElementById("banner").src = images[x];
+        }
+  
+        function startTimer() {
+            setInterval(displayNextImage, 3000);
+        }
+  
+        var images = [], x = -1;
+        images[0] = "img/banner_1.jpg";
+        images[1] = "img/moving_1.jpg";
+        images[2] = "img/junk_1.jpg";
+        images[3] = "img/banner_2.jpg";
+        images[4] = "img/junk_2.jpg";
+        images[5] = "img/banner_3.jpg";
+      </script>
+    </head>
+    <body onload="startTimer()" class="hider">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-none">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <a href="#home"><img src="img/logo.png" height="50px" style="margin-right: 20px;"></a>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link booknow" href="https://flashbrozlawn.simplybook.me/v2/#book" target="_blank">Book Now!</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="ban">
+            <img id="banner" src="img/banner_1.jpg" width="100%">
+            <div class="centered">
+                <h1 class="tit" style="font-size: 7vw;">Flash Broz</h1>
+            </div>
+            <!-- <div class="lefter">
+                <h1 class="tit" style="font-size: 4vw;">Lawn Care</h1>
+            </div>
+            <div class="righter">
+                <h1 class="tit" style="font-size: 4vw;">Junk Removal</h1>
+            </div>
+            <div class="centered-down">
+                <h1 class="tit" style="font-size: 4vw;">Moving Services</h1>
+            </div> -->
+        </div>
+
+        <div id="services"></div>
+        <div class="spacer"></div>
+        <div class="container text-center">
+            <div class="spacer"></div>
+            <h2>Our Services</h2>
+            <div class="spacer"></div>
+            <div class="row text-center">
+                <div class="col">
+                    <div class="spacer-s"></div>
+                    <h2 class="orange">Lawn Care</h2>
+                    <div class="spacer-s"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="img/icons/mower.png" class="icon" width="60%">
+                    <div class="spacer-s"></div>
+                    <h4>Mowing</h4>
+                </div>
+                <div class="col">
+                    <img src="img/icons/cord.png" width="60%">
+                    <div class="spacer-s"></div>
+                    <h4>Edging</h4>
+                </div>
+                <div class="col">
+                    <img src="img/icons/grass.png" width="60%">
+                    <div class="spacer-s"></div>
+                    <h4>Trimming</h4>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    <div class="spacer-s"></div>
+                    <h4 class="orange">Spring & Fall Cleanup Included</h4>
+                    <div class="spacer-s"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-6 col-md-4">
+                    <img src="img/icons/move.png" width="60%">
+                    <div class="spacer-s"></div>
+                    <h4>Moving</h4>
+                </div>
+                <div class="col-6 col-md-4">
+                    <img src="img/icons/truck.png" width="60%">
+                    <div class="spacer-s"></div>
+                    <h4>Junk Removal</h4>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+
+        <div id="about"></div>
+        <div class="spacer"></div>
+        <div class="jumbotron" style="border-radius: 0;">
+            <h2 class="text-center" style="font-size: 5vw">About Flash Broz</h2>
+            <div class="spacer"></div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-3 col-4">
+                    <img src="img/prof.jpg" width="100%" style="border-radius: 15px;">
+                </div>
+                <div class="col-md-7 col-8">
+                    <h4 class="text-left" style="font-size: 2.5vw;">We pride our company on reliability, great communication, integrity, and quality work. We are dedicated to providing a source of cleanliness and clear out services that everyone across Atlanta can count on. We bring a full range of options. We are experts in our trade and will do our best to keep you as educated as we can on your particular task or project. We look forward to earning your business!</h4>
+                    <div class="spacer-s"></div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+        <!-- lawnCareFIVERR -->
+        <div class="spacer-l"></div>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <a class="orange-button" href="https://flashbrozlawn.simplybook.me/v2/#book" target="_blank" style="font-size:5vw;">Book an appointment today!</a>
+                </div>
+            </div>
+        </div>
+        <div class="spacer-l"></div>
+        <footer style="height: 100px">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <p style="font-size: 2vw;">Email<br>FlashBrozLawnCare@gmail.com</p>
+                    </div>
+                    <div class="col text-center">
+                        <p style="font-size: 2vw;">Phone<br>(470) 469-7913</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
