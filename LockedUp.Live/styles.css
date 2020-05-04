@@ -1,0 +1,50 @@
+/* Julian M. Rice on Fiverr */
+/* April 30th - May 3rd, 2020 */
+
+.magic {
+    background-image: url("magic3.jpg");
+    background-size: cover;
+    height: 450px;
+    opacity: 0.8;
+    transition: 1.5s ease;
+}
+.magic:hover {
+    opacity: 1;
+    transition: 1.5s ease;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.75px;
+    background-color: black;
+}
+ul > li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ul > li > a {
+    color: white;
+    font-size: 1.5vw;
+    transition: 1s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+ul > li > a:hover {
+    color: red;
+    transition: 1s ease;
+    padding: 5px 10px;
+    background-color: rgb(239, 239, 239);
+    border-radius: 5px;
+}
+.centerS {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    transition: 1s ease;
+    transform: scale(1);
+}
+.centerS:hover {
+    transition: 1s ease;
+    transform: scale(1.1);
+}
