@@ -1,0 +1,55 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    background: linear-gradient(180deg, black, #050505);
+    color: #FAFAFA;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    letter-spacing: -0.75px;
+}
+html {
+    height: 100%;
+}
+ul > li > a.nav-link {
+    color: white;
+    border-radius: 5px;
+    transition: 1s ease;
+    margin: 10px 20px;
+    padding: 5px 15px;
+}
+ul > li > a.nav-link:hover {
+    color: black;
+    border-radius: 5px;
+    background-color: white;
+    transition: 1s ease;
+    padding: 5px 15px;
+}
+.parallax {
+    background-image: url("bball.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+.faded {
+    opacity: 0.9;
+    transition: 1s ease;
+}
+.faded:hover {
+    opacity: 1;
+    transition: 1s ease;
+}
+.spacer { margin: 50px 0px; }
+.spacer-m { margin: 30px 0px; }
+.spacer-s { margin: 10px 0px; }
+.invert {
+    color: black;
+    background: linear-gradient(180deg, white, #FAFAFA);
+}
+.d-flex {
+    height: 500px;
+}
