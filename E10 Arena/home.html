@@ -14,60 +14,75 @@
   </head>
   <body>
     
-    <ul class="nav justify-content-center">
+    <ul class="nav justify-content-center opac">
         <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#"><img src="e10w.png" width="40px" class="center"></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">E10</a>
+            <a class="nav-link" href="#">Reservations</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#">Merch</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Register</a>
+            <a class="nav-link" href="#">Signup | Login</a>
         </li>
     </ul>
     <!-- Navigation -->
-    <div class="parallax faded">
+    <div class="parallax faded blur">
+        <!-- <h1 class="center-t">Fitness Reimagined.</h1> -->
         <ul class="nav justify-content-center">
             <li>
                 <div class="spacer"></div>
-                <img src="e10w.png" width="225px" class="center">
+                
             </li>
         </ul>
+        <img src="e10w.png" width="225px" class="center-t stick">
     </div>
-
-    <div class="spacer"></div>
+    
+    <div class="d-flex"></div>
+    
     <!-- Section 2 -->
-    <div class="container-fluid">
-        <h2 class="text-center">E10 is Awesome Because...</h2>
-        <div class="d-flex flex-row justify-content-around">
+    <div class="container-fluid opac">
+        <div class="spacer"></div>
+        <h2 class="text-center">Fitness Reimagined.</h2>
+        <div class="spacer"></div>
+        <!-- <div class="d-flex flex-row justify-content-around">
             <h4 class="p-2">T1</h4>
             <h4 class="p-2">T2</h4>
             <h4 class="p-2">T3</h4>
-        </div>
+        </div> -->
     </div>
     
-    <!-- TEMP -->
-    <div class="spacer"></div>
-    <div class="spacer"></div>
-
+    <div class="d-flex"></div>
     <!-- Section 3 -->
-    <div class="d-flex flex-row justify-content-around">
-        <h2 class="p-2">About Standings?</h2>
+    <div class="container-fluid">
+        <h2 class="text-center blur">Facilities</h2>
+        <div class="spacer"></div>
+        
+        <div class="row">
+            <div class="col-md-7 col-12 opac">
+                <img src="soccer1-.jpeg" width="100%" class="darken">
+                <div class="center-tt text-center">
+                    <p>Arena Facility Name<br>
+                        Hours of Operation: M-F 9 AM - 6 PM<br>
+                        Address: 12345 E10 Street, Los Angeles 90024 CA</p>
+                </div>
+            </div>
+            <div class="col-md-5 col-12 opac">
+                <div id="map"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                
+            </div>
+        </div>
     </div>
 
-    <div class="d-flex flex-row justify-content-around invert">
-        <h2 class="p-2">About Uploads?</h2>
-    </div>
-
+    <div class="spacer"></div>
     <div class="d-flex flex-row justify-content-around">
-        <h2 class="p-2">Something else?</h2>
-    </div>
-
-    <div class="d-flex flex-row justify-content-around">
-        <h2 class="p-2">Footer: Address / Email / Contact / etc.</h2>
+        <p class="p-2">Footer: Address / Email / Contact / etc.</p>
     </div>
 
     <!-- Optional JavaScript -->
@@ -75,5 +90,25 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+        // The location of Uluru
+        var uluru = {lat: -25.344, lng: 131.036};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 4, center: uluru});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+        </script>
+        <!--Load the API from the specified URL
+        * The async attribute allows the browser to render the page while the API loads
+        * The key parameter will contain your own API key (which is not needed for this tutorial)
+        * The callback parameter executes the initMap() function
+        -->
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbDYY7-2oJV5b6ygcm7s9OQZDF4EJW9zY&callback=initMap">
+    </script>
   </body>
 </html>

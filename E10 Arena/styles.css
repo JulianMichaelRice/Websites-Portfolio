@@ -9,9 +9,25 @@ body {
     font-family: 'Oxygen', sans-serif;
     font-weight: 300;
     letter-spacing: -0.75px;
+    -ms-overflow-style: none;
 }
 html {
     height: 100%;
+}
+@keyframes blurIn {
+    0% { filter: blur(25px); opacity: 0; transform: scale(0.9); }
+    100% { filter: blur(0px); opacity: 1; transform: scale(1); }
+}
+@keyframes opacit {
+    0% { opacity: 0; transform: scale(1.1); }
+    50% { opacity: 0; transform: scale(1.1); }
+    100% { opacity: 1; transform: scale(1); }
+}
+.blur {
+    animation: blurIn 1.5s forwards;
+}
+.opac {
+    animation: opacit 3s forwards;
 }
 ul > li > a.nav-link {
     color: white;
@@ -27,16 +43,25 @@ ul > li > a.nav-link:hover {
     transition: 1s ease;
     padding: 5px 15px;
 }
+ul > li > a > div.bg {
+    background-image: url("e10w.png");
+    height: 40px;
+}
+ul > li > a > div.bg:hover {
+    background-image: url("e10b.png");
+    height: 40px;
+}
+
 .parallax {
-    background-image: url("bball.jpg");
+    background-image: url("soccer2-.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 350px;
+    height: 550px;
 }
 .faded {
-    opacity: 0.9;
+    opacity: 0.85;
     transition: 1s ease;
 }
 .faded:hover {
@@ -50,6 +75,56 @@ ul > li > a.nav-link:hover {
     color: black;
     background: linear-gradient(180deg, white, #FAFAFA);
 }
+.darken {
+    opacity: 0.5;
+    transition: 1s ease;
+}
+.darken:hover {
+    opacity: 1;
+    transition: 1s ease;
+}
 .d-flex {
-    height: 500px;
+    height: 200px;
+}
+.container-fluid {
+    padding: 0px;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.center-t {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.center-tt {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: -20px;
+    padding: 20px;
+    background-color: transparent;
+    transition: 1s ease;
+}
+.center-tt:hover {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: -20px;
+    padding: 20px;
+    background-color: black;
+    transition: 1s ease;
+    border-radius: 5px;
+}
+#map {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+}
+.stick {
+    position: sticky;
+    position: -webkit-sticky;
 }
