@@ -1,0 +1,46 @@
+.spacer { margin-top: 50px; margin-bottom: 50px; }
+body {
+    scroll-behavior: auto;
+    -ms-overflow-style: none;
+    background: linear-gradient(45deg, #101010, #010101);
+}
+ul > li > a {
+    color: white;
+    transition: 1s ease;
+}
+ul > li > a:hover {
+    color: #F5921F;
+    transition: 1s ease;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: white;
+}
+a, p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    letter-spacing: -1px;
+    color: white;
+}
+.highlight {
+    background-color: transparent;
+    transition: 1s ease;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin: 10px 5px;
+}
+.highlight:hover {
+    background-color: #393938;
+    transition: 1s ease;
+    border-radius: 8px;
+}
+.parallax {
+    background-image: url("img/b_atrox_zone.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
