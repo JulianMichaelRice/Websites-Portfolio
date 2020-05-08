@@ -37,6 +37,12 @@ a, p {
     letter-spacing: -1px;
     color: white;
 }
+.jumbotron {
+    background: linear-gradient(0deg, #F5921F, rgb(250, 182, 40))
+}
+.jumbotron p {
+    letter-spacing: -1.25px;
+}
 .highlight {
     background-color: transparent;
     transition: 1s ease;
@@ -69,6 +75,48 @@ a, p {
 }
 .comeDown {
     position: relative;
-    animation: 2.5s fromTop forwards;
+    animation: 0.5s fromTop forwards;
     z-index: 1;
 }
+.dropdown-item {
+    font-weight: 200;
+    padding: 10px 15px;
+    font-size: 1.5vw;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    transition: 1s ease;
+    margin: 5px 0px;
+}
+.dropdown-item:hover {
+    color: black;
+    background-color: #F5921F;
+    transition: 1s ease;
+}
+.dropdown-menu {
+    padding: 0;
+    margin-top: 0;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 0px solid transparent;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+/* Fade In */
+@keyframes fade-in {
+    from {opacity: 0; transform: translateY(250px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+@keyframes fade-right {
+    from {opacity: 0; transform: translateX(1500px);}
+    to {opacity: 1; transform: translateX(0);}
+}
+@keyframes fade-left {
+    from {opacity: 0; transform: translateX(-1500px);}
+    to {opacity: 1; transform: translateX(0);}
+}
+.hidden, .hidden-r, .hidden-l { opacity: 0; }
+.fade-in-element { animation: fade-in 4s; }
+.fade-in-element-r { animation: fade-right 4s; }
+.fade-in-element-l { animation: fade-left 4s; }
