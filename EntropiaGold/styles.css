@@ -1,4 +1,17 @@
 .spacer { margin-top: 50px; margin-bottom: 50px; }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    20% {opacity: 0;}
+    100% { opacity: 1; }
+}
+@keyframes fromTop {
+    0% { top: -500px; }
+    20% { top: -500px; }
+    100% { top: 0px; }
+}
+body::-webkit-scrollbar {
+    display: none;
+}
 body {
     scroll-behavior: auto;
     -ms-overflow-style: none;
@@ -37,10 +50,25 @@ a, p {
     border-radius: 8px;
 }
 .parallax {
-    background-image: url("img/b_atrox_zone.jpg");
+    background-image: url("img/b_atrox_zone_d.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
+}
+.centered {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.fade {
+    animation: 2.5s fadeIn forwards;
+    z-index: 1;
+}
+.comeDown {
+    position: relative;
+    animation: 2.5s fromTop forwards;
+    z-index: 1;
 }

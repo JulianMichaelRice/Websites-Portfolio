@@ -30,13 +30,20 @@ html {
     animation: opacit 3s forwards;
 }
 ul > li > a.nav-link {
-    color: white;
-    border-radius: 5px;
-    transition: 1s ease;
-    margin: 10px 20px;
+    margin: 2px 5px;
     padding: 5px 15px;
 }
 ul > li > a.nav-link:hover {
+    margin: 2px 5px;
+    padding: 5px 15px;
+}
+.whitey {
+    color: white;
+    border-radius: 5px;
+    transition: 1s ease;
+    font-size: 1.5vw;
+}
+.whitey:hover {
     color: black;
     border-radius: 5px;
     background-color: white;
@@ -52,14 +59,47 @@ ul > li > a > div.bg:hover {
     height: 40px;
 }
 
-.parallax {
-    background-image: url("soccer2-.jpeg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 550px;
+@media only screen and (max-width:720px) {
+    .parallax {
+        background-image: url("soccer2-.jpeg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+    }
+    .center-t {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%, -50%);
+        width: 150px;
+    }
+    .logo {
+        height: 20px;
+    }
 }
+@media only screen and (min-width:720px) {
+    .parallax {
+        background-image: url("soccer2-.jpeg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 550px;
+    }
+    .center-t {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 225px;
+    }
+    .logo {
+        height: 32px;
+    }
+}
+
 .faded {
     opacity: 0.85;
     transition: 1s ease;
@@ -75,6 +115,19 @@ ul > li > a > div.bg:hover {
     color: black;
     background: linear-gradient(180deg, white, #FAFAFA);
 }
+.address {
+    color: white;
+    text-decoration: none;
+    transition: 1s ease;
+    padding: 10px;
+}
+.address:hover {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 1s ease;
+}
 .darken {
     opacity: 0.5;
     transition: 1s ease;
@@ -84,7 +137,7 @@ ul > li > a > div.bg:hover {
     transition: 1s ease;
 }
 .d-flex {
-    height: 200px;
+    height: 50px;
 }
 .container-fluid {
     padding: 0px;
@@ -92,11 +145,22 @@ ul > li > a > div.bg:hover {
 body::-webkit-scrollbar {
     display: none;
 }
-.center-t {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.sm {
+    opacity: 1;
+    width: 75px;
+    transition: 1s ease;
+    border-radius: 15px;
+    align-self: center;
+}
+.sm:hover {
+    opacity: 0.8;
+    transition: 1s ease;
+}
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 .center-tt {
     position: absolute;

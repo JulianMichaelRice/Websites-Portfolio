@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta name="viewport" content="width=1024"> -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="e10w.png">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>E10 Arena</title>
+  </head>
+  <body>
+    
+    <ul class="nav justify-content-center opac">
+        <li class="nav-item">
+            <a class="nav-link" href="#"><img src="e10w.png" class="center logo"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link whitey" href="#">Reservations</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link whitey" href="#">Merch</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link whitey" href="#">Signup | Login</a>
+        </li>
+    </ul>
+    <!-- Navigation -->
+    <div class="parallax faded blur">
+        <!-- <h1 class="center-t">Fitness Reimagined.</h1> -->
+        <ul class="nav justify-content-center">
+            <li>
+                <div class="spacer"></div>
+                
+            </li>
+        </ul>
+        <img src="e10w.png" class="center-t stick">
+    </div>
+    
+    <div class="d-flex"></div>
+    
+    <!-- Section 2 -->
+    <div class="container-fluid opac">
+        <div class="spacer"></div>
+        <h2 class="text-center">Fitness Reimagined.</h2>
+        <div class="spacer"></div>
+        <!-- <div class="d-flex flex-row justify-content-around">
+            <h4 class="p-2">T1</h4>
+            <h4 class="p-2">T2</h4>
+            <h4 class="p-2">T3</h4>
+        </div> -->
+    </div>
+    
+    <div class="d-flex"></div>
+    <!-- Section 3 -->
+    <div class="container-fluid">
+        <h2 class="text-center blur">E10ARENA</h2>
+        <div class="spacer"></div>
+        
+        <div class="row">
+            <div class="col-md-7 col-12 opac">
+                <img src="soccer1-.jpeg" width="100%" class="darken">
+                <div class="center-tt text-center">
+                    <p>Hours of Operation: M-F 9 AM - 6 PM</p>
+                    <!-- Add link inside "" -->
+                    <a class="address" href="">12345 E10 Street, Los Angeles 90024 CA</a>
+                </div>
+            </div>
+            <div class="col-md-5 opac">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6" style="margin-left: 25px;">
+                <p>Contact | Terms of Use | Privacy Policy</p>
+                <p>E10ARENA ©2020</p>
+            </div>
+            <div class="col-md-6" style="margin-right: -25px;">
+                <h4 class="text-center">Follow us on Social Media</h4>
+                <div class="centered">
+                    <a href="" target="_blank"><img src="ig.png" class="sm"></a>
+                    <a href="" target="_blank"><img src="twitter.png" class="sm"></a>
+                    <a href="" target="_blank"><img src="fb.png" class="sm"></a>
+                </div>
+            </div>        
+        </div>
+    </div>
+    <div class="d-flex"></div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var uluru = {lat: -25.344, lng: 131.036};
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 8, center: uluru, styles: [
+            {
+                "elementType": "geometry",
+                "stylers": [
+                {
+                    "color": "#212121"
+                }
+                ]
+            },
+            {
+                "elementType": "labels.icon",
+                "stylers": [
+                {
+                    "visibility": "off"
+                }
+                ]
+            },
+            {
+                "elementType": "labels.text.fill",
+                "stylers": [
+                {
+                    "color": "#757575"
+                }
+                ]
+            },
+            {
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                {
+                    "color": "#212121"
+                }
+                ]
+            },
+            {
+                "featureType": "administrative",
+                "elementType": "geometry",
+                "stylers": [
+                {
+                    "color": "#757575"
+                }
+                ]
+            },
+            {
+                "featureType": "administrative.country",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                {
+                    "color": "#9e9e9e"
+                }
+                ]
+            },
+            {
+                "featureType": "administrative.locality",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                {
+                    "color": "#bdbdbd"
+                }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                {
+                    "color": "#757575"
+                }
+                ]
+            },
+            {
+                "featureType": "poi.business",
+                "stylers": [
+                {
+                    "visibility": "off"
+                }
+                ]
+            },
+            {
+                "featureType": "poi.park",
+                "elementType": "geometry",
+                "stylers": [
+                {
+                    "color": "#181818"
+                }
+                ]
+            },
+            {
+                "featureType": "poi.park",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                {
+                    "color": "#616161"
+                }
+                ]
+            },
+            {
+                "featureType": "poi.park",
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                {
+                    "color": "#1b1b1b"
+                }
+                ]
+            },
+            {
+                "featureType": "road",
+                "elementType": "geometry.fill",
+                "stylers": [
+                {
+                    "color": "#2c2c2c"
+                }
+                ]
+            },
+            {
+                "featureType": "road",
+                "elementType": "labels.icon",
+                "stylers": [
+                {
+                    "visibility": "off"
+                }
+                ]
+            },
+            {
+                "featureType": "road",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                {
+                    "color": "#8a8a8a"
+                }
+                ]
+            },
+            {
+                "featureType": "road.arterial",
+                "elementType": "geometry",
+                "stylers": [
+                {
+                    "color": "#373737"
+                }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry",
+                "stylers": [
+                {
+                    "color": "#3c3c3c"
+                }
+                ]
+            },
+            {
+                "featureType": "road.highway.controlled_access",
+                "elementType": "geometry",
+                "stylers": [
+                {
+                    "color": "#4e4e4e"
+                }
+                ]
+            },
+            {
+                "featureType": "road.local",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                {
+                    "color": "#616161"
+                }
+                ]
+            },
+            {
+                "featureType": "transit",
+                "stylers": [
+                {
+                    "visibility": "off"
+                }
+                ]
+            },
+            {
+                "featureType": "transit",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                {
+                    "color": "#757575"
+                }
+                ]
+            },
+            {
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [
+                {
+                    "color": "#000000"
+                }
+                ]
+            },
+            {
+                "featureType": "water",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                {
+                    "color": "#3d3d3d"
+                }
+                ]
+            }
+            ]});
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({position: uluru, map: map});
+            }
+        </script>
+        <!--Load the API from the specified URL
+        * The async attribute allows the browser to render the page while the API loads
+        * The key parameter will contain your own API key (which is not needed for this tutorial)
+        * The callback parameter executes the initMap() function
+        -->
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbDYY7-2oJV5b6ygcm7s9OQZDF4EJW9zY&callback=initMap">
+    </script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.14.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.14.2/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+  </body>
+</html>
