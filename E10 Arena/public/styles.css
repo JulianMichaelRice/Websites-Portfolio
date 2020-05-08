@@ -41,7 +41,7 @@ ul > li > a.nav-link:hover {
     color: white;
     border-radius: 5px;
     transition: 1s ease;
-    font-size: 1.5vw;
+    font-size: 20px;
 }
 .whitey:hover {
     color: black;
@@ -205,7 +205,29 @@ body::-webkit-scrollbar {
     from {opacity: 0; transform: translateX(-1000px);}
     to {opacity: 1; transform: translateX(0);}
 }
-.hidden, .hidden-r, .hidden-l { opacity: 0; }
+@keyframes jump-in-s {
+    0% {opacity: 0; transform: scale(0.6);}
+    50% {opacity: 0; transform: scale(0.6);}
+    100% {opacity: 1; transform: scale(1);}
+}
+@keyframes jump-in-f {
+    0% {opacity: 0; transform: scale(0.6);}
+    100% {opacity: 1; transform: scale(1);}
+}
+.hidden, .hidden-r, .hidden-l, .hidden-jF, .hidden-jS { opacity: 0; }
 .fade-in-element { animation: fade-in 2s; }
 .fade-in-element-r { animation: fade-right 2s; }
 .fade-in-element-l { animation: fade-left 2s; }
+.jump-in-element-f { animation: jump-in-f 2s; }
+.jump-in-element-s { animation: jump-in-s 4s; }
+
+a {
+    color: rgb(4, 156, 4);
+}
+
+.modal-content {
+    background-color: black;
+}
+.modal-lg {
+    max-width: 80% !important;
+}
