@@ -38,7 +38,8 @@ a, p {
     color: white;
 }
 .jumbotron {
-    background: linear-gradient(0deg, #F5921F, rgb(250, 182, 40))
+    background: linear-gradient(0deg, #F5921F, rgb(250, 182, 40));
+    border-radius: 0;
 }
 .jumbotron p {
     letter-spacing: -1.25px;
@@ -105,18 +106,18 @@ a, p {
 }
 /* Fade In */
 @keyframes fade-in {
-    from {opacity: 0; transform: translateY(250px);}
+    from {opacity: 0; transform: translateY(150px);}
     to {opacity: 1; transform: translateY(0);}
 }
 @keyframes fade-right {
-    from {opacity: 0; transform: translateX(1500px);}
+    from {opacity: 0; transform: translateX(1000px);}
     to {opacity: 1; transform: translateX(0);}
 }
 @keyframes fade-left {
-    from {opacity: 0; transform: translateX(-1500px);}
+    from {opacity: 0; transform: translateX(-1000px);}
     to {opacity: 1; transform: translateX(0);}
 }
 .hidden, .hidden-r, .hidden-l { opacity: 0; }
-.fade-in-element { animation: fade-in 4s; }
-.fade-in-element-r { animation: fade-right 4s; }
-.fade-in-element-l { animation: fade-left 4s; }
+.fade-in-element { animation: fade-in 2s; }
+.fade-in-element-r { animation: fade-right 2s; }
+.fade-in-element-l { animation: fade-left 2s; }

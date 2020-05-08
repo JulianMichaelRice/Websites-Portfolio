@@ -13,31 +13,43 @@
     <title>E10 Arena</title>
   </head>
   <body>
-    
-    <ul class="nav justify-content-center opac">
-        <li class="nav-item">
-            <a class="nav-link" href="#"><img src="e10w.png" class="center logo"></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link whitey" href="#">Reservations</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link whitey" href="#">Merch</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link whitey" href="#">Signup | Login</a>
-        </li>
-    </ul>
+    <div class="container">
+        <ul class="nav justify-content-center opac">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><img src="e10w.png" class="center logo"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link whitey" href="#">Reservations</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link whitey" href="#">Merch</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link whitey" href="#">Signup | Login</a>
+            </li>
+        </ul>
+    </div>
     <!-- Navigation -->
-    <div class="parallax faded blur">
+    <div class="spacer-xl"></div>
+    <div class="container" id="block">
+        <img src="e10w.png" width="300px" class="center hidden-r stick">
+        <div class="spacer"></div>
+        <h1 class="text-center hidden-l">E10ARENA</h1>
+    </div>
+    <div class="spacer-xl"></div>
+    <div class="container">
+        <h1 class="text-center hidden">Fitness Reimagined.</h1>
+        <div class="spacer-xl"></div>
+    </div>
+    <div class="parallax faded blur hidden">
         <!-- <h1 class="center-t">Fitness Reimagined.</h1> -->
-        <ul class="nav justify-content-center">
+        <!-- <ul class="nav justify-content-center">
             <li>
                 <div class="spacer"></div>
                 
             </li>
         </ul>
-        <img src="e10w.png" class="center-t stick">
+        <img src="e10w.png" class="center-t stick"> -->
     </div>
     
     <div class="d-flex"></div>
@@ -45,7 +57,7 @@
     <!-- Section 2 -->
     <div class="container-fluid opac">
         <div class="spacer"></div>
-        <h2 class="text-center">Fitness Reimagined.</h2>
+        <!-- <h2 class="text-center">Fitness Reimagined.</h2> -->
         <div class="spacer"></div>
         <!-- <div class="d-flex flex-row justify-content-around">
             <h4 class="p-2">T1</h4>
@@ -57,11 +69,9 @@
     <div class="d-flex"></div>
     <!-- Section 3 -->
     <div class="container-fluid">
-        <h2 class="text-center blur">E10ARENA</h2>
         <div class="spacer"></div>
-        
         <div class="row">
-            <div class="col-md-7 col-12 opac">
+            <div class="col-md-7 col-12 opac hidden-l">
                 <img src="soccer1-.jpeg" width="100%" class="darken">
                 <div class="center-tt text-center">
                     <p>Hours of Operation: M-F 9 AM - 6 PM</p>
@@ -69,7 +79,7 @@
                     <a class="address" href="">12345 E10 Street, Los Angeles 90024 CA</a>
                 </div>
             </div>
-            <div class="col-md-5 opac">
+            <div class="col-md-5 opac hidden-r">
                 <div id="map"></div>
             </div>
         </div>
@@ -78,15 +88,15 @@
     <div class="spacer"></div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6" style="margin-left: 25px;">
+            <div class="col-md-6 hidden" style="margin-left: 25px;">
                 <p>Contact | Terms of Use | Privacy Policy</p>
                 <p>E10ARENA ©2020</p>
             </div>
-            <div class="col-md-6" style="margin-right: -25px;">
+            <div class="col-md-6 hidden" style="margin-right: -25px;">
                 <h4 class="text-center">Follow us on Social Media</h4>
                 <div class="centered">
-                    <a href="" target="_blank"><img src="ig.png" class="sm"></a>
-                    <a href="" target="_blank"><img src="twitter.png" class="sm"></a>
+                    <a href="https://www.instagram.com/e10arena/" target="_blank"><img src="ig.png" class="sm"></a>
+                    <a href="https://twitter.com/E10ARENA" target="_blank"><img src="twitter.png" class="sm"></a>
                     <a href="" target="_blank"><img src="fb.png" class="sm"></a>
                 </div>
             </div>        
@@ -99,6 +109,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('block').style.height = window.innerHeight + "px";
+    </script>
     <script>
         // Initialize and add the map
         function initMap() {
@@ -321,9 +334,61 @@
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbDYY7-2oJV5b6ygcm7s9OQZDF4EJW9zY&callback=initMap">
     </script>
+
+    <script>
+        (function() {
+            var elements;
+            var windowHeight;
+
+            function init() {
+                elements = document.querySelectorAll('.hidden');
+                r_elements = document.querySelectorAll('.hidden-r');
+                l_elements = document.querySelectorAll('.hidden-l');
+                windowHeight = window.innerHeight;
+                checkPosition();
+            }
+
+            function checkPosition() {
+                for (var i = 0; i < elements.length; i++) {
+                    var element = elements[i]
+                    var positionFromTop = elements[i].getBoundingClientRect().top;
+
+                    if (positionFromTop - windowHeight <= 0) {
+                        element.classList.add('fade-in-element');
+                        element.classList.remove('hidden');
+                    }
+                }
+                for (var i = 0; i < r_elements.length; i++) {
+                    var r_element = r_elements[i]
+                    var positionFromTop = r_elements[i].getBoundingClientRect().top;
+
+                    if (positionFromTop - windowHeight <= 0) {
+                        r_element.classList.add('fade-in-element-r');
+                        r_element.classList.remove('hidden-r');
+                    }
+                }
+                for (var k = 0; k < l_elements.length; k++) {
+                    var l_element = l_elements[k]
+                    var positionFromTop = l_elements[k].getBoundingClientRect().top;
+
+                    if (positionFromTop - windowHeight <= 0) {
+                        l_element.classList.add('fade-in-element-l');
+                        l_element.classList.remove('hidden-l');
+                    }
+                }
+            }
+
+            window.addEventListener('scroll', checkPosition);
+            window.addEventListener('resize', init);
+
+            init();
+            checkPosition();
+        })();
+    </script>
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="/__/firebase/7.14.2/firebase-app.js"></script>
-
+    
     <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="/__/firebase/7.14.2/firebase-analytics.js"></script>
