@@ -3,3 +3,70 @@ body { font-family: 'Lobster', cursive; margin: 0; padding: 0; }
 .full-screen { width: 100vw; min-height: 100vh; }
 .flex-center { display: flex; flex-direction: column; justify-content: center; align-items: center; }
 .text-xl { font-size: 4rem; }
+@keyframes fade-in {
+    from {opacity: 0; transform: translateY(150px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+@keyframes fade-right {
+    from {opacity: 0; transform: translateX(1000px);}
+    to {opacity: 1; transform: translateX(0);}
+}
+@keyframes fade-left {
+    from {opacity: 0; transform: translateX(-1000px);}
+    to {opacity: 1; transform: translateX(0);}
+}
+@keyframes jump-in-s {
+    0% {opacity: 0; transform: scale(0.6);}
+    50% {opacity: 0; transform: scale(0.6);}
+    100% {opacity: 1; transform: scale(1);}
+}
+@keyframes jump-in-f {
+    0% {opacity: 0; transform: scale(0.6);}
+    100% {opacity: 1; transform: scale(1);}
+}
+.hidden, .hidden-r, .hidden-l, .hidden-jF, .hidden-jS { opacity: 0; }
+.fade-in-element { animation: fade-in 2s; }
+.fade-in-element-r { animation: fade-right 2s; }
+.fade-in-element-l { animation: fade-left 2s; }
+.jump-in-element-f { animation: jump-in-f 2s; }
+.jump-in-element-s { animation: jump-in-s 4s; }
+
+body::-webkit-scrollbar { display: none; }
+body {
+    color: #31D02F;
+    /* font-family: 'Oxygen', sans-serif; */
+    /* font-weight: 300; */
+    /* letter-spacing: -0.75px; */
+    -ms-overflow-style: none;
+    font-family: 'Rubik', sans-serif;
+}
+.container-fluid {
+    background: linear-gradient(180deg, white, rgb(238, 255, 242));
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    letter-spacing: -2.5px;
+}
+p, a {
+    font-weight: 300;
+    letter-spacing: -1.55px;
+}
+ul > li > a.nav-link {
+    color: white;
+    /* background-color: transparent; */
+    transition: 1s ease;
+    padding: 5px 15px;
+    margin: 5px 25px;
+    border-bottom: 4px solid white;
+    border-radius: 15px;
+}
+ul > li > a.nav-link:hover {
+    color: #31D02F;
+    background-color: white;
+    border-bottom: 4px solid #81562A;
+    transition: 0.3s ease;
+}
+.cover {
+    background: linear-gradient(90deg, #31D02F, rgb(136, 248, 62));
+    padding: 20px 0px 30px 0px;
+}
