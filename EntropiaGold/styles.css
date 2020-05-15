@@ -76,6 +76,14 @@ footer p, h4 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.smaller {
+    font-size: 16px;
+}
 .fade {
     animation: 2.5s fadeIn forwards;
     z-index: 1;
