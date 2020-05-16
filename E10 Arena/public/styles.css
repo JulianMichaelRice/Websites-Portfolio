@@ -61,11 +61,11 @@ ul > li > a > div.bg:hover {
 
 @media only screen and (max-width:720px) {
     .parallax {
-        background-image: url("soccer2-.jpeg");
+        background-image: url("soccer2m.jpeg");
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         height: 450px;
     }
     .center-t {
