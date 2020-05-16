@@ -5,21 +5,17 @@ body { font-family: 'Lobster', cursive; margin: 0; padding: 0; }
 .text-xl { font-size: 4rem; }
 @keyframes fade-in {
     from {opacity: 0; transform: translateY(150px);}
-    to {opacity: 1; transform: translateY(0);}
-}
+    to {opacity: 1; transform: translateY(0);} }
 @keyframes fade-right {
     from {opacity: 0; transform: translateX(1000px);}
-    to {opacity: 1; transform: translateX(0);}
-}
+    to {opacity: 1; transform: translateX(0);} }
 @keyframes fade-left {
     from {opacity: 0; transform: translateX(-1000px);}
-    to {opacity: 1; transform: translateX(0);}
-}
+    to {opacity: 1; transform: translateX(0);} }
 @keyframes jump-in-s {
     0% {opacity: 0; transform: scale(0.6);}
     50% {opacity: 0; transform: scale(0.6);}
-    100% {opacity: 1; transform: scale(1);}
-}
+    100% {opacity: 1; transform: scale(1);} }
 @keyframes jump-in-f {
     0% {opacity: 0; transform: scale(0.6);}
     100% {opacity: 1; transform: scale(1);}
@@ -70,3 +66,15 @@ ul > li > a.nav-link:hover {
     background: linear-gradient(90deg, #31D02F, rgb(136, 248, 62));
     padding: 20px 0px 30px 0px;
 }
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cover-tall { height: 500px; }
+.cover-mid { height: 300px; }
+.cover-tight { height: 150px; }
+.bg1 { background-image: url("study1.jpg"); }
+.bg2 { background-image: url("study2.jpg"); }
+.bg3 { background-image: url("study3.jpg"); }
