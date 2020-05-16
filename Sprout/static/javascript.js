@@ -1,3 +1,29 @@
+const $dropdown = $(".dropdown");
+const $dropdownToggle = $(".dropdown-toggle");
+const $dropdownMenu = $(".dropdown-menu");
+const showClass = "show";
+
+$(window).on("load resize", function() {
+if (this.matchMedia("(min-width: 768px)").matches) {
+    $dropdown.hover(
+    function() {
+        const $this = $(this);
+        $this.addClass(showClass);
+        $this.find($dropdownToggle).attr("aria-expanded", "true");
+        $this.find($dropdownMenu).addClass(showClass);
+    },
+    function() {
+        const $this = $(this);
+        $this.removeClass(showClass);
+        $this.find($dropdownToggle).attr("aria-expanded", "false");
+        $this.find($dropdownMenu).removeClass(showClass);
+    }
+    );
+} else {
+    $dropdown.off("mouseenter mouseleave");
+}
+});
+
 (function() {
     var elements;
     var windowHeight;
@@ -8,6 +34,8 @@
         l_elements = document.querySelectorAll('.hidden-l');
         f_elements = document.querySelectorAll('.hidden-jF');
         s_elements = document.querySelectorAll('.hidden-jS');
+        o_elements = document.querySelectorAll('.hidden-o');
+        o2_elements = document.querySelectorAll('.hidden-o2');
         windowHeight = window.innerHeight;
         checkPosition();
     }
@@ -56,6 +84,24 @@
             if (positionFromTop - windowHeight <= 0) {
                 s_element.classList.add('jump-in-element-s');
                 s_element.classList.remove('hidden-jS');
+            }
+        }
+        for (var o = 0; o < o_elements.length; o++) {
+            var o_element = o_elements[o]
+            var positionFromTop = o_elements[o].getBoundingClientRect().top;
+
+            if (positionFromTop - windowHeight <= 0) {
+                o_element.classList.add('opac');
+                o_element.classList.remove('hidden-o');
+            }
+        }
+        for (var o2 = 0; o2 < o2_elements.length; o2++) {
+            var o2_element = o2_elements[o2]
+            var positionFromTop = o2_elements[o2].getBoundingClientRect().top;
+
+            if (positionFromTop - windowHeight <= 0) {
+                o2_element.classList.add('opac2');
+                o2_element.classList.remove('hidden-o2');
             }
         }
     }

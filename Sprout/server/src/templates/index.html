@@ -11,8 +11,8 @@
   </head>
   <body>
     <!-- Nav -->
-    <div class="cover">
-        <ul class="nav justify-content-center">
+    <div class="cover comeDown">
+        <ul class="nav justify-content-center hidden-jS">
             <li class="nav-item">
                 <a class="nav-link" href="#">Sprout</a>
             </li>
@@ -28,11 +28,25 @@
         </ul>
     </div>
 
-    <div class="parallax cover-tall bg1"
+    <div class="parallax cover-tall bg3 hidden-o">
+      <img src="../../../static/Sprout.png" width="300px" class="centered hidden-o2">
+    </div>
 
     <!-- Content -->
     <div class="container-fluid">
-      <h1 class="hidden-l text-center">Kuribo + Ena</h1>
+      <div class="row">
+        <div class="col-md-6">
+            <div class="container hidden-l">
+              <h2 class="text-center d-item">Teach</h2>
+            </div>
+        </div>
+        <div class="col-md-6">
+          <div class="jumbotron hidden-r">
+            <h2 class="text-center">Learn</h2>
+          </div>
+        </div>
+      </div>
+      <h1 class="hidden-l text-center">Learn</h1>
       <h3 class="hidden-r text-center">{{ context.server_time }}</h3>
       
     </div>
