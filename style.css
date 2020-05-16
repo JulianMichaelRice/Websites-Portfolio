@@ -1,0 +1,209 @@
+.spacer { margin-top: 50px; margin-bottom: 50px; }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    20% {opacity: 0;}
+    100% { opacity: 1; }
+}
+@keyframes fromTop {
+    0% { top: -500px; }
+    20% { top: -500px; }
+    100% { top: 0px; }
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+body {
+    scroll-behavior: auto;
+    -ms-overflow-style: none;
+    background: linear-gradient(45deg, #1b1b1b, #010101);
+}
+ul > li > a {
+    color: white;
+    transition: 1s ease;
+}
+ul > li > a:hover {
+    color: rgb(245, 31, 31);
+    transition: 1s ease;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: -1px;
+    color: white;
+}
+.site {
+    border:1px solid transparent;
+}
+a, p, .card-body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    letter-spacing: -1px;
+    color: white;
+}
+.jumbotron, footer {
+    background: linear-gradient(0deg, rgb(245, 31, 31), rgb(250, 85, 40));
+    border-radius: 0;
+}
+footer {
+    padding: 35px 25px 25px 25px;
+}
+footer p, h4 {
+    color: black;
+}
+.jumbotron p {
+    letter-spacing: -1.25px;
+}
+.highlight {
+    background-color: transparent;
+    transition: 1s ease;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin: 10px 5px;
+}
+.highlight:hover {
+    transition: 1s ease;
+    border-radius: 8px;
+}
+.roundy {
+    border-radius: 100%;
+}
+.parallax {
+    background-image: url("bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.centered {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.smaller {
+    font-size: 16px;
+}
+.fade {
+    animation: 2.5s fadeIn forwards;
+    z-index: 1;
+}
+.comeDown {
+    position: relative;
+    animation: 2.5s fromTop forwards;
+    z-index: 1;
+}
+.dropdown-item {
+    font-weight: 200;
+    padding: 10px 15px;
+    font-size: 1.5vw;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    transition: 1s ease;
+    margin: 5px 0px;
+}
+.dropdown-item:hover {
+    color: black;
+    background-color: #F5921F;
+    transition: 1s ease;
+}
+.adjusted {
+    font-size: 1.65vw;
+}
+.container-fluid {
+    padding: 0px;
+}
+.dropdown-menu {
+    padding: 0;
+    margin-top: 0;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 0px solid transparent;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+@keyframes fade-in {
+    from {opacity: 0; transform: translateY(150px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+@keyframes fade-right {
+    from {opacity: 0; transform: translateX(1000px);}
+    to {opacity: 1; transform: translateX(0);}
+}
+@keyframes fade-left {
+    from {opacity: 0; transform: translateX(-1000px);}
+    to {opacity: 1; transform: translateX(0);}
+}
+@keyframes jump-in-s {
+    0% {opacity: 0; transform: scale(0.6);}
+    50% {opacity: 0; transform: scale(0.6);}
+    100% {opacity: 1; transform: scale(1);}
+}
+@keyframes jump-in-f {
+    0% {opacity: 0; transform: scale(0.6);}
+    100% {opacity: 1; transform: scale(1);}
+}
+@keyframes fade-opac {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fade-opac-slow {
+    0%   { opacity: 0; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+.hidden, .hidden-r, .hidden-l, .hidden-jF, .hidden-jS, .hidden-o, .hidden-o2 { opacity: 0; }
+.opac { animation: fade-opac 3s; }
+.opac2 { animation: fade-opac-slow 4s; }
+.fade-in-element { animation: fade-in 2s; }
+.fade-in-element-r { animation: fade-right 2s; }
+.fade-in-element-l { animation: fade-left 2s; }
+.jump-in-element-f { animation: jump-in-f 2s; }
+.jump-in-element-s { animation: jump-in-s 4s; }
+.front {z-index: 100;}
+
+#headingOne {
+    background-image: url(img/b_deino_island.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#headingTwo {
+    background-image: url(img/b_atrox_zone_d.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#headingThree {
+    background-image: url(img/b_ola50.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.land {
+    color: white;
+    text-decoration: none;
+}
+.land:hover {
+    color: #F5921F;
+    text-decoration: none;
+}
+.card-body {
+    opacity: 1;
+}
+.btn {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 0;
+}
+.c-white { color: white; }
+.c-black { color: black; }
+.card-body img {
+    border-radius: 10px;
+}
+#accordion { text-align: center; }
+.card {background-color: black;}
