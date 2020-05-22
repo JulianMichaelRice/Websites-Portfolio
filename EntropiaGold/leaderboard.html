@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/fav.png">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
+    <title>Entropia Gold</title>
+  </head>
+  <body onload="loadXMLDoc()">
+    <div class="cover">
+        <ul class="nav justify-content-center comeDown">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><img src="img/logo-w.png" height="50px"></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle highlight" href="lootius.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Lootius Mayhem
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="lootius.html">How to Participate</a>
+                  <a class="dropdown-item" href="https://www.youtube.com/watch?v=ELQIgdgROVA" target="_blank">Teaser Trailer</a>
+                  <a class="dropdown-item" href="classes.html">Character Classes</a>
+                  <a class="dropdown-item" href="prizes.html">Prize Pool</a>
+                  <a class="dropdown-item" href="hof.html">Hall of Fame</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link highlight" href="#">Leaderboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link highlight" href="areas.html">Land Areas</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle highlight" href="mission.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="mission.html">Mission Statement</a>
+                  <a class="dropdown-item" href="mystory.html">My Story</a>
+                  <a class="dropdown-item" href="eula.html">EULA 2.1 Compliance</a>
+                </div>
+            </li>
+        </ul>
+        <div class="parallax fade">
+            <img src="img/logo-w.png" width="400px" class="centered">
+        </div>
+    </div>
+    <!-- "Entropia" font name is Josefin Sans and "Gold" font name is Montserrat.
+        Black Color = #393938
+        Gold Color = #F5921F 
+        Link: https://julianmichaelrice.github.io/Websites-Portfolio/EntropiaGold/home.html
+    -->
+    <div class="spacer"></div>
+    <div class="container-fluid">
+        <h2 class="text-center hidden-o">Leaderboard</h2>
+        <div class="spacer"></div>
+        <div class="row">
+            <div class="col-md-1 col-0"></div>
+            <div class="col-md-10 col-12">
+                <table id="goomba" class="hidden-o2"></table>
+            </div>
+            <div class="col-md-1 col-0"></div>
+        </div>
+        
+    </div>
+    <div class="spacer"></div>
+    <footer>
+        <h4 class="text-center hidden">Rediscover Entropia</h4>
+        <p class="text-center hidden">EntropiaGold is in no way connected to MindArk PE AB® or any of MindArks' Planet Partners™ Entropia Universe™ is a registered trademark of MindArk PE AB®. All logos, brand names and concepts are the sole property of their respective owners</p>
+    </footer>
+    <script>
+        function loadXMLDoc() {
+          var xmlhttp = new XMLHttpRequest();
+          xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                ranking(this);
+            }
+          };
+          xmlhttp.open("GET", "https://www.entropiagold.com/tourn/output.xml", true);
+          xmlhttp.send();
+        }
+
+        function organizeArray(array) {
+            array.sort(function(a, b) {
+                return a-b;
+            });
+            array.reverse();
+            return array;
+        }
+
+        function sleep(milliseconds) {
+            const date = Date.now();
+            let currentDate = null;
+            do {
+            currentDate = Date.now();
+            } while (currentDate - date < milliseconds);
+        }
+
+        function getGlobalString(array) {
+            var result = "";
+            for (i = 0; i < array.length; i++) {
+                if (i+1 >= array.length) {
+                    result += array[i];
+                } else {
+                    result += array[i] + ", ";
+                }
+            }
+            return result;
+        }
+        
+        function ranking(xml) {
+            //Variable Declaration
+            var i;
+            var xmlDoc = xml.responseXML;
+            var table="<tr><th>Class</th><th>Rank</th><th>Placement Score</th><th>Avatar</th><th>Atrox Globals</th><th>Scipulor Globals</th><th>Neconu Globals</th></tr>";
+            var x = xmlDoc.getElementsByTagName("player");
+            var p_class, rank, total_score, avatar, atrox_globals, scip_globals, neconu_globals, atrox_string, scip_string, neconu_string;
+
+            for (i = 0; i < 15; i++) { //x.length
+                p_class = x[i].getAttribute("class");   //What class is the player?
+                rank = i+1;                             //What's the player's rank?
+                total_score = x[i].getElementsByTagName("total_score")[0].childNodes[0].nodeValue;  //What is the player's final score?
+                avatar = x[i].getAttribute("name");     //What is the player's avatar/name?
+                atrox_globals = [];                     //List of atrox globals
+                scip_globals = [];                      //List of scipular globals
+                neconu_globals = [];                    //List of neconu globals
+                atrox_string = "";                      //Final output for atrox values
+                scip_string = "";                       //Final output for scipular values
+                neconu_string = "";                     //Final output for neconu values
+
+                //Get every EVENT in the XML for the player, then add the values to a global array
+                for (atrox = 0; atrox < x[i].getElementsByTagName("atrox")[0].getElementsByTagName("event").length; atrox++) {
+                    atrox_globals.push(x[i].getElementsByTagName("atrox")[0].getElementsByTagName("event")[atrox].getAttribute("value"));
+                }
+
+                //Organize the array so that it's descending order (100, 90, 80, etc.)
+                atrox_globals = organizeArray(atrox_globals);
+
+                for (scip = 0; scip < x[i].getElementsByTagName("scipulor")[0].getElementsByTagName("event").length; scip++) {
+                    scip_globals.push(x[i].getElementsByTagName("scipulor")[0].getElementsByTagName("event")[scip].getAttribute("value"));
+                }
+                scip_globals = organizeArray(scip_globals);
+
+                for (neco = 0; neco < x[i].getElementsByTagName("neconu")[0].getElementsByTagName("event").length; neco++) {
+                    neconu_globals.push(x[i].getElementsByTagName("neconu")[0].getElementsByTagName("event")[neco].getAttribute("value"));
+                }
+                neconu_globals = organizeArray(neconu_globals);
+
+                //Get a string of the numbers for each player's Atrox / Scipulor / Neconu globals
+                //Ex: 185, 74, 54, 51
+                atrox_string = getGlobalString(atrox_globals);
+                scip_string = getGlobalString(scip_globals);
+                neconu_string = getGlobalString(neconu_globals);
+
+                var source = "";
+                if (p_class == "Scipulor") {
+                    source = "i_fixer.png";
+                } else if (p_class == "Atrox") {
+                    source = "i_nomad.png";
+                } else {
+                    source = "i_neconu.png";
+                }
+
+                //Final output for ONE player to the table pure html
+                table += "<tr class=\"opac\"><td><img src=\"img/" + source + "\" style=\"width:100px\"></td><td>" + rank + "</td><td>" + total_score + "</td><td>" + avatar + "</td><td>" + atrox_string + "</td><td>" + scip_string + "</td><td>" + neconu_string + "</td></tr>"
+                console.log(table);
+            }
+            document.getElementById("goomba").innerHTML = table;
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="julian.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -24,6 +24,8 @@ if (this.matchMedia("(min-width: 768px)").matches) {
 }
 });
 
+  
+
 (function() {
     var elements;
     var windowHeight;
