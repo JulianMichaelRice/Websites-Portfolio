@@ -57,7 +57,7 @@
         Link: https://julianmichaelrice.github.io/Websites-Portfolio/EntropiaGold/home.html
     -->
     <div class="spacer"></div>
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
         <h2 class="text-center hidden-o">Leaderboard</h2>
         <div class="spacer"></div>
         <div class="row">
@@ -67,37 +67,63 @@
             </div>
             <div class="col-md-1 col-0"></div>
         </div>
+    </div> -->
+    <div class="spacer"></div>
+    <ul class="nav nav-tabs d-flex justify-content-center">
+        <li><a data-toggle="tab" href="#lead" style="padding: 20px">Overall</a></li>
+        <li><a data-toggle="tab" href="#day" style="padding: 20px">Daily</a></li>
+        <li><a data-toggle="tab" href="#week" style="padding: 20px">Weekly</a></li>
+        <li><a data-toggle="tab" href="#month" style="padding: 20px">Monthly</a></li>
+    </ul>
+    <div class="tab-content container-fluid">
+        <div class="spacer"></div>
+        <h2 class="text-center hidden-o">Leaderboard</h2>
+        <div class="spacer"></div>
+        <div id="lead" class="tab-pane fade in active">
+            <div class="spacer"></div>
+            <div class="row">
+                <div class="col-md-1 col-0"></div>
+                <div class="col-md-10 col-12">
+                    <table id="goomba" class="hidden-o2"></table>
+                </div>
+                <div class="col-md-1 col-0"></div>
+            </div>
+        </div>
+        <div id="day" class="tab-pane fade in">
+            <h2 class="text-center hidden-o">Daily</h2>
+            <div class="spacer"></div>
+            <div class="row">
+                <div class="col-md-1 col-0"></div>
+                <div class="col-md-10 col-12">
+                    <table id="daily" class="hidden-o2" style="width: 100%"></table>
+                </div>
+                <div class="col-md-1 col-0"></div>
+            </div>
+        </div>
+        <div id="week" class="tab-pane fade">
+            <h2 class="text-center hidden-o">Weekly</h2>
+            <div class="spacer"></div>
+            <div class="row">
+                <div class="col-md-1 col-0"></div>
+                <div class="col-md-10 col-12">
+                    <table id="weekly" class="hidden-o2" style="width: 100%"></table>
+                </div>
+                <div class="col-md-1 col-0"></div>
+            </div>
+        </div>
+        <div id="month" class="tab-pane fade">
+            <h2 class="text-center hidden-o">Monthly</h2>
+            <div class="spacer"></div>
+            <div class="row">
+                <div class="col-md-1 col-0"></div>
+                <div class="col-md-10 col-12">
+                    <table id="monthly" class="hidden-o2" style="width: 100%"></table>
+                </div>
+                <div class="col-md-1 col-0"></div>
+            </div>
+        </div>
     </div>
     <div class="spacer"></div>
-    <div class="container-fluid">
-        <h2 class="text-center hidden-o">Daily</h2>
-        <div class="spacer"></div>
-        <div class="row">
-            <div class="col-md-1 col-0"></div>
-            <div class="col-md-10 col-12">
-                <table id="daily" class="hidden-o2"></table>
-            </div>
-            <div class="col-md-1 col-0"></div>
-        </div>
-        <h2 class="text-center hidden-o">Weekly</h2>
-        <div class="spacer"></div>
-        <div class="row">
-            <div class="col-md-1 col-0"></div>
-            <div class="col-md-10 col-12">
-                <table id="weekly" class="hidden-o2"></table>
-            </div>
-            <div class="col-md-1 col-0"></div>
-        </div>
-        <h2 class="text-center hidden-o">Monthly</h2>
-        <div class="spacer"></div>
-        <div class="row">
-            <div class="col-md-1 col-0"></div>
-            <div class="col-md-10 col-12">
-                <table id="monthly" class="hidden-o2" style="width: 100%"></table>
-            </div>
-            <div class="col-md-1 col-0"></div>
-        </div>
-    </div>
     <footer>
         <h4 class="text-center hidden">Rediscover Entropia</h4>
         <p class="text-center hidden">EntropiaGold is in no way connected to MindArk PE AB® or any of MindArks' Planet Partners™ Entropia Universe™ is a registered trademark of MindArk PE AB®. All logos, brand names and concepts are the sole property of their respective owners</p>
@@ -147,10 +173,39 @@
 
         function daily(xml) {
             var xmlDoc = xml.responseXML;
+            var xmlDoc = xml.responseXML;
+            var parentTag = xmlDoc.getElementsByTagName("daily")[0].getElementsByTagName("bonus");
+            var table="<tr><th>Bonus Points</th><th>Avatar</th><th>Mob | Resource Value</th><th>Date</th></tr>";
+            var bonus, avatar, value, date;
+            console.log(parentTag.length + " Hey ");
+            for (var i = parentTag.length-1; i >= 0; i--) {
+                var fullText = parentTag[i].childNodes[0].nodeValue;
+                bonus = parentTag[i].getAttribute("value");
+                avatar = parentTag[i].childNodes[0].nodeValue.substring(fullText.indexOf("<"), fullText.indexOf("</a>"));
+                value = fullText.substring(fullText.indexOf("- ")+2, fullText.indexOf(")")+1);
+                date = parentTag[i].getAttribute("date").substring(0, 10);
+
+                table += "<tr class=\"opac\"><td>" + bonus + "</td><td>" + avatar + "</td><td>" + value + "</td><td>" + date + "</td></tr>"
+            }
+            document.getElementById("daily").innerHTML = table;
         }
 
         function weekly(xml) {
             var xmlDoc = xml.responseXML;
+            var parentTag = xmlDoc.getElementsByTagName("weekly")[0].getElementsByTagName("bonus");
+            var table="<tr><th>Bonus Points</th><th>Avatar</th><th>Mob | Resource Value</th><th>Date</th></tr>";
+            var bonus, avatar, value, date;
+            console.log(parentTag.length + " Hey ");
+            for (var i = parentTag.length-1; i >= 0; i--) {
+                var fullText = parentTag[i].childNodes[0].nodeValue;
+                bonus = parentTag[i].getAttribute("value");
+                avatar = parentTag[i].childNodes[0].nodeValue.substring(fullText.indexOf("<"), fullText.indexOf("</a>"));
+                value = fullText.substring(fullText.indexOf("- ")+2, fullText.indexOf(")")+1);
+                date = parentTag[i].getAttribute("date").substring(0, 10);
+
+                table += "<tr class=\"opac\"><td>" + bonus + "</td><td>" + avatar + "</td><td>" + value + "</td><td>" + date + "</td></tr>"
+            }
+            document.getElementById("weekly").innerHTML = table;
         }
 
         function monthly(xml) {
@@ -159,7 +214,7 @@
             var table="<tr><th>Bonus Points</th><th>Avatar</th><th>Mob | Resource Value</th><th>Date</th></tr>";
             var bonus, avatar, value, date;
             console.log(parentTag.length + " Hey ");
-            for (var i = 0; i < parentTag.length; i++) {
+            for (var i = parentTag.length-1; i >= 0; i--) {
                 var fullText = parentTag[i].childNodes[0].nodeValue;
                 bonus = parentTag[i].getAttribute("value");
                 avatar = parentTag[i].childNodes[0].nodeValue.substring(fullText.indexOf("<"), fullText.indexOf("</a>"));

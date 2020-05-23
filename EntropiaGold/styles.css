@@ -20,10 +20,12 @@ body {
 ul > li > a {
     color: white;
     transition: 1s ease;
+    text-decoration: none;
 }
 ul > li > a:hover {
     color: #F5921F;
     transition: 1s ease;
+    text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6, th {
     font-family: 'Josefin Sans', sans-serif;
@@ -204,6 +206,15 @@ tr:nth-child(odd) {
 tr:first-child {
     background-color: #F5921F;
 }
+td > a {
+    text-decoration: none;
+    transition: 1s ease;
+}
+td > a:hover {
+    transition: 1s ease;
+    color: #F5921F;
+    text-decoration: none;
+}
 th {
     color: white;
     padding: 10px 10px;
@@ -222,7 +233,7 @@ td {
     text-align: center;
     font-size: 20px;
 }
-tr:nth-child(n+16) td {
+#goomba > tr:nth-child(n+16) td {
     padding: 0px;
 }
 tr {
