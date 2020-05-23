@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
     <title>Entropia Gold</title>
   </head>
-  <body>
+  <body onload="loadXMLDocBonus()">
     <div class="cover">
       <ul class="nav justify-content-center comeDown">
           <li class="nav-item">
@@ -62,15 +62,58 @@
         Gold Color = #F5921F 
         Link: https://julianmichaelrice.github.io/Websites-Portfolio/EntropiaGold/home.html
     -->
-
-
     <div class="spacer"></div>
+    <ul class="nav nav-tabs d-flex justify-content-center">
+        <li><a data-toggle="tab" href="#day" style="padding: 20px">Daily</a></li>
+        <li><a data-toggle="tab" href="#week" style="padding: 20px">Weekly</a></li>
+        <li><a data-toggle="tab" href="#month" style="padding: 20px">Monthly</a></li>
+    </ul>
+    <div class="spacer"></div>
+    <div class="tab-content container-fluid">
+        <div class="spacer"></div>
+        <div id="day" class="tab-pane fade in active">
+            <h2 class="text-center hidden-o">Daily</h2>
+            <div class="spacer"></div>
+            <div class="row">
+                <div class="col-md-1 col-0"></div>
+                <div class="col-md-10 col-12">
+                    <table id="daily" class="hidden-o2" style="width: 100%"></table>
+                </div>
+                <div class="col-md-1 col-0"></div>
+            </div>
+        </div>
+        <div id="week" class="tab-pane fade">
+            <h2 class="text-center hidden-o">Weekly</h2>
+            <div class="spacer"></div>
+            <div class="row">
+                <div class="col-md-1 col-0"></div>
+                <div class="col-md-10 col-12">
+                    <table id="weekly" class="hidden-o2" style="width: 100%"></table>
+                </div>
+                <div class="col-md-1 col-0"></div>
+            </div>
+        </div>
+        <div id="month" class="tab-pane fade">
+            <h2 class="text-center hidden-o">Monthly</h2>
+            <div class="spacer"></div>
+            <div class="row">
+                <div class="col-md-1 col-0"></div>
+                <div class="col-md-10 col-12">
+                    <table id="monthly" class="hidden-o2" style="width: 100%"></table>
+                </div>
+                <div class="col-md-1 col-0"></div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+    </div>
+
     <footer>
         <h4 class="text-center hidden">Rediscover Entropia</h4>
         <p class="text-center hidden">EntropiaGold is in no way connected to MindArk PE AB® or any of MindArks' Planet Partners™ Entropia Universe™ is a registered trademark of MindArk PE AB®. All logos, brand names and concepts are the sole property of their respective owners</p>
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="leaderboard.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
