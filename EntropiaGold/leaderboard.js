@@ -63,7 +63,7 @@ function getGlobalString(array) {
 
 function getGlobalScore(xml) {
     var xmlDoc = xml.responseXML;
-    document.getElementById("tscore").innerHTML = "<h4 class='text-center' style='color: white;'>Total Score: " + xmlDoc.getElementsByTagName("global_total")[0].childNodes[0].nodeValue + "</h4>";
+    document.getElementById("tscore").innerHTML = "<h4 class='text-center' style='color: white; font-size: 60px'>" + xmlDoc.getElementsByTagName("global_total")[0].childNodes[0].nodeValue + "</h4>";
 }
 
 function daily(xml) {
