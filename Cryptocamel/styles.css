@@ -1,0 +1,54 @@
+@keyframes fade-in {
+    from {opacity: 0; transform: translateY(150px);}
+    to {opacity: 1; transform: translateY(0);} }
+@keyframes fade-right {
+    from {opacity: 0; transform: translateX(1000px);}
+    to {opacity: 1; transform: translateX(0);} }
+@keyframes fade-left {
+    from {opacity: 0; transform: translateX(-1000px);}
+    to {opacity: 1; transform: translateX(0);} }
+@keyframes jump-in-s {
+    0% {opacity: 0; transform: scale(0.6);}
+    50% {opacity: 0; transform: scale(0.6);}
+    100% {opacity: 1; transform: scale(1);} }
+@keyframes jump-in-f {
+    0% {opacity: 0; transform: scale(0.6);}
+    100% {opacity: 1; transform: scale(1);}
+}
+@keyframes fade-opac {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fade-opac-slow {
+    0%   { opacity: 0; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fromTop {
+    0% { top: -500px; }
+    20% { top: -500px; }
+    100% { top: 0px; }
+}
+.hidden, .hidden-r, .hidden-l, .hidden-jF, .hidden-jS, .hidden-o, .hidden-o2 { opacity: 0; }
+.fade-in-element { animation: fade-in 2s; }
+.fade-in-element-r { animation: fade-right 2s; }
+.fade-in-element-l { animation: fade-left 2s; }
+.jump-in-element-f { animation: jump-in-f 2s; }
+.jump-in-element-s { animation: jump-in-s 4s; }
+.opac { animation: fade-opac 3s; }
+.opac2 { animation: fade-opac-slow 4s; }
+.comeDown {
+    position: relative;
+    animation: 2.5s fromTop forwards;
+    z-index: 1;
+}
+
+body::-webkit-scrollbar { display: none; }
+body {
+    background: linear-gradient(180deg, black, #050505);
+    color: #FAFAFA;
+    /* font-family: 'Oxygen', sans-serif; */
+    /* font-weight: 300; */
+    /* letter-spacing: -0.75px; */
+    -ms-overflow-style: none;
+}
