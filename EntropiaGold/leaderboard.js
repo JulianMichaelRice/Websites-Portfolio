@@ -22,6 +22,16 @@ function loadXMLDocBonus() {
     xmlhttp.send();
 }
 
+function loadXMLDocPrize() {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            getGlobalScore(this);
+        }
+    };
+    xmlhttp.open("GET", "https://www.entropiagold.com/tourn/output.xml", true);
+    xmlhttp.send();
+}
 
 function organizeArray(array) {
     array.sort(function(a, b) {
@@ -51,11 +61,15 @@ function getGlobalString(array) {
     return result;
 }
 
+function getGlobalScore(xml) {
+    var xmlDoc = xml.responseXML;
+    document.getElementById("tscore").innerHTML = "<h4 class='text-center' style='color: white;'>Total Score: " + xmlDoc.getElementsByTagName("global_total")[0].childNodes[0].nodeValue + "</h4>";
+}
+
 function daily(xml) {
     var xmlDoc = xml.responseXML;
-    var xmlDoc = xml.responseXML;
     var parentTag = xmlDoc.getElementsByTagName("daily")[0].getElementsByTagName("bonus");
-    var table="<tr><th>Date</th><th>Avatar</th><th>Bonus Points</th><th>Mob | Resource Value</th></tr>";
+    var table="<tr><th>Date</th><th>Avatar</th><th>Mob | Resource Value</th><th>Bonus Points</th></tr>";
     var bonus, avatar, value, date;
     for (var i = parentTag.length-1; i >= 0; i--) {
         var fullText = parentTag[i].childNodes[0].nodeValue;
@@ -64,7 +78,7 @@ function daily(xml) {
         value = fullText.substring(fullText.indexOf("- ")+2, fullText.indexOf(")")+1);
         date = parentTag[i].getAttribute("date").substring(0, 10);
 
-        table += "<tr class=\"opac\"><td>" + date + "</td><td>" + avatar + "</td><td>" + bonus + "</td><td>" + value + "</td></tr>"
+        table += "<tr class=\"opac\"><td>" + date + "</td><td>" + avatar + "</td><td>" + value + "</td><td>" + bonus + "</td></tr>"
     }
     document.getElementById("daily").innerHTML = table;
 }
@@ -72,7 +86,7 @@ function daily(xml) {
 function weekly(xml) {
     var xmlDoc = xml.responseXML;
     var parentTag = xmlDoc.getElementsByTagName("weekly")[0].getElementsByTagName("bonus");
-    var table="<tr><th>Date</th><th>Avatar</th><th>Bonus Points</th><th>Mob | Resource Value</th></tr>";
+    var table="<tr><th>Date</th><th>Avatar</th><th>Mob | Resource Value</th><th>Bonus Points</th></tr>";
     var bonus, avatar, value, date;
     for (var i = parentTag.length-1; i >= 0; i--) {
         var fullText = parentTag[i].childNodes[0].nodeValue;
@@ -81,7 +95,7 @@ function weekly(xml) {
         value = fullText.substring(fullText.indexOf("- ")+2, fullText.indexOf(")")+1);
         date = parentTag[i].getAttribute("date").substring(0, 10);
 
-        table += "<tr class=\"opac\"><td>" + date + "</td><td>" + avatar + "</td><td>" + bonus + "</td><td>" + value + "</td></tr>"
+        table += "<tr class=\"opac\"><td>" + date + "</td><td>" + avatar + "</td><td>" + value + "</td><td>" + bonus + "</td></tr>"
     }
     document.getElementById("weekly").innerHTML = table;
 }
@@ -89,7 +103,7 @@ function weekly(xml) {
 function monthly(xml) {
     var xmlDoc = xml.responseXML;
     var parentTag = xmlDoc.getElementsByTagName("monthly")[0].getElementsByTagName("bonus");
-    var table="<tr><th>Date</th><th>Avatar</th><th>Bonus Points</th><th>Mob | Resource Value</th></tr>";
+    var table="<tr><th>Date</th><th>Avatar</th><th>Mob | Resource Value</th><th>Bonus Points</th></tr>";
     var bonus, avatar, value, date;
     for (var i = 0; i < parentTag.length; i++) {
         var fullText = parentTag[i].childNodes[0].nodeValue;
@@ -98,7 +112,7 @@ function monthly(xml) {
         value = fullText.substring(fullText.indexOf("- ")+2, fullText.indexOf(")")+1);
         date = parentTag[i].getAttribute("date").substring(0, 10);
 
-        table += "<tr class=\"opac\"><td>" + date + "</td><td>" + avatar + "</td><td>" + bonus + "</td><td>" + value + "</td></tr>"
+        table += "<tr class=\"opac\"><td>" + date + "</td><td>" + avatar + "</td><td>" + value + "</td><td>" + bonus + "</td></tr>"
     }
     document.getElementById("monthly").innerHTML = table;
 }
@@ -107,7 +121,7 @@ function ranking(xml) {
     //Variable Declaration
     var i;
     var xmlDoc = xml.responseXML;
-    var table="<tr><th>Class</th><th>Rank</th><th>Avatar</th><th>Score</th><th>Atrox Globals</th><th>Scipulor Globals</th><th>Neconu Globals</th></tr>";
+    var table="<tr><th>Class</th><th>Rank</th><th>Avatar</th><th width='18%'>Score</th><th width='18%'>Atrox Globals</th><th width='22%'>Scipulor Globals</th><th width='15%'>Neconu Globals</th></tr>";
     var x = xmlDoc.getElementsByTagName("player");
     var p_class, rank, total_score, avatar, atrox_globals, scip_globals, neconu_globals, atrox_string, scip_string, neconu_string;
 
@@ -162,7 +176,7 @@ function ranking(xml) {
 
         //Final output for ONE player to the table pure html
         if (rank <= 15) {
-            table += "<tr class=\"opac\"><td><img src=\"img/" + source + "\" style=\"width:100px\"></td><td style='font-size: 32px'>" + rank + "</td><td>" + avatar + "</td><td>" + parseFloat(total_score).toFixed(2) + "</td><td>" + atrox_string + "</td><td>" + scip_string + "</td><td>" + neconu_string + "</td></tr>"
+            table += "<tr class=\"opac\"><td><img src=\"img/" + source + "\" style=\"width:100px\"></td><td style='font-size: 32px; font-weight: 500'>" + rank + "</td><td>" + avatar + "</td><td style='font-size: 28px;'>" + parseFloat(total_score).toFixed(2) + "</td><td>" + atrox_string + "</td><td>" + scip_string + "</td><td>" + neconu_string + "</td></tr>"
         } else {
             table += "<tr class=\"opac\"><td>" + class_name + "</td><td style='font-size: 22px'>" + rank + "</td><td>" + avatar + "</td><td>" + parseFloat(total_score).toFixed(2) + "</td><td>" + atrox_string + "</td><td>" + scip_string + "</td><td>" + neconu_string + "</td></tr>"
         }
