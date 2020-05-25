@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../../static/style.css">
+    <link rel="stylesheet" href="url_for('static', filename='style.css')">
     <!-- <link rel="stylesheet" href="styles.css"> -->
     <title>Sprout | Official Website</title>
   </head>
@@ -29,16 +29,16 @@
     </div>
 
     <div class="parallax cover-tall bg3 hidden-o">
-      <img src="../../../static/Sprout.png" width="300px" class="centered hidden-o2">
+      <img src="url_for('static', filename='Sprout.png')" width="300px" class="centered hidden-o2">
     </div>
 
     <!-- Content -->
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6">
-            <div class="container hidden-l">
-              <h2 class="text-center d-item">Teach</h2>
-            </div>
+          <div class="jumbotron hidden-l">
+            <h2 class="text-center">Teach</h2>
+          </div>
         </div>
         <div class="col-md-6">
           <div class="jumbotron hidden-r">
@@ -46,7 +46,7 @@
           </div>
         </div>
       </div>
-      <h1 class="hidden-l text-center">Learn</h1>
+      <h1 class="hidden-l text-center">Sprout</h1>
       <h3 class="hidden-r text-center">{{ context.server_time }}</h3>
       
     </div>
