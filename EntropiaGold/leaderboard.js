@@ -173,9 +173,19 @@ function ranking(xml) {
             source = "i_neconu2.png";
             class_name = "Techie";
         }
-
+        rank = rank.toString();
+        var lastNum = rank[rank.length-1];
+        if (lastNum == "1") {
+            rank += "st";
+        } else if (lastNum == "2") {
+            rank += "nd";
+        } else if (lastNum == "3") {
+            rank += "rd";
+        } else {
+            rank += "th";
+        }
         //Final output for ONE player to the table pure html
-        if (rank <= 15) {
+        if (parseInt(rank) <= 15) {
             table += "<tr class=\"opac\"><td><img src=\"img/" + source + "\" style=\"width:100px\"></td><td style='font-size: 32px; font-weight: 500'>" + rank + "</td><td>" + avatar + "</td><td style='font-size: 28px;'>" + parseFloat(total_score).toFixed(2) + "</td><td>" + atrox_string + "</td><td>" + scip_string + "</td><td>" + neconu_string + "</td></tr>"
         } else {
             table += "<tr class=\"opac\"><td>" + class_name + "</td><td style='font-size: 22px'>" + rank + "</td><td>" + avatar + "</td><td>" + parseFloat(total_score).toFixed(2) + "</td><td>" + atrox_string + "</td><td>" + scip_string + "</td><td>" + neconu_string + "</td></tr>"
