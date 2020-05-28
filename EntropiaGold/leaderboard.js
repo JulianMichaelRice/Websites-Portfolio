@@ -175,11 +175,11 @@ function ranking(xml) {
         }
         rank = rank.toString();
         var lastNum = rank[rank.length-1];
-        if (lastNum == "1") {
+        if (lastNum == "1" && rank != "11") {
             rank += "st";
-        } else if (lastNum == "2") {
+        } else if (lastNum == "2" && rank != "12") {
             rank += "nd";
-        } else if (lastNum == "3") {
+        } else if (lastNum == "3" && rank != "13") {
             rank += "rd";
         } else {
             rank += "th";

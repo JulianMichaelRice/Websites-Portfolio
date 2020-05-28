@@ -70,6 +70,10 @@ footer p, h4 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 550px;
+}
+.bg2 {
+    background-image: url("img/b_sunset.png");
     height: 720px;
 }
 .centered {
