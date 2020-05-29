@@ -21,7 +21,7 @@ function loadXMLDocBonus() {
     };
     xmlhttp.open("GET", "https://www.entropiagold.com/tourn/output.xml", true);
     xmlhttp.send();
-    setTimeout(checkTimeBonus, 1000);
+    setInterval(checkTimeBonus, 1000);
 }
 
 function loadXMLDocPrize() {
@@ -33,6 +33,7 @@ function loadXMLDocPrize() {
     };
     xmlhttp.open("GET", "https://www.entropiagold.com/tourn/output.xml", true);
     xmlhttp.send();
+    setInterval(checkTimePrize, 1000);
 }
 
 function organizeArray(array) {
@@ -152,6 +153,24 @@ function checkTimeBonus() {
                 daily(this);
                 weekly(this);
                 monthly(this);
+            }
+        };
+        xmlhttp.open("GET", "https://www.entropiagold.com/tourn/output.xml", true);
+        xmlhttp.send();
+    }
+}
+
+//Not sure if this works yet... we'll have to wait till Sunday and see probably
+function checkTimePrize() {
+    var seconds = new Date().getTime() / 1000;
+    if (seconds % 300 == 0) {
+        
+        $.get("https://www.entropiagold.com/tourn/lootius.php");
+        sleep(10000);
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                getGlobalScore(this);
             }
         };
         xmlhttp.open("GET", "https://www.entropiagold.com/tourn/output.xml", true);
