@@ -83,10 +83,19 @@ h3:hover {
 /* White: #ffffff */
 .parallax {
     background-attachment: fixed;
-    background-position: scroll;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+}
+@media screen and (max-width: 768px) {
+    .parallax {
+        background-attachment: fixed;
+        background-position: scroll;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 800px;
+    }
 }
 .bg1 { background-image: url("img/w_night.jpg"); }
 .bg2 { background-image: url("img/w_wires.jpg"); height: 450px }
