@@ -96,7 +96,7 @@ footer p, h4 {
 }
 .comeDown {
     position: relative;
-    animation: 0.5s fromTop forwards;
+    animation: 3.5s fromTop forwards;
     z-index: 1;
 }
 .dropdown-item {
