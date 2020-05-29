@@ -16,29 +16,28 @@
   </head>
   <body>
     <!-- Nav -->
-    <div class="cover">
+    <div class="cover comeDown">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#">My Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Games</a>
+                <a class="nav-link" href="#">Profile</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
+                <a class="nav-link" href="#"><img src="img/Sprout.png" width="35px" class="hidden-o2"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#register">Find a Tutor</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="logout.php">Logout</a>
             </li>
         </ul>
     </div>
-
-    <div class="container">
-        <h1 class="text-center">Title</h1>
-    </div>
-
+    <div class="spacer-x"></div>
     <!-- Content -->
-    <h1>Hello <?php echo $_SESSION['Username'] ?></h1>
+    <h1 class="text-center">Welcome back, <?php echo $_SESSION['Username'] ?></h1>
 
     <!-- Code -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

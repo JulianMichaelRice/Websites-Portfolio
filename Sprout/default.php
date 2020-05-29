@@ -12,7 +12,7 @@
   <body>
     <!-- Nav -->
     <div class="cover comeDown">
-        <ul class="nav justify-content-center hidden-jS">
+        <ul class="nav justify-content-center">
             <li class="nav-item">
                 <a class="nav-link" href="#">Learn</a>
             </li>
@@ -26,7 +26,7 @@
               <a class="nav-link" href="#register">Register</a>
           </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
+                <a class="nav-link" href="#login" data-toggle="modal" data-target="#loginModal">Login</a>
             </li>
         </ul>
     </div>
@@ -41,7 +41,7 @@
     <div class="spacer-x"></div>
     
     <!-- Content -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="learn">
       <div class="row">
         <div class="col-md-7">
           <div class="parallax cover-full bg5 hidden-r">
@@ -59,8 +59,10 @@
     </div>
 
     <div class="spacer-x"></div>
+    <h4 class="text-center hidden-o">Our Mission Statement is to educate students to never leave their questions unanswered.</h4>
+    <div class="spacer-x"></div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="teach">
       <div class="row">
         <div class="col-md-5">
           <div class="jumbotron hidden-l d-flex" style="align-items: center; justify-content: center">
@@ -79,9 +81,31 @@
 
     <div class="spacer-x" id="register"></div>
 
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5 class="text-center">Login</h5>
+            <form action="validation.php" method="post">
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" name="user" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-light display-center">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Form: Registration --> 
-    <div class="container form-container">
-        <h1 class="text-center">Find Your Sprout Tutor</h1>
+    <div class="container form-container hidden-o">
+        <h1 class="text-center">Find Your Sprout Tutor Today</h1>
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10 display-center">
@@ -125,7 +149,7 @@
     <div class="spacer-x"></div>
 
     <!-- Footer -->
-    <footer class="jumbotron" style="margin-bottom: -20px; height: 250px; padding-top: 50px">
+    <footer class="jumbotron hidden" style="margin-bottom: -20px; height: 250px; padding-top: 50px">
         <div class="row">
             <div class="col-md-6">
                 <h4>Contact</h4>
