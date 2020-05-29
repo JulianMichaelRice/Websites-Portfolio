@@ -7,6 +7,7 @@ function loadXMLDoc() {
     };
     xmlhttp.open("GET", "https://www.entropiagold.com/tourn/output.xml", true);
     xmlhttp.send();
+    setInterval(checkTime, 1000);
 }
 
 function loadXMLDocBonus() {
@@ -20,6 +21,7 @@ function loadXMLDocBonus() {
     };
     xmlhttp.open("GET", "https://www.entropiagold.com/tourn/output.xml", true);
     xmlhttp.send();
+    setTimeout(checkTimeBonus, 1000);
 }
 
 function loadXMLDocPrize() {
@@ -115,6 +117,46 @@ function monthly(xml) {
         table += "<tr class=\"opac\"><td>" + date + "</td><td>" + avatar + "</td><td>" + value + "</td><td>" + bonus + "</td></tr>"
     }
     document.getElementById("monthly").innerHTML = table;
+}
+
+//Not sure if this works yet... we'll have to wait till Sunday and see probably
+function checkTime() {
+    var seconds = parseInt(new Date().getTime() / 1000);
+    // console.log("ran checktime " + seconds + " % 300 => " + parseInt(seconds % 300));
+    if (parseInt(seconds % 300) == 0) {
+        
+        $.get("https://www.entropiagold.com/tourn/lootius.php");
+        sleep(10000);
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                ranking(this);
+            }
+        };
+        // console.log("Sent a request to update the leaderboard");
+        xmlhttp.open("GET", "https://www.entropiagold.com/tourn/output.xml", true);
+        xmlhttp.send();
+    }
+}
+
+//Not sure if this works yet... we'll have to wait till Sunday and see probably
+function checkTimeBonus() {
+    var seconds = new Date().getTime() / 1000;
+    if (seconds % 300 == 0) {
+        
+        $.get("https://www.entropiagold.com/tourn/lootius.php");
+        sleep(10000);
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                daily(this);
+                weekly(this);
+                monthly(this);
+            }
+        };
+        xmlhttp.open("GET", "https://www.entropiagold.com/tourn/output.xml", true);
+        xmlhttp.send();
+    }
 }
 
 function ranking(xml) {
