@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+body { font-family: 'Lobster', cursive; margin: 0; padding: 0; background: linear-gradient(270deg, rgb(245, 255, 245), rgb(255, 255, 255)); }
+.full-screen { width: 100vw; min-height: 100vh; }
+.flex-center { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.text-xl { font-size: 4rem; }
+@keyframes fade-in {
+    from {opacity: 0; transform: translateY(150px);}
+    to {opacity: 1; transform: translateY(0);} }
+@keyframes fade-right {
+    from {opacity: 0; transform: translateX(1000px);}
+    to {opacity: 1; transform: translateX(0);} }
+@keyframes fade-left {
+    from {opacity: 0; transform: translateX(-1000px);}
+    to {opacity: 1; transform: translateX(0);} }
+@keyframes jump-in-s {
+    0% {opacity: 0; transform: scale(0.6);}
+    50% {opacity: 0; transform: scale(0.6);}
+    100% {opacity: 1; transform: scale(1);} }
+@keyframes jump-in-f {
+    0% {opacity: 0; transform: scale(0.6);}
+    100% {opacity: 1; transform: scale(1);}
+}
+@keyframes fade-opac {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fade-opac-slow {
+    0%   { opacity: 0; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fromTop {
+    0% { top: -500px; }
+    20% { top: -500px; }
+    100% { top: 0px; }
+}
+html {
+    scroll-behavior: smooth;
+}
+.hidden, .hidden-r, .hidden-l, .hidden-jF, .hidden-jS, .hidden-o, .hidden-o2 { opacity: 0; }
+.fade-in-element { animation: fade-in 2s; }
+.fade-in-element-r { animation: fade-right 2s; }
+.fade-in-element-l { animation: fade-left 2s; }
+.jump-in-element-f { animation: jump-in-f 2s; }
+.jump-in-element-s { animation: jump-in-s 4s; }
+.opac { animation: fade-opac 3s; }
+.opac2 { animation: fade-opac-slow 4s; }
+.comeDown {
+    position: relative;
+    animation: 2.5s fromTop forwards;
+    z-index: 1;
+}
+
+body::-webkit-scrollbar { display: none; }
+body {
+    color: #31D02F;
+    /* font-family: 'Oxygen', sans-serif; */
+    /* font-weight: 300; */
+    /* letter-spacing: -0.75px; */
+    -ms-overflow-style: none;
+    font-family: 'Assistant', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    letter-spacing: -1.5px;
+}
+p, a {
+    font-weight: 200;
+    letter-spacing: -0.55px;
+}
+ul > li > a.nav-link {
+    color: #31D02F;
+    /* background-color: transparent; */
+    transition: 1s ease;
+    padding: 5px 15px;
+    margin: 5px 25px;
+    border-bottom: 2px solid white;
+    border-radius: 5px;
+}
+ul > li > a.nav-link:hover {
+    color: #222222;
+    background-color: white;
+    border-bottom: 2px solid #31D02F;
+    transition: 0.3s ease;
+}
+.cover {
+    background: linear-gradient(90deg, white, white);
+    padding: 7px 0px 7px 0px;
+}
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg1 { background-image: url("img/study1.jpg"); }
+.bg2 { background-image: url("img/study2.jpg"); }
+.bg3 { background-image: url("img/study3.jpg"); }
+.bg4 { background-image: url("img/study4.jpg"); }
+.bg5 { background-image: url("img/study5.jpg"); }
+.bg6 { background-image: url("img/study6.jpg"); }
+.cover-full { height: 100vh; }
+.cover-tall { height: 500px; }
+.cover-mid { height: 300px; }
+.cover-tight { height: 150px; }
+.spacer-x { margin: 200px 0px; }
+.spacer-l { margin: 50px 0px; }
+.spacer-m { margin: 25px 0px; }
+.spacer-s { margin: 15px 0px; }
+.centered {
+    position: relative;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.display-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-fluid { padding: 0 }
+.jumbotron { 
+    background: linear-gradient(270deg, rgb(14, 144, 12), rgb(106, 195, 46)); 
+    border-radius: 0;
+    color: white;
+    height: 100vh;
+}
+.col-md-6, .col-md-5, .col-md-7 {
+    padding: 0;
+}
+.form-container {
+    color: white;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 4px 2px rgb(215, 250, 215);
+    background: linear-gradient(0deg, rgb(14, 144, 12), rgb(106, 195, 46));
+}
