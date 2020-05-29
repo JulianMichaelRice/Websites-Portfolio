@@ -16,8 +16,9 @@
     100% {opacity: 1; transform: scale(1);}
 }
 @keyframes fade-opac {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
+    0%   { opacity: 0; filter: blur(20px); }
+    20%  { opacity: 0; }
+    100% { opacity: 1; filter: blur(0px); }
 }
 @keyframes fade-opac-slow {
     0%   { opacity: 0; }
@@ -42,15 +43,37 @@
     animation: 2.5s fromTop forwards;
     z-index: 1;
 }
-
+.spacer-xl { margin-top: 200px; margin-bottom: 200px; }
+.spacer { margin-top: 50px; margin-bottom: 50px; }
+.spacer-sm { margin-top: 30px; margin-bottom: 30px; }
+html {
+    scroll-behavior: smooth;
+}
 body::-webkit-scrollbar { display: none; }
 body {
-    background: linear-gradient(180deg, black, #050505);
+    background: linear-gradient(180deg, #191818, #151414);
     color: #FAFAFA;
-    /* font-family: 'Oxygen', sans-serif; */
-    /* font-weight: 300; */
-    /* letter-spacing: -0.75px; */
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 100;
+    letter-spacing: -0.75px;
+    text-align: center;
     -ms-overflow-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 100;
+    letter-spacing: -0.25px;
+    color: #E4AF77;
+    text-shadow: 0.5px 0.5px 25px #E4AF77;
+    transition: 1s ease;
+}
+h3:hover {
+    text-shadow: 1px 1px 10px white;
+    transition: 1s ease;
+}
+.white {
+    font-weight: 100;
+    letter-spacing: -0.75px;
+    color: white;
 }
 
 /* Colors */
@@ -58,3 +81,61 @@ body {
 /* Silver: #d6d4d0 */
 /* Black: #232121 */
 /* White: #ffffff */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.bg1 { background-image: url("img/w_night.jpg"); }
+.bg2 { background-image: url("img/w_wires.jpg"); height: 450px }
+.centered {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.jumbotron {
+    background: linear-gradient(0deg, #d6d4d0, #ffffff);
+    border-radius: 0px;
+}
+.jumbotron h3, p {
+    color: #232121;
+    text-shadow: 0.2px 0.2px 15px #232121;
+}
+.jumbotron a {
+    color: #E4AF77;
+    font-weight: 300;
+    text-shadow: 0.2px 0.2px 15px #FAFAFA;
+    text-decoration: none;
+    transition: 1s ease;
+}
+.jumbotron a:hover {
+    color: black;
+    font-weight: 300;
+    text-shadow: 0.2px 0.2px 15px #E4AF77;
+    transition: 1s ease;
+}
+input {
+    font-weight: 100;
+}
+.btn-mine {
+    color: white;
+    background-color: #232121;
+}
+.btn-mine:hover {
+    background-color: #E4AF77;
+}
+::placeholder {
+    font-weight: 100;
+}
+.form-control:focus {
+    border: 1px solid #E4AF77;
+    border-radius: 0;
+    box-shadow: 0 0 0 0.1rem rgba(167, 140, 40, 0.25);
+} 

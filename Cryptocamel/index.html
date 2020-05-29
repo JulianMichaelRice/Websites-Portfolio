@@ -4,31 +4,101 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Tab Title</title>
+    <title>Cryptocamel</title>
   </head>
-  <body>
+  <body id="home">
     <!-- Nav -->
-    <div class="cover">
+    <div style="position: fixed; top: 0; z-index: 100;" >
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Games</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <img src="">
+                <a class="nav-link" href="#home"><img src="img/logo_camel.png" width="70px" class="comeDown"></a>
             </li>
         </ul>
     </div>
 
+    <div class="parallax bg1 hidden-o">
+        <img src="img/long_gold_w.png" class="centered hidden-o" width="330px">
+    </div>
+
     <!-- Content -->
+    <div class="spacer"></div>
+    <div class="container-fluid">
+      <div class="hidden-o2">
+        <h1>Leading Bitcoin Miner in the Desert</h1>
+      </div>
+      <div class="spacer"></div>
+      <div class="row">
+        <div class="col-md-4 col-12">
+          <img src="img/l_bcoin.png" width="170px" class="hidden icon">
+          <div class="spacer"></div>
+          <h3 class="hidden">Bringing You Bitcoin</h3>
+        </div>
+        <div class="col-md-4 col-12">
+          <img src="img/l_sun.png" width="170px" class="hidden icon">
+          <div class="spacer"></div>
+          <h3 class="hidden">Extreme Conditions</h3>
+        </div>
+        <div class="col-md-4 col-12">
+          <img src="img/l_block.png" width="170px" class="hidden icon">
+          <div class="spacer"></div>
+          <h3 class="hidden">ASIC &amp; GPU Mining</h3>
+        </div>
+      </div>
+    </div>
+    <div class="spacer-xl"></div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-5">
+          <div class="spacer-sm"></div>
+          <h4 class="text-left hidden-l">Running SHA256 in 60 degree environments</h4>
+          <p class="text-left white hidden-l">Cryptocamel is an EPC contractor (Engineering/Procurement/Construction) in deploying mobile HPC Datacenters within the GCC and MENA regions.</p>
+          <div class="spacer"></div>
+          <p class="text-left white hidden-l">Our proprietary stack of software/firmwares and HVAC structures enable us operate ASICS at peak hashrates within the extreme climatic conditions of the Middle East.</p>
+        </div>
+        <div class="col-12 col-md-7 hidden-r">
+          <div class="parallax bg2 hidden" style="border-radius: 15px;">
+            <img src="img/long_white.png" class="centered hidden-o" width="230px">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spacer-xl"></div>
+    <div class="jumbotron">
+      <h3 class="hidden">Contact Us</h3>
+      <p class="hidden">You can contact us by sending an email to <a href="mailto:farm@cryptocamel.com">farm@cryptocamel.com</a>, or you may fill out the form below with an inquiry.</p>
+      
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <form action="mailto:farm@cryptocamel.com" method="POST" enctype="text/plain">
+            <div class="form-row">
+              <div class="col">
+                <input type="text" name="name" class="form-control hidden-l" placeholder="Name">
+              </div>
+              <div class="col">
+                <input type="email" name="mail" class="form-control hidden-r" placeholder="Email">
+              </div>
+            </div>
+            <div class="spacer-sm"></div>
+            <div class="form-row hidden">
+              <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+            </div>
+            <div class="spacer-sm"></div>
+            <button type="submit" class="btn btn-mine mb-2 hidden-o2">Send Inquiry</button>
+          </form>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="white text-center hidden">Copyright 2020 CryptoCamel © All Rights Reserved</p>
+      <div class="spacer"></div>
+    </footer>
 
     <!-- Code -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
