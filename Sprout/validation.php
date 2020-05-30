@@ -26,6 +26,13 @@
     //If there exists a user... we know the username has already been taken
     if ($num == 1) {
         $_SESSION['Username'] = $name;
+
+        //Get the row so we can set values to other session variables
+        $row = mysqli_fetch_assoc($result);
+        $_SESSION['First'] = $row['First'];
+        $_SESSION['Last'] = $row['Last'];
+        // $_SESSION['user_data'] = $row; //$_SESSION['user_data']['First']; etc
+
         header('location:home.php');
     } else {
         header('location:default.php');

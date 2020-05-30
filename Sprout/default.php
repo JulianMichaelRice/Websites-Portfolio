@@ -59,7 +59,9 @@
     </div>
 
     <div class="spacer-x"></div>
-    <h4 class="text-center hidden-o">Our Mission Statement is to educate students to never leave their questions unanswered.</h4>
+        <div class="container-fluid">
+        <h4 class="text-center hidden-o">Our Mission Statement is to educate students to never leave their questions unanswered.</h4>
+    </div>
     <div class="spacer-x"></div>
 
     <div class="container-fluid" id="teach">
@@ -128,7 +130,7 @@
                         </div>
                         <div class="col">
                             <label>Password</label>
-                            <input type="text" name="password" class="form-control" required>
+                            <input type="password" name="password" class="form-control" required>
                         </div>
                     </div>
                     <div class="spacer-m"></div>
@@ -149,14 +151,14 @@
     <div class="spacer-x"></div>
 
     <!-- Footer -->
-    <footer class="jumbotron hidden" style="margin-bottom: -20px; height: 250px; padding-top: 50px">
+    <footer class="jumbotron hidden" style="margin-bottom: -20px; height: 55vh; padding-top: 50px">
         <div class="row">
-            <div class="col-md-6">
-                <h4>Contact</h4>
-                <p>Contact us at ??@sprouttutor.com</p>
+            <div class="col-md-6 col-12">
+                <h4 class="text-center">Contact</h4>
+                <p class="text-center">Contact us at ??@sprouttutor.com</p>
             </div>
-            <div class="col-md-6">
-                <h4 class="text-right">Follow us on Social Media</h4>
+            <div class="col-md-6 col-12s">
+                <h4 class="text-center">Follow us on Social Media</h4>
 
             </div>
         </div>
