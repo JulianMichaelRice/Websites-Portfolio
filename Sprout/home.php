@@ -11,8 +11,11 @@
     }
 
     $query = "SELECT * FROM tutors";
+    $querySubjects = "SELECT * FROM subjects";
     $result = $mysqli -> query($query);
+    $resultSubjects = $mysqli -> query($querySubjects);
     $row = $result -> fetch_all(MYSQLI_ASSOC);
+    $rowSubjects = $resultSubjects -> fetch_all(MYSQLI_ASSOC);
     // printf("%s (%s)\n", $row[0]['First'], $row[1]['First']);
 ?>
 
@@ -23,6 +26,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="calendar.css">
     <link rel="stylesheet" href="styles.css">
     <title>Home</title>
   </head>
@@ -31,7 +35,7 @@
     <div class="cover comeDown">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link" href="#">My Home</a>
+                <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Profile</a>
@@ -49,7 +53,18 @@
     </div>
     <div class="spacer-s"></div>
 
-    <!-- list of tutors php -->
+    <?php include 'calendar.php';
+          include 'booking.php';
+          include 'BookableCell.php';
+      $booking = new Booking($dbname, $host, $username, $password);
+      $bookableCell = new BookableCell($booking);
+      $calendar = new Calendar();
+      $calendar->attachObserver('showCell', $bookableCell);
+      $bookableCell->routeActions();
+      echo $calendar->show();
+    ?>
+
+    <!-- Find Tutors .php -->
     <h1 class="text-center">Find a Tutor</h1>
     <div class="container-fluid">
       <div class="row d-flex justify-content-center">
@@ -65,9 +80,11 @@
 
           <div class="card-footer">
 
-            <button type="button" class="btn btn-light btn-block" data-toggle="modal" data-target="#aboutModal" data-username="<?php echo $tutor['Username'] ?>" data-bio="<?php echo $tutor['Bio'] ?>" data-main="<?php echo $tutor['Main'] ?>" data-second="<?php echo $tutor['Second'] ?>" data-name="<?php echo $tutor['First'] ?>">About</button>
+            <button type="button" class="btn btn-light3 btn-block" data-toggle="modal" data-target="#aboutModal" data-username="<?php echo $tutor['Username'] ?>" data-bio="<?php echo $tutor['Bio'] ?>" data-main="<?php echo $tutor['Main'] ?>" data-second="<?php echo $tutor['Second'] ?>" data-name="<?php echo $tutor['First'] ?>">About</button>
 
-            <button class="btn btn-light2 btn-block">Contact</button>
+            <button class="btn btn-light btn-block" data-toggle="modal" data-target="#contactModal" data-username="<?php echo $tutor['Username'] ?>" data-bio="<?php echo $tutor['Bio'] ?>" data-main="<?php echo $tutor['Main'] ?>" data-second="<?php echo $tutor['Second'] ?>" data-name="<?php echo $tutor['First'] ?>">Contact</button>
+
+            <button class="btn btn-light2 btn-block" data-toggle="modal" data-target="#contactModal" data-username="<?php echo $tutor['Username'] ?>" data-bio="<?php echo $tutor['Bio'] ?>" data-main="<?php echo $tutor['Main'] ?>" data-second="<?php echo $tutor['Second'] ?>" data-name="<?php echo $tutor['First'] ?>">Schedule Now</button>
           </div>
         </div>
         <?php endforeach; ?>
@@ -99,10 +116,10 @@
 
       <!-- Contact Modal -->
       <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="contactModalLabel">About</h5>
+              <h5 class="modal-title" id="contactModalLabel">Message</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -110,15 +127,68 @@
             <div class="modal-body">
               <form>
                 <div class="form-group">
-                  <label for="recipient-name" class="col-form-label">Recipient:</label>
+                  <label for="recipient-name" class="col-form-label">Subject Title:</label>
                   <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                  <label for="inputState">Target Subject</label>
+                  <select id="inputState" class="form-control">
+                    <option selected><?php echo $tutor['Main'] ?></option>
+                    <option><?php echo $tutor['Second'] ?></option>
+                  </select>
                 </div>
                 <div class="form-group">
                   <label for="message-text" class="col-form-label">Message:</label>
                   <textarea class="form-control" id="message-text"></textarea>
                 </div>
               </form>
+              <button type="submit" class="btn btn-light2 mb-2">Message</button>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Edit Profile Modal -->
+    <div class="modal fade" id="editProfile" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Message</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Subject Title:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="inputState">Main Subject</label>
+                <select id="inputState" class="form-control">
+                  <option selected></option>
+                  <?php foreach($rowSubjects as $subject): ?>
+                  <option><?php echo $subject['Name'] ?></option>
+                  <?php endforeach; ?>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="inputState">Secondary Subject</label>
+                <select id="inputState" class="form-control">
+                  <option selected><?php echo $subject['Name'] ?></option>
+                  <?php foreach($rowSubjects as $subject): ?>
+                  <option><?php echo $subject['Name'] ?></option>
+                  <?php endforeach; ?>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Bio:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+            <button type="submit" class="btn btn-light2 mb-2">Update Profile</button>
           </div>
         </div>
       </div>
@@ -176,7 +246,7 @@
           </div>
           <div class="row">
             <div class="col-md-12 col-12 text-center">
-              <a href="editprofile.php" class="quick display-center">Edit Profile</a>
+              <button class="btn btn-light2" data-toggle="modal" data-target="#editProfile" data-username="<?php echo $tutor['Username'] ?>" data-bio="<?php echo $tutor['Bio'] ?>" data-main="<?php echo $tutor['Main'] ?>" data-second="<?php echo $tutor['Second'] ?>" data-name="<?php echo $tutor['First'] ?>">Edit Profile</button>
             </div>
           </div>
           <div class="row">
@@ -226,7 +296,25 @@
         // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
         var modal = $(this)
         modal.find('.modal-title').text('New message to ' + name)
-        modal.find('.modal-body input').val(recipient)
+        modal.find('.modal-body input').val("Interested student in " + recipient)
+      })
+    </script>
+
+    <script>
+      $('#editProfile').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget) // Button that triggered the modal
+        var recipient = button.data('username') // Extract info from data-* attributes
+        var bio = button.data('bio')
+        var main = button.data('main')
+        var second = button.data('second')
+        var name = button.data('name')
+        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+        var modal = $(this)
+        modal.find('.modal-title').text('Edit Profile')
+        modal.find('option selected').val(main);
+        modal.find('.modal-body input').val("name")
+
       })
     </script>
   </body>

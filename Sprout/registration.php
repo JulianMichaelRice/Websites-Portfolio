@@ -5,11 +5,11 @@
     session_start();
     
     //Where to send the user
-    header('location:default.php');
+    header('location:default');
     $con = mysqli_connect($host, $username, $password, $dbname);
     
     $name = $_POST['user'];
-    $pass = $_POST['password'];
+    $pass = password_hash($_POST['password'], PASSWORD_DEFAULT);
     $first = $_POST['firstname'];
     $last = $_POST['lastname'];
     
@@ -35,5 +35,6 @@
 
         //We did it!
         echo "Registration Success!";
+        session_destroy();
     }
 ?>

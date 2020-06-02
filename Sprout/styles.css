@@ -197,9 +197,17 @@ ul > li > a.nav-link:hover {
     background-color: #31D02F;
     color: white;
 }
+.btn-light3 {
+    background-color: #FBFBFB;
+    color: #31D02F;
+}
 .btn-light2:hover {
     color: white;
     background-color: #20C01E;
+}
+.btn-light3:hover {
+    background-color: #F2F2F2;
+    color: #42E13F;
 }
 .card-img-top {
     border-radius: 100%;

@@ -1,3 +1,7 @@
+<?php 
+    session_start();
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -31,8 +35,13 @@
         </ul>
     </div>
 
+    <?php if (isset($_SESSION['errors'])): ?>
+        <?php foreach ($_SESSION['errors'] as $error): ?>
+        <p class="text-center" style="color: red;"><?php echo $error ?></p>
+        <?php endforeach; ?>
+    <?php endif; ?>
+
     <div class="parallax cover-full bg2 hidden-o">
-      
       <h1 class="centered text-center" style="color: white;">Sprout</h1>
       <br>
       <h4 class="centered text-center" style="color: white; font-weight: 200">Planting an Education for Your Future</h4>

@@ -12,29 +12,29 @@
     //Grab the register details from login.php's registration form
     $name = $_POST['user'];
     $pass = $_POST['password'];
-
-    //SQL command that grabs all entries where the 
-    //username is the same as what was typed on login.php
-    $s = " select * from users where Username = '$name' && Password = '$pass'";
-
-    //Set the result equal to what is returned from the SQL command
+    $s = " select * from users where Username = '$name'";
     $result = mysqli_query($con, $s);
 
-    //Get how many rows there are with the username matching the input
-    $num = mysqli_num_rows($result);
+    //Did we find a matching user?
+    if (mysqli_num_rows($result) == 1) {
 
-    //If there exists a user... we know the username has already been taken
-    if ($num == 1) {
-        $_SESSION['Username'] = $name;
+        //Is the password right? If so, log in!
+        if (password_verify($pass, mysqli_fetch_assoc($result)['Password'])) {
+            $_SESSION['Username'] = $name;
 
-        //Get the row so we can set values to other session variables
-        $row = mysqli_fetch_assoc($result);
-        $_SESSION['First'] = $row['First'];
-        $_SESSION['Last'] = $row['Last'];
-        // $_SESSION['user_data'] = $row; //$_SESSION['user_data']['First']; etc
-
-        header('location:home.php');
+            //Get the row so we can set values to other session variables
+            $row = mysqli_fetch_assoc($result);
+            $_SESSION['First'] = $row['First'];
+            $_SESSION['Last'] = $row['Last'];
+            header('location:home');
+        } else {
+            //Incorrect Password
+            $_SESSION['error'] = array("Your username or password was incorrect.");
+            header('location:default');
+        }
     } else {
-        header('location:default.php');
+        //Incorrect Username
+        $_SESSION['errors'] = array("Your username or password was incorrect.");
+        header('location:default');
     }
 ?>
