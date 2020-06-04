@@ -117,17 +117,18 @@ h3:hover {
     color: #232121;
     text-shadow: 0.2px 0.2px 15px #232121;
 }
-.jumbotron a {
+.email {
     color: #E4AF77;
     font-weight: 300;
     text-shadow: 0.2px 0.2px 15px #FAFAFA;
     text-decoration: none;
     transition: 1s ease;
 }
-.jumbotron a:hover {
-    color: black;
+.email:hover {
+    color: silver;
     font-weight: 300;
     text-shadow: 0.2px 0.2px 15px #E4AF77;
+    text-decoration: none;
     transition: 1s ease;
 }
 input {
