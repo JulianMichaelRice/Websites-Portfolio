@@ -1,0 +1,147 @@
+/*
+    | Color Guide from Fiverr
+    Coral Reef      -> #FF7878    Melon     -> #FFAAAF    Misty Rose  -> #FFDCE1
+    Turquoise Surf  -> #00B8D6    Maya Blue -> #6EE1FA    Diamond     -> #BEF0FA
+    Dark Blue Gray  -> #636687    Gray Blue -> #8588AD    White Smoke -> #F7F7F7
+    Pastel Gray     -> #D3CDC7    Jet       -> #323232
+
+    | Class Color Guide - Use class Gradient-Pink, Gradient-Blue to get the gradient colors
+*/
+
+.bg-coral-reef { background-color: #FF7878; }
+.bg-melon { background-color: #FFAAAF; }
+.bg-misty-rose { background-color: #FFDCE1; }
+.bg-turquoise-surf { background-color: #00B8D6; }
+.bg-maya-blue { background-color: #6EE1FA; }
+.bg-diamond { background-color: #BEF0FA; }
+.bg-dark-blue-gray { background-color: #636687; }
+.bg-gray-blue { background-color: #8588AD; }
+.bg-white-smoke { background-color: #F7F7F7; }
+.bg-pastel-gray { background-color: #D3CDC7; }
+.bg-jet { background-color: #323232; }
+.txt-coral-reef { color: #FF7878; }
+.txt-melon { color: #FFAAAF; }
+.txt-misty-rose { color: #FFDCE1; }
+.txt-turquoise-surf { color: #00B8D6; }
+.txt-maya-blue { color: #6EE1FA; }
+.txt-diamond { color: #BEF0FA; }
+.txt-dark-blue-gray { color: #636687; }
+.txt-gray-blue { color: #8588AD; }
+.txt-white-smoke { color: #F7F7F7; }
+.txt-pastel-gray { color: #D3CDC7; }
+.txt-jet { color: #323232; }
+.gradient-pink { background: linear-gradient(90deg, #FF7878, #FFAAAF); }
+.gradient-pink-rev { background: linear-gradient(270deg, #FF7878, #FFAAAF); }
+.gradient-blue { background: linear-gradient(90deg, #00B8D6, #6EE1FA); }
+.gradient-blue-rev { background: linear-gradient(270deg, #00B8D6, #6EE1FA); }
+
+body::-webkit-scrollbar { display: none; }
+body {
+    background: linear-gradient(180deg, white, #FAFAFA);
+    color: #FAFAFA;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300; 
+    letter-spacing: -0.75px;
+    -ms-overflow-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300; 
+    letter-spacing: -0.75px;
+}
+p, a {
+    font-weight: 100; 
+    letter-spacing: -0.75px;
+    transition: 1s ease;
+}
+
+a:hover {
+    color: black;
+    transition: 1s ease;
+}
+
+@keyframes fade-in {
+    from {opacity: 0; transform: translateY(150px);}
+    to {opacity: 1; transform: translateY(0);} }
+@keyframes fade-right {
+    from {opacity: 0; transform: translateX(1000px);}
+    to {opacity: 1; transform: translateX(0);} }
+@keyframes fade-left {
+    from {opacity: 0; transform: translateX(-1000px);}
+    to {opacity: 1; transform: translateX(0);} }
+@keyframes jump-in-s {
+    0% {opacity: 0; transform: scale(0.6);}
+    50% {opacity: 0; transform: scale(0.6);}
+    100% {opacity: 1; transform: scale(1);} }
+@keyframes jump-in-f {
+    0% {opacity: 0; transform: scale(0.6);}
+    100% {opacity: 1; transform: scale(1);}
+}
+@keyframes fade-opac {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fade-opac-slow {
+    0%   { opacity: 0; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fromTop {
+    0% { top: -500px; }
+    20% { top: -500px; }
+    100% { top: 0px; }
+}
+.hidden, .hidden-r, .hidden-l, .hidden-jF, .hidden-jS, .hidden-o, .hidden-o2 { opacity: 0; }
+.fade-in-element { animation: fade-in 2s; }
+.fade-in-element-r { animation: fade-right 2s; }
+.fade-in-element-l { animation: fade-left 2s; }
+.jump-in-element-f { animation: jump-in-f 2s; }
+.jump-in-element-s { animation: jump-in-s 4s; }
+.opac { animation: fade-opac 3s; }
+.opac2 { animation: fade-opac-slow 4s; }
+.comeDown {
+    position: relative;
+    animation: 2.5s fromTop forwards;
+    z-index: 1;
+}
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-max { height: 100vh; }
+.bg-lg { height: 550px; }
+.bg-md { height: 375px; }
+.bg-sm { height: 200px; }
+.spacer { padding-top: 50px; padding-bottom: 50px; }
+.spacer-sm { padding-top: 30px; padding-bottom: 30px; }
+.spacer-lg { padding-top: 100px; padding-bottom: 100px; }
+.spacer-xl { padding-top: 200px; padding-bottom: 200px; }
+.spacer-xxl { padding-top: 300px; padding-bottom: 300px; }
+
+.p-photo {
+    background-image: url("https://i.pinimg.com/originals/96/78/5a/96785a4f7affaadeeeda0ac6adc43eff.jpg")
+}
+.p-photo2 {
+    background-image: url("https://hdwallsource.com/img/2017/12/modern-luxury-house-desktop-hd-wallpaper-62362-64304-hd-wallpapers.jpg")
+}
+.house {
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+@media screen and (max-width: 768px) {
+    .parallax {
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+    }
+}
+.centered {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
