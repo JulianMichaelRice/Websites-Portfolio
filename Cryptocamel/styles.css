@@ -113,9 +113,12 @@ h3:hover {
     background: linear-gradient(0deg, #d6d4d0, #ffffff);
     border-radius: 0px;
 }
-.jumbotron h3, p {
+.jumbotron h3, .jumbotron p {
     color: #232121;
     text-shadow: 0.2px 0.2px 15px #232121;
+}
+p {
+    color: black;
 }
 .email {
     color: #E4AF77;
