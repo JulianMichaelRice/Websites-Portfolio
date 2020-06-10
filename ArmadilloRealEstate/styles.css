@@ -120,16 +120,18 @@ a:hover {
 .spacer-xxl { padding-top: 300px; padding-bottom: 300px; }
 
 .p-photo {
-    background-image: url("https://i.pinimg.com/originals/96/78/5a/96785a4f7affaadeeeda0ac6adc43eff.jpg")
+    background-image: url("https://static1.squarespace.com/static/50a7da09e4b07b4b7b0c2aa1/5654c9f2e4b09978f206418b/5d88c85fb41b640ba55aabad/1586801447367/Sunday%2BMorning%2BComing%2BDown%2B2500x%2Bfor%2Bmuench%2Bworkshops.jpg?format=2500w")
 }
 .p-photo2 {
-    background-image: url("https://hdwallsource.com/img/2017/12/modern-luxury-house-desktop-hd-wallpaper-62362-64304-hd-wallpapers.jpg")
+    background-image: url("https://wallpaperaccess.com/full/175677.jpg")
 }
 .house {
     border-radius: 5px;
     border: 2px solid white;
 }
-
+.logo-size {
+    width: 400px;
+}
 @media screen and (max-width: 768px) {
     .parallax {
         background-attachment: scroll;
@@ -138,10 +140,46 @@ a:hover {
         background-size: cover;
         height: 700px;
     }
+    .logo-size {
+        width: 250px;
+    }
 }
 .centered {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.centered-l {
+    position: relative;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+.centered-below {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(0%, -50%);
+}
+.below-right {
+    position: absolute;
+    top: 90%;
+    left: 60%;
+    transform: translate(0%, -50%);
+}
+.livechat {
+    background: linear-gradient(90deg, #00B8D6, #6EE1FA);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    transition: 1s ease;
+    display: block; width: 50%; margin-left: auto; margin-right: auto;
+    text-align: center;
+}
+.livechat:hover {
+    background-color: linear-gradient(-90deg, #00B8D6, #6EE1FA);
+    color: white;
+    text-decoration: none;
+    transition: 1s ease;
 }
