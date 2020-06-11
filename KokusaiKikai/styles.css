@@ -1,0 +1,124 @@
+@keyframes fade-in {
+    from {opacity: 0; transform: translateY(150px);}
+    to {opacity: 1; transform: translateY(0);} }
+@keyframes fade-right {
+    from {opacity: 0; transform: translateX(1000px);}
+    to {opacity: 1; transform: translateX(0);} }
+@keyframes fade-left {
+    from {opacity: 0; transform: translateX(-1000px);}
+    to {opacity: 1; transform: translateX(0);} }
+@keyframes jump-in-s {
+    0% {opacity: 0; transform: scale(0.6);}
+    50% {opacity: 0; transform: scale(0.6);}
+    100% {opacity: 1; transform: scale(1);} }
+@keyframes jump-in-f {
+    0% {opacity: 0; transform: scale(0.6);}
+    100% {opacity: 1; transform: scale(1);}
+}
+@keyframes fade-opac {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fade-opac-slow {
+    0%   { opacity: 0; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fromTop {
+    0% { top: -500px; }
+    20% { top: -500px; }
+    100% { top: 0px; }
+}
+.bg-max { height: 100vh; }
+.bg-lg { height: 550px; }
+.bg-md { height: 375px; }
+.bg-sm { height: 200px; }
+.spacer { padding-top: 50px; padding-bottom: 50px; }
+.spacer-sm { padding-top: 30px; padding-bottom: 30px; }
+.spacer-xs { padding-top: 15px; padding-bottom: 15px; }
+.spacer-lg { padding-top: 100px; padding-bottom: 100px; }
+.spacer-xl { padding-top: 200px; padding-bottom: 200px; }
+.spacer-xxl { padding-top: 300px; padding-bottom: 300px; }
+.hidden, .hidden-r, .hidden-l, .hidden-jF, .hidden-jS, .hidden-o, .hidden-o2 { opacity: 0; }
+.fade-in-element { animation: fade-in 2s; }
+.fade-in-element-r { animation: fade-right 2s; }
+.fade-in-element-l { animation: fade-left 2s; }
+.jump-in-element-f { animation: jump-in-f 2s; }
+.jump-in-element-s { animation: jump-in-s 4s; }
+.opac { animation: fade-opac 3s; }
+.opac2 { animation: fade-opac-slow 2.5s; }
+.comeDown {
+    position: relative;
+    animation: 1.5s fromTop forwards;
+    z-index: 1;
+}
+
+body::-webkit-scrollbar { display: none; }
+body {
+    background: linear-gradient(90deg, rgb(5, 125, 161), rgb(61, 219, 240));
+    color: navy;
+    font-family: 'M PLUS 1p', sans-serif;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    /* font-family: 'Work Sans', sans-serif; */
+    font-weight: 100;
+    letter-spacing: -1.15px;
+    -ms-overflow-style: none;
+}
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media screen and (max-width: 768px) {
+    .parallax {
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+    }
+}
+.icon { width: 75%; }
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bg-grad-blue { background: linear-gradient(-90deg, rgb(61, 219, 240), rgb(5, 125, 161)); }
+.jumbotron {
+    /* rgb(21, 21, 181), navy */
+    background: linear-gradient(90deg, rgb(5, 125, 161), rgb(61, 219, 240));
+    border-radius: 0;
+    /* transform: skewY(-1.5deg); */
+}
+.bg1 { 
+    background-image: url("https://wallpaperaccess.com/full/184570.jpg"); 
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 0 100%);
+    clip-path: polygon(11% 1%, 91% 5%, 97% 94%, 4.5% 97%);
+}
+.jumbotron h1, h2, h3, h4, h5, h6 { color: white; }
+.jumbotron p { 
+    color: white; 
+}
+
+a {
+    color: white;
+    transition: 0.5s ease;
+    border-bottom: 2px solid transparent;
+
+    background-color: transparent;
+}
+a:hover {
+    color: white;
+    transition: 0.5s ease;
+    border-bottom: 2px solid white;
+
+    background-color: rgba(61, 219, 240, 0.168);
+}
+.centered {
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+}
