@@ -115,6 +115,7 @@ a:hover {
 .bg-sm { height: 200px; }
 .spacer { padding-top: 50px; padding-bottom: 50px; }
 .spacer-sm { padding-top: 30px; padding-bottom: 30px; }
+.spacer-xs { padding-top: 8px; padding-bottom: 2px; }
 .spacer-lg { padding-top: 100px; padding-bottom: 100px; }
 .spacer-xl { padding-top: 200px; padding-bottom: 200px; }
 .spacer-xxl { padding-top: 300px; padding-bottom: 300px; }
@@ -130,7 +131,7 @@ a:hover {
     border: 2px solid white;
 }
 .logo-size {
-    width: 400px;
+    width: 470px;
 }
 @media screen and (max-width: 768px) {
     .parallax {
@@ -141,12 +142,18 @@ a:hover {
         height: 700px;
     }
     .logo-size {
-        width: 250px;
+        width: 280px;
     }
 }
 .centered {
     position: relative;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centered-u {
+    position: relative;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -158,14 +165,14 @@ a:hover {
 }
 .centered-below {
     position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(0%, -50%);
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .below-right {
     position: absolute;
     top: 90%;
-    left: 60%;
+    left: 90%;
     transform: translate(0%, -50%);
 }
 .livechat {
