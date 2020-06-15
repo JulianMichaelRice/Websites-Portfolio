@@ -50,12 +50,13 @@ html {
     scroll-behavior: smooth;
 }
 body::-webkit-scrollbar { display: none; }
+iframe { overflow: hidden; }
 body {
     background: linear-gradient(180deg, #191818, #151414);
     color: #FAFAFA;
     font-family: 'Yantramanav', sans-serif;
     font-weight: 100;
-    letter-spacing: -0.75px;
+    letter-spacing: -0.25px;
     text-align: center;
     -ms-overflow-style: none;
 }
@@ -96,6 +97,16 @@ h3:hover {
         background-size: cover;
         height: 800px;
     }
+}
+#top-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.darker {
+    filter: brightness(55%);
 }
 .bg1 { background-image: url("img/w_mine.jpg"); }
 .bg2 { background-image: url("img/w_wires.jpg"); height: 450px }
