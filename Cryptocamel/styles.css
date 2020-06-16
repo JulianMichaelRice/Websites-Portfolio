@@ -43,9 +43,24 @@
     animation: 2.5s fromTop forwards;
     z-index: 1;
 }
+.height {
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carousel-bg1 { background-image: url("img/wall.jpg"); }
+.carousel-bg2 { background-image: url("img/wallguy.jpg"); }
+.carousel-bg3 { background-image: url("img/tall_wall2.jpg"); }
+.carousel-bg4 { background-image: url("img/tall_wall1.jpg"); }
+.carousel-bg5 { background-image: url("img/gear3.jpg"); }
+.carousel-bg6 { background-image: url("img/pic3.jpg"); }
 .spacer-xl { margin-top: 200px; margin-bottom: 200px; }
 .spacer { margin-top: 50px; margin-bottom: 50px; }
 .spacer-sm { margin-top: 30px; margin-bottom: 30px; }
+.spacer-xs { margin-top: 10px; margin-bottom: 10px; }
+.spacer-xxs { margin-top: 5px; margin-bottom: 5px; }
 html {
     scroll-behavior: smooth;
 }
