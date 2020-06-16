@@ -7,7 +7,7 @@
 
     | Class Color Guide - Use class Gradient-Pink, Gradient-Blue to get the gradient colors
 */
-
+.btn:hover { color: white; background-color: #FFAAAF; }
 .bg-coral-reef { background-color: #FF7878; }
 .bg-melon { background-color: #FFAAAF; }
 .bg-misty-rose { background-color: #FFDCE1; }
@@ -189,4 +189,11 @@ a:hover {
     color: white;
     text-decoration: none;
     transition: 1s ease;
+}
+.form-control {
+    font-weight: 100;
+}
+.form-control:focus {
+    border-color: #FFAAAF;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #FCC5B3;
 }
