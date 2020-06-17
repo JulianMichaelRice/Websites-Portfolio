@@ -61,7 +61,6 @@
 .carousel-bg9 { background-image: url("img/inside_comp.jpg"); }
 .carousel-bg10 { background-image: url("img/fan.jpg"); }
 .carousel-bg11 { background-image: url("img/inside_comp2.jpg"); }
-.carousel-bg12 { background-image: url("img/pic3.jpg"); }
 .carousel-bg13 { background-image: url("img/inside_comp3.jpg"); }
 .carousel-bg14 { background-image: url(""); }
 .spacer-xl { margin-top: 200px; margin-bottom: 200px; }
@@ -155,6 +154,7 @@ li {
     li {
         font-size: 18px;
     }
+    .bg2 { background-image: url("img/w_wiresm.jpg"); }
     .parallax {
         background-attachment: scroll;
         background-position: center;
