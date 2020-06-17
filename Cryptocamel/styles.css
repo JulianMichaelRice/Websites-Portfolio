@@ -111,6 +111,23 @@ h3:hover {
     background-size: cover;
     height: 100vh;
 }
+
+#top-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.darker {
+    filter: brightness(75%);
+}
+p {
+    color: black;
+    font-size: 2vw;
+}
+.bg1 { background-image: url("img/w_mine.jpg"); }
+.bg2 { background-image: url("img/w_wires2.jpg"); height: 450px }
 @media screen and (max-width: 768px) {
     .parallax {
         background-attachment: scroll;
@@ -127,18 +144,20 @@ h3:hover {
         height: 700px;
     }
 }
-#top-video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+@media screen and (min-width: 1920px) {
+    p {
+        color: black;
+        font-size: 1.3vw;
+    }
+    .bg2 { background-image: url("img/w_wires2.jpg"); height: 900px }
+    .height {
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 900px;
+    }
 }
-.darker {
-    filter: brightness(75%);
-}
-.bg1 { background-image: url("img/w_mine.jpg"); }
-.bg2 { background-image: url("img/w_wires2.jpg"); height: 450px }
 .centered {
     position: relative;
     top: 50%;
@@ -161,9 +180,6 @@ h3:hover {
 .jumbotron h3, .jumbotron p {
     color: #232121;
     text-shadow: 0.2px 0.2px 15px #232121;
-}
-p {
-    color: black;
 }
 .email {
     color: #E4AF77;
