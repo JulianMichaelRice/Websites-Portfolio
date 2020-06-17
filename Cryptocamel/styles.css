@@ -55,7 +55,14 @@
 .carousel-bg3 { background-image: url("img/tall_wall2.jpg"); }
 .carousel-bg4 { background-image: url("img/tall_wall1.jpg"); }
 .carousel-bg5 { background-image: url("img/gear3.jpg"); }
-.carousel-bg6 { background-image: url("img/pic3.jpg"); }
+.carousel-bg6 { background-image: url("img/tall_wall3.jpg"); }
+.carousel-bg7 { background-image: url("img/truck.jpg"); }
+.carousel-bg8 { background-image: url("img/wall2.jpg"); }
+.carousel-bg9 { background-image: url("img/inside_comp.jpg"); }
+.carousel-bg11 { background-image: url("img/inside_comp2.jpg"); }
+.carousel-bg12 { background-image: url("img/pic3.jpg"); }
+.carousel-bg13 { background-image: url("img/inside_comp3.jpg"); }
+.carousel-bg14 { background-image: url(""); }
 .spacer-xl { margin-top: 200px; margin-bottom: 200px; }
 .spacer { margin-top: 50px; margin-bottom: 50px; }
 .spacer-sm { margin-top: 30px; margin-bottom: 30px; }
@@ -112,6 +119,13 @@ h3:hover {
         background-size: cover;
         height: 800px;
     }
+    .height {
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+    }
 }
 #top-video {
     position: absolute;
@@ -121,14 +135,19 @@ h3:hover {
     min-height: 100%;
 }
 .darker {
-    filter: brightness(55%);
+    filter: brightness(75%);
 }
 .bg1 { background-image: url("img/w_mine.jpg"); }
-.bg2 { background-image: url("img/w_wires.jpg"); height: 450px }
+.bg2 { background-image: url("img/w_wires2.jpg"); height: 450px }
 .centered {
     position: relative;
     top: 50%;
     transform: translate(0, -50%);
+}
+.centered-br {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 .icon {
     display: block;
