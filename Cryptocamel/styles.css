@@ -127,6 +127,9 @@ p {
     color: black;
     font-size: 2vw;
 }
+li {
+    font-size: 2vw;
+}
 .bg1 { background-image: url("img/w_mine.jpg"); }
 .bg2 { background-image: url("img/w_wires2.jpg"); height: 750px }
 .icon {
@@ -143,6 +146,9 @@ p {
 @media screen and (max-width: 768px) {
     p {
         color: black;
+        font-size: 18px;
+    }
+    li {
         font-size: 18px;
     }
     .parallax {
@@ -163,6 +169,9 @@ p {
 @media screen and (min-width: 1920px) {
     p {
         color: black;
+        font-size: 1.3vw;
+    }
+    li {
         font-size: 1.3vw;
     }
     .bg2 { background-image: url("img/w_wires2.jpg"); height: 900px }
