@@ -129,6 +129,10 @@ p {
 .bg1 { background-image: url("img/w_mine.jpg"); }
 .bg2 { background-image: url("img/w_wires2.jpg"); height: 450px }
 @media screen and (max-width: 768px) {
+    p {
+        color: black;
+        font-size: 18px;
+    }
     .parallax {
         background-attachment: scroll;
         background-position: center;
