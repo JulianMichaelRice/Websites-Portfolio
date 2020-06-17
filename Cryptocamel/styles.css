@@ -131,6 +131,7 @@ p {
 .icon {
     width: 100px;
     opacity: 1;
+    padding: 5px;
     transition: 1s ease;
 }
 .icon:hover {
