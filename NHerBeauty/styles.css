@@ -127,6 +127,24 @@ ul > li > a.nav-link:hover {
     text-decoration: none;
     transition: 0.5s ease;
 }
+.quickhalf {
+    color: white;
+    background-color: #E2AB9A;
+    padding: 5px 10px;
+    margin: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 177px;
+    transition: 0.5s ease;
+}
+.quickhalf:hover {
+    color: whitesmoke;
+    background-color: #C89688;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
 .quick60 { background-color: #E2AB9A; color: white; width: 177px; }
 .quick60:hover { background-color:#FCC5B3; color: white; width: 177px; }
 .bg1 { background-image: url("https://cdn-ak.f.st-hatena.com/images/fotolife/y/yokunelco/20180524/20180524162218.jpg"); }
@@ -218,7 +236,47 @@ ul > li > a.nav-link:hover {
 /* ************************************************************* */
 /* General image related classes */
 /* ************************************************************* */
-
+.carousel-bg1 {
+    background-image: url("img/black.jpg");
+    height: 600px;
+    width: 100%;
+}
+.carousel-bg2 {
+    background-image: url("img/c_shop.jpg");
+    height: 600px;
+    width: 100%;
+}
+.carousel-bg3 {
+    background-image: url("img/c_blog.jpg");
+    height: 600px;
+    width: 100%;
+}
+.carousel-bg4 {
+    background-image: url("img/c_lounge.jpg");
+    height: 600px;
+    width: 100%;
+}
+.blog {
+    background-size: cover;
+    width: 100%;
+}
+.blog-wallpaper-1 { background-image: url("img/c_lounge.jpg"); }
+.blog-wallpaper-2 { background-image: url("img/c_shop.jpg"); }
+.blog-wallpaper-3 { background-image: url("img/c_blog.jpg"); }
+.blog-wallpaper-4 { background-image: url("img/c_contact.jpg"); }
+.hoverer {
+    transform: scale(1, 1);
+    transition: 0.2s ease;
+}
+.hoverer:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.2s ease;
+}
+.shop {
+    border-radius: 10px;
+    border: 2px solid #E2AB9A;
+    padding: 25px;
+}
 
 /* ************************************************************* */
 

@@ -1,7 +1,6 @@
 <?php 
     session_start();
 ?>
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,6 +10,7 @@
     <!-- Assistant -->
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;700&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/nav.png">
     <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -22,7 +22,7 @@
         <div class="modal-content frame" style="height: 100vh;">
           <img src="img/logo-canvas.png" class="image-centered-v hidden-o">
           <div class="close-animatedModal bottom-center"> 
-            <a href="" class="enter-site hidden-o2">Enter Site</a>
+            <a href="" class="enter-site hidden-o2" onclick="loadPopUp()">Enter Site</a>
           </div>
         </div>
     </div>
@@ -48,13 +48,121 @@
         </ul>
     </div>
 
+    <!-- Initial Modal -->
+    <div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="popupTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="spacer-s"></div>
+            <h3 class="text-center">Receive special messages and stay up to date! Spin the wheel of fortune and win prizes when you sign up with your email or phone number!</h3>
+            <!-- ?? -->
+            <div class="spacer-s"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Home -->
+    <div class="container-fluid">
+      <div class="spacer-s"></div>
+      <!-- <div class="spacer-l"></div>
+      <div class="parallax cover-mid hidden-o">
+        <img src="img/logo.png" width="600px;" class="centered">
+      </div> -->
+
+      <div id="indicators" class="carousel hidden-o2 slide w-100 d-block ml-auto mr-auto" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#indicators" data-slide-to="0" class="active"></li>
+          <li data-target="#indicators" data-slide-to="1"></li>
+          <li data-target="#indicators" data-slide-to="2"></li>
+          <li data-target="#indicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-bg1 parallax d-flex justify-content-center align-items-center">
+              <h4 class="text-center lit-text"><i>"Discovering our beauty inwards and emanating it outwards"</i></h4>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-bg2 parallax d-flex justify-content-center align-items-center">
+              <h4 class="text-center lit-text"><i>Some kind of short one liner</i></h4>
+              <a href="" class="quick quick60 lit-text">Shop Now</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-bg3 parallax d-flex justify-content-center align-items-center">
+              <h4 class="text-center lit-text"><i>Blog of the Week</i></h4>
+              <a href="" class="quick quick60 lit-text">Watch Now</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-bg4 parallax d-flex justify-content-center align-items-center">
+              <h4 class="text-center lit-text"><i>Become a Lady of The Beauty Lounge today</i></h4>
+              <a href="" class="quick quick60 lit-text">Sign Me Up!</a>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#indicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#indicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="container">
+        <p class="text-center hidden spacer-l">There is nothing like the solidarity of sisterhood amongst women. Welcome to a community focused on all things self love and internal transformation with the support to esteem one another, correct one another, and empower one another. We dare every woman to brazenly walk NHerBeauty.</p>
+      </div>
+    </div>
+
     <!-- The Beauty Lounge -->
+
+    <!-- Blog -->
+    <div class="container-fluid">
+      <h1 class="text-center">Blog</h1>
+      <div class="spacer-m"></div>
+      <div class="row">
+        <div class="col-md-4 col-12 hidden-l hoverer" onmouseover="priority(0,'on');" onmouseout="priority(0,'off')" style="padding: 0;">
+          <div class="blog blog-wallpaper-1 cover-mid" style="padding: 30px;">
+            <h5 class="text-center">Blog Post 1</h5>
+            <div class="text-center">
+              <a href="" class="btn quickhalf display-center" target="_blank">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 hidden hoverer" onmouseover="priority(1,'on');" onmouseout="priority(1,'off')" style="padding: 0;">
+          <div class="blog blog-wallpaper-2 cover-mid" style="padding: 30px;">
+            <h5 class="text-center">Blog Post 2</h5>
+            <div class="text-center">
+              <a href="" class="btn quickhalf display-center" target="_blank">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 hidden-r hoverer" onmouseover="priority(2,'on');" onmouseout="priority(2,'off')" style="padding: 0;">
+          <div class="blog blog-wallpaper-3 cover-mid" style="padding: 30px;">
+            <h5 class="text-center">Blog Post 3</h5>
+            <a href="" class="btn quickhalf display-center" target="_blank">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-6 hidden-l hoverer" onmouseover="priority(3,'on');" onmouseout="priority(3,'off')" style="padding: 0;">
+          <div class="blog blog-wallpaper-4 cover-mid" style="padding: 30px;">
+            <h5 class="text-center">Blog Post 4</h5>
+            <a href="" class="btn quickhalf display-center" target="_blank">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
     <div class="container-fluid">
       <div class="spacer-s"></div>
       <div class="parallax cover-tall bg-service"></div>
       <div class="spacer-m"></div>
       <h1 class="text-center">Let's Grow Together</h1>
-      <p class="text-center">I think we should add a one-two liner here to talk about!</p>
+      <p class="text-center">We at NHerBeauty want you to maximize your growth possibilities with us. Want a more personalized stratagem? Schedule a consultation with our internal growth coach today to create a personal development plan based around where you specifically desire to experience growth.</p>
       <div class="spacer-s"></div>
       <button class="btn quick display-center hidden-o" style="width: 500px">Book your free trial consultation today!</button>
       <div class="row">
@@ -64,7 +172,7 @@
           <img src="img/logo.png" width="100%" class="hidden">
           <div class="spacer-s"></div>
           <h5 class="text-center hidden">1 on 1 Consultation</h5>
-          <p class="text-center hidden">Some simple description about 1 on 1 consultations.</p>
+          <p class="text-center hidden">A personal session tailored to your individual goals.</p>
           <button class="btn quick display-center hidden-o" data-category="1 on 1 Consultation" data-time="30 Mins" data-toggle="modal" data-target="#fillprofile">30 Mins</button>
           <button class="btn quick60 display-center hidden-o" data-category="1 on 1 Consultation" data-time="60 Mins" data-toggle="modal" data-target="#fillprofile">60 Mins</button>
         </div>
@@ -73,7 +181,7 @@
           <img src="img/logo.png" width="100%" class="hidden">
           <div class="spacer-s"></div>
           <h5 class="text-center hidden">Group Consultation</h5>
-          <p class="text-center hidden">Some simple description about group consultations.</p>
+          <p class="text-center hidden">Sessions tailored to discuss achieving synonymous goals in a group setting. Maximum 5 Participants</p>
           <button type="button" class="btn quick display-center hidden-o" data-category="Group Consultation" data-time="30 Mins" data-toggle="modal" data-target="#fillprofile">30 Mins</button>
           <button type="button" class="btn quick60 display-center hidden-o" data-category="Group Consultation" data-time="60 Mins" data-toggle="modal" data-target="#fillprofile">60 Mins</button>
         </div>
@@ -82,14 +190,14 @@
       <div class="spacer-m"></div>
     </div>
 
-    <!-- Modal -->
+    <!-- Form Modal -->
     <div class="modal fade" id="fillprofile" tabindex="-1" role="dialog" aria-labelledby="filloutTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-body">
             <div class="spacer-s"></div>
             <h3 class="text-center">Book a Consultation</h3>
-            <p class="text-center">You're only a form away from talking to someone who will understand you.</p>
+            <p class="text-center">You're only a form away from a wonder session ahead of you.</p>
             <div class="spacer-s"></div>
             <form>
               <div class="form-group">
@@ -143,25 +251,51 @@
       <h1 class="text-center">Shop</h1>
       <div class="spacer-s"></div>
       <div class="row">
-        <div class="col-md-3 col-12 display-center hidden-l">
+        <div class="col-md-4 col-12 display-center hidden-l">
           <!-- Shop Item Entry -->
-          <img src="img/logo.png" width="100%">
+          <img src="img/shop/logo_black.jpg" width="100%" class="shop">
           <div class="spacer-s"></div>
-          <h5 class="text-center">Product 1</h5>
+          <h5 class="text-center">NHerBeauty Logo Tee (White)</h5>
           <p class="text-center">Small Description. This product is amazing because I made it. Now, you can learn how amazing it is by clicking the Buy Now button.</p>
           <a href="" target="_blank" class="quick display-center">Buy Now</a>
         </div>
-        <div class="col-md-3 col-12 display-center hidden">
-          <img src="img/logo.png" width="100%">
+        <div class="col-md-4 col-12 display-center hidden">
+          <img src="img/shop/logo_white.jpg" width="100%" class="shop">
           <div class="spacer-s"></div>
-          <h5 class="text-center">Product 2</h5>
+          <h5 class="text-center">NHerBeauty Logo Tee (Black)</h5>
           <p class="text-center">Small Description. This product is amazing because I made it. Now, you can learn how amazing it is by clicking the Buy Now button.</p>
           <a href="" target="_blank" class="quick display-center">Buy Now</a>
         </div>
-        <div class="col-md-3 col-12 display-center hidden-r">
-          <img src="img/logo.png" width="100%">
+      </div>
+      <div class="row spacer-m">
+        <div class="col-md-4 col-12 display-center hidden-r">
+          <img src="img/shop/empowered_grey.jpg" class="shop" width="100%">
           <div class="spacer-s"></div>
-          <h5 class="text-center">Product 3</h5>
+          <h5 class="text-center">Empowered Tee (Faded Black)</h5>
+          <p class="text-center">Small Description. This product is amazing because I made it. Now, you can learn how amazing it is by clicking the Buy Now button.</p>
+          <a href="" target="_blank" class="quick display-center">Buy Now</a>
+        </div>
+        <div class="col-md-4 col-12 display-center hidden-l">
+          <!-- Shop Item Entry -->
+          <img src="img/shop/empowered_orange.jpg" class="shop" width="100%">
+          <div class="spacer-s"></div>
+          <h5 class="text-center">Empowered Tee (Faded Orange)</h5>
+          <p class="text-center">Small Description. This product is amazing because I made it. Now, you can learn how amazing it is by clicking the Buy Now button.</p>
+          <a href="" target="_blank" class="quick display-center">Buy Now</a>
+        </div>
+      </div>
+      <div class="row spacer-m">
+        <div class="col-md-4 col-12 display-center hidden">
+          <img src="img/shop/glow_red.jpg" class="shop" width="100%">
+          <div class="spacer-s"></div>
+          <h5 class="text-center">Glow Up Tee (Red)</h5>
+          <p class="text-center">Small Description. This product is amazing because I made it. Now, you can learn how amazing it is by clicking the Buy Now button.</p>
+          <a href="" target="_blank" class="quick display-center">Buy Now</a>
+        </div>
+        <div class="col-md-4 col-12 display-center hidden-r">
+          <img src="img/shop/glow_white.jpg" width="100%" class="shop">
+          <div class="spacer-s"></div>
+          <h5 class="text-center">Glow Up Tee (White)</h5>
           <p class="text-center">Small Description. This product is amazing because I made it. Now, you can learn how amazing it is by clicking the Buy Now button.</p>
           <a href="" target="_blank" class="quick display-center">Buy Now</a>
         </div>
@@ -174,56 +308,8 @@
         <?php endforeach; ?>
     <?php endif; ?>
 
-    <div class="parallax cover-full hidden-o">
-      <!-- <h1 class="centered text-center" style="color: white;">N Her Beauty</h1> -->
-      <img src="img/logo.png" width="600px;" class="centered">
-    </div>
-
     <div class="spacer-x"></div>
     
-    <!-- Content -->
-    <div class="container-fluid" id="learn">
-      <div class="row">
-        <div class="col-md-7">
-          <div class="parallax cover-full bg5 hidden-r">
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="jumbotron hidden-r d-flex" style="align-items: center; justify-content: center;">
-            <div>
-                <h2 class="text-center">Learn</h2>
-                <p class="text-center">Here at Sprout we make sure not to just teach our students, but to understand how they learn and help them gain the tools to build a strong foundation that will show them how to leap over any obstacle to gain the most from their education. Instead of learning how to find the answer to a problem we take a step further and teach your student the skills to understand the problem and the concepts behind it.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="spacer-x"></div>
-        <div class="container-fluid">
-        <h4 class="text-center hidden-o">Our Mission Statement is to educate students to never leave their questions unanswered.</h4>
-    </div>
-    <div class="spacer-x"></div>
-
-    <div class="container-fluid" id="teach">
-      <div class="row">
-        <div class="col-md-5">
-          <div class="jumbotron hidden-l d-flex" style="align-items: center; justify-content: center">
-            <div>
-                <h2 class="text-center">Teach</h2>
-                <p class="text-center">Our goal is to serve as mentors for our sprouts who are looking for help. We do things differently here at sprout. Compared to most tutors you may have experienced, We believe learning about how our sprouts think and how they solve problems is the first step we can take.  We don’t want to be just your tutor, We don’t want to only help you find answers to your homework,  We want help you build a foundation and support system to gain the skills you need to tackle any problem you may face.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-7">
-          <div class="parallax cover-full bg6 hidden-r">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="spacer-x" id="register"></div>
-
     <!-- Login Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -290,20 +376,6 @@
     </div>
 
     <div class="spacer-x"></div>
-
-    <!-- Footer -->
-    <footer class="jumbotron hidden" style="margin-bottom: -20px; height: 55vh; padding-top: 50px">
-        <div class="row">
-            <div class="col-md-6 col-12">
-                <h4 class="text-center">Contact</h4>
-                <p class="text-center">Contact us at ??@sprouttutor.com</p>
-            </div>
-            <div class="col-md-6 col-12s">
-                <h4 class="text-center">Follow us on Social Media</h4>
-
-            </div>
-        </div>
-    </footer>
     <div id="front" href="#animatedModal"></div>
     </div>
 
@@ -330,6 +402,27 @@
         modal.find('#cat').val(category)
         modal.find('#tim').val(time)
       })
+    </script>
+    <script>
+      function priority(id, onOff) {
+        var allBlogPosts = document.getElementsByClassName("hoverer");
+        var i = 0;
+        var focusSet = onOff == 'on' ? "1" : "0";
+        for (i = 0; i < allBlogPosts.length; i++) {
+          if (i == id) {
+            allBlogPosts[i].style.zIndex = focusSet;
+          } else {
+            allBlogPosts[i].style.zIndex = "0";
+          }
+        }
+      }
+    </script>
+    <script>
+      function loadPopUp() {
+        var timeoutID = window.setTimeout(function() {
+          $('#popup').modal();
+        }, 1300);
+      }
     </script>
   </body>
 </html>
