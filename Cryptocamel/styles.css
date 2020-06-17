@@ -127,7 +127,17 @@ p {
     font-size: 2vw;
 }
 .bg1 { background-image: url("img/w_mine.jpg"); }
-.bg2 { background-image: url("img/w_wires2.jpg"); height: 450px }
+.bg2 { background-image: url("img/w_wires2.jpg"); height: 750px }
+.icon {
+    width: 100px;
+    opacity: 1;
+    transition: 1s ease;
+}
+.icon:hover {
+    width: 100px;
+    opacity: 0.8;
+    transition: 1s ease;
+}
 @media screen and (max-width: 768px) {
     p {
         color: black;
