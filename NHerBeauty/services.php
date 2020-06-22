@@ -16,19 +16,9 @@
     <link rel="stylesheet" href="styles.css">
     <title>NHerBeauty | Official Website</title>
   </head>
-  <body>
-    <!-- MODAL STARTS -->
-    <div id="animatedModal">
-        <div class="modal-content frame" style="height: 100vh;">
-          <img src="img/logo-canvas.png" class="image-centered-v hidden-o">
-          <div class="close-animatedModal bottom-center"> 
-            <a href="" class="enter-site hidden-o2" onclick="loadPopUp()">Enter Site</a>
-          </div>
-        </div>
-    </div>
-    <div id='container' style='display:none;'>
+  <body id="container">
     <!-- Nav -->
-    <div class="comeDown">
+    <div class="hidden-o">
         <ul class="nav justify-content-center">
             <li class="nav-item">
                 <a class="nav-link" href="home">Home</a>
@@ -48,128 +38,13 @@
         </ul>
     </div>
 
-    <!-- Initial Modal -->
-    <div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="popupTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="spacer-s"></div>
-            <h3 class="text-center">Receive special messages and stay up to date! Spin the wheel of fortune and win prizes when you sign up with your email or phone number!</h3>
-            <!-- ?? -->
-            <div class="spacer-s"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Home -->
-    <div class="container-fluid">
-      <div class="spacer-s"></div>
-      <!-- <div class="spacer-l"></div>
-      <div class="parallax cover-mid hidden-o">
-        <img src="img/logo.png" width="600px;" class="centered">
-      </div> -->
-
-      <div id="indicators" class="carousel hidden-o2 slide w-100 d-block ml-auto mr-auto" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#indicators" data-slide-to="0" class="active"></li>
-          <li data-target="#indicators" data-slide-to="1"></li>
-          <li data-target="#indicators" data-slide-to="2"></li>
-          <li data-target="#indicators" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="carousel-bg1 parallax d-flex justify-content-center align-items-center">
-              <h4 class="text-center lit-text"><i>"Discovering our beauty inwards and emanating it outwards"</i></h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-bg2 parallax d-flex justify-content-center align-items-center">
-              <h4 class="text-center lit-text"><i>Fashion to fit your force</i></h4>
-              <a href="" class="quick quick60 lit-text">Shop Now</a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-bg3 parallax d-flex justify-content-center align-items-center">
-              <h4 class="text-center lit-text"><i>Blog of the Week</i></h4>
-              <a href="" class="quick quick60 lit-text">Watch Now</a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-bg4 parallax d-flex justify-content-center align-items-center">
-              <h4 class="text-center lit-text"><i>Become a Lady of The Beauty Lounge today</i></h4>
-              <a href="" class="quick quick60 lit-text">Sign Me Up!</a>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#indicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#indicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-      <div class="container">
-        <p class="text-center hidden spacer-l">There is nothing like the solidarity of sisterhood amongst women. Welcome to a community focused on all things self love and internal transformation with the support to esteem one another, correct one another, and empower one another. We dare every woman to brazenly walk NHerBeauty.</p>
-      </div>
-      <h4 class="text-center">Contact</h4>
-      <div class="text-center d-flex justify-content-center">
-        <a href="https://www.facebook.com/nherbeauty.co" target="_blank"><img src="img/icon_fb.png" class="smedia"></a>
-        <a href="https://www.instagram.com/nherbeauty.co" target="_blank"><img src="img/icon_insta.png" class="smedia"></a>
-        <a href="mailto:nherbeauty.co@gmail.com" target="_blank"><img src="img/icon_email.png" class="smedia"></a>
-      </div>
-      <div class="spacer-x"></div>
-    </div>
-
-    <!-- The Beauty Lounge -->
-
-    <!-- Blog -->
-    <div class="container-fluid">
-      <h1 class="text-center">Blog</h1>
-      <div class="spacer-m"></div>
-      <div class="row">
-        <div class="col-md-4 col-12 hidden-l hoverer" onmouseover="priority(0,'on');" onmouseout="priority(0,'off')" style="padding: 0;">
-          <div class="blog blog-wallpaper-1 cover-mid" style="padding: 30px;">
-            <h5 class="text-center">Blog Post 1</h5>
-            <div class="text-center">
-              <a href="" class="btn quickhalf display-center" target="_blank">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-12 hidden hoverer" onmouseover="priority(1,'on');" onmouseout="priority(1,'off')" style="padding: 0;">
-          <div class="blog blog-wallpaper-2 cover-mid" style="padding: 30px;">
-            <h5 class="text-center">Blog Post 2</h5>
-            <div class="text-center">
-              <a href="" class="btn quickhalf display-center" target="_blank">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-12 hidden-r hoverer" onmouseover="priority(2,'on');" onmouseout="priority(2,'off')" style="padding: 0;">
-          <div class="blog blog-wallpaper-3 cover-mid" style="padding: 30px;">
-            <h5 class="text-center">Blog Post 3</h5>
-            <a href="" class="btn quickhalf display-center" target="_blank">Read More</a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-6 hidden-l hoverer" onmouseover="priority(3,'on');" onmouseout="priority(3,'off')" style="padding: 0;">
-          <div class="blog blog-wallpaper-4 cover-mid" style="padding: 30px;">
-            <h5 class="text-center">Blog Post 4</h5>
-            <a href="" class="btn quickhalf display-center" target="_blank">Read More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Services -->
     <div class="container-fluid">
       <div class="spacer-s"></div>
-      <div class="parallax cover-tall bg-service"></div>
+      <div class="parallax cover-tall bg-service hidden-o"></div>
       <div class="spacer-m"></div>
-      <h1 class="text-center">Let's Grow Together</h1>
-      <p class="text-center">We at NHerBeauty want you to maximize your growth possibilities with us. Want a more personalized stratagem? Schedule a consultation with our internal growth coach today to create a personal development plan based around where you specifically desire to experience growth.</p>
+      <h1 class="text-center hidden-o">Let's Grow Together</h1>
+      <p class="text-center hidden-o2">We at NHerBeauty want you to maximize your growth possibilities with us. Want a more personalized stratagem? Schedule a consultation with our internal growth coach today to create a personal development plan based around where you specifically desire to experience growth.</p>
       <div class="spacer-s"></div>
       <button class="btn quick display-center hidden-o" style="width: 500px">Book your free trial consultation today!</button>
       <div class="row">
@@ -250,65 +125,6 @@
       </div>
     </div>
 
-    <!-- Shop -->
-    <div class="container-fluid">
-      <div class="spacer-s"></div>
-      <div class="parallax cover-tall bg1"></div>
-      <div class="spacer-s"></div>
-      <h1 class="text-center">Shop</h1>
-      <div class="spacer-s"></div>
-      <div class="row">
-        <div class="col-md-4 col-12 display-center hidden-l">
-          <!-- Shop Item Entry -->
-          <img src="img/shop/logo_black.jpg" width="100%" class="shop">
-          <div class="spacer-s"></div>
-          <h5 class="text-center">NHerBeauty Logo Tee (White)</h5>
-          <p class="text-center">$25</p>
-          <a href="" target="_blank" class="quick display-center">Buy Now</a>
-        </div>
-        <div class="col-md-4 col-12 display-center hidden">
-          <img src="img/shop/logo_white.jpg" width="100%" class="shop">
-          <div class="spacer-s"></div>
-          <h5 class="text-center">NHerBeauty Logo Tee (Black)</h5>
-          <p class="text-center">$25</p>
-          <a href="" target="_blank" class="quick display-center">Buy Now</a>
-        </div>
-      </div>
-      <div class="row spacer-m">
-        <div class="col-md-4 col-12 display-center hidden-r">
-          <img src="img/shop/empowered_grey.jpg" class="shop" width="100%">
-          <div class="spacer-s"></div>
-          <h5 class="text-center">Empowered Tee (Faded Black)</h5>
-          <p class="text-center">$25</p>
-          <a href="" target="_blank" class="quick display-center">Buy Now</a>
-        </div>
-        <div class="col-md-4 col-12 display-center hidden-l">
-          <!-- Shop Item Entry -->
-          <img src="img/shop/empowered_orange.jpg" class="shop" width="100%">
-          <div class="spacer-s"></div>
-          <h5 class="text-center">Empowered Tee (Faded Orange)</h5>
-          <p class="text-center">$25</p>
-          <a href="" target="_blank" class="quick display-center">Buy Now</a>
-        </div>
-      </div>
-      <div class="row spacer-m">
-        <div class="col-md-4 col-12 display-center hidden">
-          <img src="img/shop/glow_red.jpg" class="shop" width="100%">
-          <div class="spacer-s"></div>
-          <h5 class="text-center">Glow Up Tee (Red)</h5>
-          <p class="text-center">$25</p>
-          <a href="" target="_blank" class="quick display-center">Buy Now</a>
-        </div>
-        <div class="col-md-4 col-12 display-center hidden-r">
-          <img src="img/shop/glow_white.jpg" width="100%" class="shop">
-          <div class="spacer-s"></div>
-          <h5 class="text-center">Glow Up Tee (White)</h5>
-          <p class="text-center">$25</p>
-          <a href="" target="_blank" class="quick display-center">Buy Now</a>
-        </div>
-      </div>
-    </div>
-
     <?php if (isset($_SESSION['errors'])): ?>
         <?php foreach ($_SESSION['errors'] as $error): ?>
         <p class="text-center" style="color: red;"><?php echo $error ?></p>
@@ -383,7 +199,6 @@
     </div>
 
     <div class="spacer-x"></div>
-    <div id="front" href="#animatedModal"></div>
     </div>
 
     <!-- Code -->
