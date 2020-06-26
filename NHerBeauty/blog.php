@@ -53,6 +53,28 @@
         </ul>
     </div>
 
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5 class="text-center">Login</h5>
+            <form action="login" method="post">
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" name="user" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-light display-center">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Home -->
     <div class="spacer-s"></div>
 

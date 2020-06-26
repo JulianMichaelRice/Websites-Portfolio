@@ -117,6 +117,14 @@ ul > li > a.nav-link:hover {
     background: linear-gradient(0deg,#f9d348, #fdbf30);
     color: white;
 }
+.btn-pink {
+    background: linear-gradient(0deg,#FCC5B3, #E2AB9A);
+    color: white;
+}
+.btn-pink:hover {
+    background: linear-gradient(0deg,#FCC5B3, #E2AB9A);
+    color: white;
+}
 .quick {
     color: white;
     background-color: #c89688;

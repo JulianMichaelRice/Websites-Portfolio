@@ -57,11 +57,17 @@
             <?php } ?>
             <?php if (!isset($_SESSION['Username'])) { ?>
             <li class="nav-item">
-              <a class="nav-link" href="logout">Login</a>
+              <a class="nav-link" href="" data-toggle="modal" data-target="#loginModal">Login</a>
             </li> 
             <?php } ?>
         </ul>
     </div>
+
+    <?php if (isset($_SESSION['errors'])): ?>
+        <?php foreach ($_SESSION['errors'] as $error): ?>
+        <p class="text-center" style="color: red;"><?php echo $error ?></p>
+        <?php endforeach; ?>
+    <?php endif; ?>
 
     <!-- Initial Modal -->
     <div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="popupTitle" aria-hidden="true">
@@ -208,7 +214,7 @@
           <div class="response" id="mce-success-response" style="display:none"></div>
         </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_582ecd78cc0d65ab6af717df5_b87499b254" tabindex="-1" value=""></div>
-        <div class="clear col-12 hidden"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        <div class="clear col-12 hidden"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-pink spacer-m"></div>
       </div>
     </form>
     </div>
@@ -238,10 +244,10 @@
         <div class="modal-content">
           <div class="modal-body">
             <h5 class="text-center">Login</h5>
-            <form action="validation.php" method="post">
+            <form action="login" method="post">
                 <div class="form-group">
-                    <label>Username</label>
-                    <input type="text" name="user" class="form-control" required>
+                    <label>Email</label>
+                    <input type="email" name="email" class="form-control" required>
                 </div>
                 <div class="form-group">
                     <label>Password</label>

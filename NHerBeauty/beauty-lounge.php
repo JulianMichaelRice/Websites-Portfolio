@@ -60,68 +60,103 @@
     <!-- The Beauty Lounge -->
     <div class="spacer-s"></div>
     <div class="parallax cover-tall carousel-bg4 hidden-o"></div>
-    <div class="spacer-m"></div>
-    <div class="panel text-center hidden-o2">
-      <form action="payment" method="POST" id="paymentFrm">
-          <div class="panel-heading">
-              <h3 class="panel-title">Join the Beauty Lounge</h3>
-              <div class="spacer-m"></div>
-              <!-- Plan Info -->
-              <p>
-                  <b>Plan </b>
-                  <select name="subscr_plan" id="subscr_plan">
-                      <?php foreach($plans as $id=>$plan){ ?>
-                          <option value="<?php echo $id; ?>"><?php echo $plan['name'].' [$'.$plan['price'].'/'.$plan['interval'].']'; ?></option>
-                      <?php } ?>
-                  </select>
-              </p>
-          </div>
-          <div class="panel-body">
-              <!-- Display errors returned by createToken -->
-              <div class="card-errors"></div>
-        
-              <!-- Payment form -->
-              <div class="row">
+    <div class="text-center hidden-o2 spacer-l">
+        <form action="payment" method="POST" id="paymentFrm">
+            <div class="">
+                <h3 class="">Join the Beauty Lounge</h3>
+                <div class="spacer-m"></div>
+                <!-- Plan Info -->
+                <p>
+                    <b>Plan </b>
+                    <select name="subscr_plan" id="subscr_plan">
+                        <?php foreach($plans as $id=>$plan){ ?>
+                            <option value="<?php echo $id; ?>"><?php echo $plan['name'].' [$'.$plan['price'].'/'.$plan['interval'].']'; ?></option>
+                        <?php } ?>
+                    </select>
+                </p>
+            </div>
+            <div class="">
+            <!-- Payment form -->
+            <div class="row">
                 <div class="form-group col-12 col-md-4">
-                  <label>Full Name</label>
-                  <input type="text" name="name" id="name" placeholder="Enter name" required="" autofocus="">
+                <label>Full Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter name" required="" autofocus="">
                 </div>
                 <div class="form-group col-12 col-md-4">
-                  <label>Email</label>
-                  <input type="email" name="email" id="email" placeholder="Enter email" required="">
+                <label>Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter email" required="">
                 </div>
                 <div class="form-group col-12 col-md-4">
-                  <label>Password</label>
-                  <input type="password" name="password" id="password" autocomplete="off" required="">
+                <label>Password</label>
+                <input type="password" name="password" id="password" autocomplete="off" required="">
                 </div>
-              </div>
-              
-              <div class="row">
+            </div>
+            
+            <div class="row">
                 <div class="col-0 col-md-2"></div>
                 <div class="form-group col-12 col-md-8">
-                  <label>Card Number</label>
-                  <input type="text" name="card_number" id="card_number" placeholder="1234 1234 1234 1234" maxlength="16" autocomplete="off" required="">
+                <label>Card Number</label>
+                <input type="text" name="card_number" id="card_number" placeholder="1234 1234 1234 1234" maxlength="16" autocomplete="off" required="">
                 </div>
                 <div class="col-0 col-md-2"></div>
-              </div>
-              <div class="row">
+            </div>
+            <div class="row">
                 <div class="form-group col-12 col-md-7">
-                  <label>Expiry Date</label>
-                  <input type="text" name="card_exp_month" id="card_exp_month" placeholder="MM" maxlength="2" required="">
-                  <input type="text" name="card_exp_year" id="card_exp_year" placeholder="YYYY" maxlength="4" required="">
+                <label>Expiry Date</label>
+                <input type="text" name="card_exp_month" id="card_exp_month" placeholder="MM" maxlength="2" required="">
+                <input type="text" name="card_exp_year" id="card_exp_year" placeholder="YYYY" maxlength="4" required="">
                 </div>
                 <div class="form-group col-12 col-md-5">
-                  <label>CVC</label>
-                  <input type="text" name="card_cvc" id="card_cvc" placeholder="CVC" maxlength="3" autocomplete="off" required="">
+                <label>CVC</label>
+                <input type="text" name="card_cvc" id="card_cvc" placeholder="CVC" maxlength="3" autocomplete="off" required="">
                 </div>
-              </div>
-              <button type="submit" class="btn btn-gold" id="payBtn">Join the Beauty Lounge</button>
-          </div>
-      </form>
+            </div>
+            <button type="submit" class="btn btn-gold" id="payBtn">Join the Beauty Lounge</button>
+        </div>
+    </form>
     </div>
-    <?php } ?>
 
-    <?php if (isset($_SESSION['Username'])) { ?>
+    <div class="spacer-l"></div>
+    <h3 class="text-center hidden-o">The Benefits of Joining the Beauty Lounge</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-12 text-center">
+                <img src="img/8icons/1 DiscMerch.png" class="spacer-s hidden-l" width="150px">
+                <p class="text-center spacer-s hidden-l">Discounts on Merchandise</p>
+            </div>
+            <div class="col-md-3 col-12 text-center">
+                <img src="img/8icons/2 StudyTopics.png" class="spacer-s hidden-l" width="150px">
+                <p class="text-center spacer-s hidden-l">Weekly Study Topics</p>
+            </div>
+            <div class="col-md-3 col-12 text-center">
+                <img src="img/8icons/3 Videos.png" class="spacer-s hidden-r" width="150px">
+                <p class="text-center spacer-s hidden-r">24/7 Access to Motivational Videos</p>
+            </div>
+            <div class="col-md-3 col-12 text-center">
+                <img src="img/8icons/4 PillowTalks.png" class="spacer-s hidden-r" width="150px">
+                <p class="text-center spacer-s hidden-r">Weekly Zoom Pillow Talks / Q&amp;A Sessions</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-12 text-center">
+                <img src="img/8icons/5 MonthlyConferences.png" class="spacer-s hidden-l" width="150px">
+                <p class="text-center spacer-s hidden-l">Discounted Enrollment in Conferences</p>
+            </div>
+            <div class="col-md-3 col-12 text-center">
+                <img src="img/8icons/6 24-7 PrevFilmed.png" class="spacer-s hidden-l" width="150px">
+                <p class="text-center spacer-s hidden-l">24/7 Access to Previously Filmed Pillow Talks &amp; Conferences</p>
+            </div>
+            <div class="col-md-3 col-12 text-center">
+                <img src="img/8icons/7 SoloConsultation.png" class="spacer-s hidden-r" width="150px">
+                <p class="text-center spacer-s hidden-r">Discounted Solo Consultation Rates</p>
+            </div>
+            <div class="col-md-3 col-12 text-center">
+                <img src="img/8icons/8 DiscussionBoard.png" class="spacer-s hidden-r" width="150px">
+                <p class="text-center spacer-s hidden-r">Interact with Others through the Discussion Board</p>
+            </div>
+        </div>
+    </div>
+    <?php } else { ?>
     <!-- The Beauty Lounge Logged In -->
     <div class="container-fluid">
         <div class="spacer-s"></div>
@@ -133,12 +168,6 @@
         
     <?php } ?>
 
-    <?php if (isset($_SESSION['errors'])): ?>
-        <?php foreach ($_SESSION['errors'] as $error): ?>
-        <p class="text-center" style="color: red;"><?php echo $error ?></p>
-        <?php endforeach; ?>
-    <?php endif; ?>
-
     <div class="spacer-x"></div>
     
     <!-- Login Modal -->
@@ -147,7 +176,7 @@
         <div class="modal-content">
           <div class="modal-body">
             <h5 class="text-center">Login</h5>
-            <form action="validation.php" method="post">
+            <form action="login" method="post">
                 <div class="form-group">
                     <label>Username</label>
                     <input type="text" name="user" class="form-control" required>

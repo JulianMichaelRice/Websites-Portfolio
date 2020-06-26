@@ -1,10 +1,6 @@
 <?php 
 session_start();
 require_once 'pdoconfig.php'; 
-
- 
-// Get user ID from current SESSION 
-// $userID = isset($_SESSION['loggedInUserID'])?$_SESSION['loggedInUserID']:1; 
  
 $payment_id = $statusMsg = $api_error = ''; 
 $ordStatus = 'error'; 
@@ -112,7 +108,8 @@ if(!empty($_POST['subscr_plan']) && !empty($_POST['stripeToken'])){
                 $newQueryResult = mysqli_query($db, $newQuery);
                 if (mysqli_num_rows($newQueryResult) == 1) {
                     echo "ERROR: Email exists in the database...";
-                    header('location:shop'); 
+                    header('location:beauty-lounge'); 
+                    exit();
                 }
 
                 $sqlA = " INSERT INTO users(first_name,email,password) VALUES('$firstname','$email','$pw')"; 
