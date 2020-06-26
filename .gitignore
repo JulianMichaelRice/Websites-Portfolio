@@ -143,3 +143,4 @@ NHerBeauty/stripe-php/phpstan.neon
 NHerBeauty/stripe-php/README.md
 NHerBeauty/stripe-php/update_certs.php
 NHerBeauty/stripe-php/VERSION
+NHerBeauty/pdoconfig.php
