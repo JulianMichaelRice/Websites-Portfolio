@@ -1,6 +1,5 @@
 <?php 
     session_start();
-    require_once 'pdoconfig.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -11,23 +10,19 @@
     <!-- Assistant -->
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;700&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/nav<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png">
+    <link rel="icon" href="img/nav.png">
     <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
-    <?php if (isset($_SESSION['Username'])) { ?>
-        <link rel='stylesheet' href='styles-x.css'>
-    <?php } else { ?>
-        <link rel='stylesheet' href='styles.css'>
-    <?php } ?>
+    <link rel="stylesheet" href="styles.css">
     <title>NHerBeauty | Official Website</title>
   </head>
   <body style="background-color: #111111">
     <!-- MODAL STARTS -->
     <div id="animatedModal">
         <div class="modal-content frame" style="height: 100vh;">
-          <img src="img/logo-canvas<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" class="image-centered-v hidden-o">
+          <img src="img/logo-canvas.png" class="image-centered-v hidden-o">
           <div class="close-animatedModal bottom-center"> 
-          <a href="" class="enter-site hidden-o2" onclick="loadPopUp()"><?php if (isset($_SESSION['Username'])) { ?>Welcome Back<?php } else { ?>Enter Site<?php } ?></a>
+            <a href="" class="enter-site hidden-o2" onclick="loadPopUp()">Enter Site</a>
           </div>
         </div>
     </div>
@@ -42,7 +37,7 @@
                 <a class="nav-link" href="blog">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="beauty-lounge" >The Beauty Lounge</a>
+              <a class="nav-link" href="#login" data-toggle="modal" data-target="#loginModal">The Beauty Lounge</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="shop">Shop</a>
@@ -50,16 +45,6 @@
             <li class="nav-item">
               <a class="nav-link" href="services">Services</a>
             </li>
-            <?php if (isset($_SESSION['Username'])) { ?>
-            <li class="nav-item">
-              <a class="nav-link" href="logout">Logout</a>
-            </li> 
-            <?php } ?>
-            <?php if (!isset($_SESSION['Username'])) { ?>
-            <li class="nav-item">
-              <a class="nav-link" href="logout">Login</a>
-            </li> 
-            <?php } ?>
         </ul>
     </div>
 
@@ -185,42 +170,43 @@
 
     <!-- Form: Registration --> 
     <div class="spacer-m" id="register"></div>
-    
-    <h3 class="text-center hidden-o">Subscribe to our mailing list!</h3>
-    <!-- Begin Mailchimp Signup Form -->
-    <div id="mc_embed_signup" class="hidden-o">
-    <form action="https://nherbeauty.us10.list-manage.com/subscribe/post?u=582ecd78cc0d65ab6af717df5&amp;id=b87499b254" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <div id="mc_embed_signup_scroll" class="row">
-        <div class="mc-field-group col-md-3 col-12 hidden-l">
-          <label for="mce-FNAME">First Name</label><br>
-          <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+    <div class="container form-container hidden-o">
+        <h1 class="text-center">Sign Up</h1>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 display-center">
+                <form action="registration.php" method="post">
+                    <div class="form-row">
+                        <div class="col">
+                            <label>Username</label>
+                            <input type="text" name="user" class="form-control" required>
+                        </div>
+                        <div class="col">
+                            <label>Password</label>
+                            <input type="password" name="password" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="spacer-m"></div>
+                    <div class="form-row">
+                        <label>Email</label>
+                        <input type="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="spacer-m"></div>
+                    <div class="form-row">
+                        <button type="submit" class="btn btn-light display-center">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-1"></div>
         </div>
-        <div class="mc-field-group col-md-3 col-12 hidden">
-          <label for="mce-LNAME">Last Name</label><br>
-          <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
-        </div>
-        <div class="mc-field-group col-md-3 col-12 hidden-r">
-          <label for="mce-EMAIL">Email Address</label><br>
-          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-        </div>
-        <div id="mce-responses" class="clear">
-          <div class="response" id="mce-error-response" style="display:none"></div>
-          <div class="response" id="mce-success-response" style="display:none"></div>
-        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_582ecd78cc0d65ab6af717df5_b87499b254" tabindex="-1" value=""></div>
-        <div class="clear col-12 hidden"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-      </div>
-    </form>
     </div>
-    <!--End mc_embed_signup-->
-    <div class="spacer-m"></div>
 
     <div class="spacer-x"></div>
     <h4 class="text-center hidden">Contact</h4>
     <div class="text-center d-flex justify-content-center">
-      <a href="" target="_blank"><img src="img/icon_fb<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" class="smedia hidden-l"></a>
-      <a href="" target="_blank"><img src="img/icon_insta<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" class="smedia hidden"></a>
-      <a href="" target="_blank"><img src="img/icon_email<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" class="smedia hidden-r"></a>
+      <a href="" target="_blank"><img src="img/icon_fb.png" class="smedia hidden-l"></a>
+      <a href="" target="_blank"><img src="img/icon_insta.png" class="smedia hidden"></a>
+      <a href="" target="_blank"><img src="img/icon_email.png" class="smedia hidden-r"></a>
       <div class="spacer-m"></div>
     </div>
 
@@ -231,7 +217,7 @@
     <?php endif; ?>
 
     <div class="spacer-x"></div>
-
+    
     <!-- Login Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -260,7 +246,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://js.stripe.com/v2/"></script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
     <script src="animatedModal.min.js"></script>
     <script src="javascript.js" type="text/javascript"></script>
     <script>

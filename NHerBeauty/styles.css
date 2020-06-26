@@ -109,14 +109,6 @@ ul > li > a.nav-link:hover {
         padding: 20px;
     }
 }
-.btn-gold {
-    background: linear-gradient(0deg,#f4b73d, #fda730);
-    color: white;
-}
-.btn-gold:hover {
-    background: linear-gradient(0deg,#f9d348, #fdbf30);
-    color: white;
-}
 .quick {
     color: white;
     background-color: #c89688;
@@ -324,17 +316,3 @@ ul > li > a.nav-link:hover {
     color: white;
 }
 /* ************************************************************* */
-input, option {
-    border-radius: 5px;
-    padding: 5px;
-    color: #A67061;
-    border: 0px;
-    margin: 5px;
-    box-sizing: border-box;
-}
-#mc_embed_signup_scroll {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}

@@ -1,6 +1,5 @@
 <?php 
     session_start();
-    require_once 'pdoconfig.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -11,14 +10,10 @@
     <!-- Assistant -->
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;700&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/nav<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png">
+    <link rel="icon" href="img/nav.png">
     <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
-    <?php if (isset($_SESSION['Username'])) { ?>
-        <link rel='stylesheet' href='styles-x.css'>
-    <?php } else { ?>
-        <link rel='stylesheet' href='styles.css'>
-    <?php } ?>
+    <link rel="stylesheet" href="styles.css">
     <title>NHerBeauty | Official Website</title>
   </head>
   <body id="container">
@@ -32,7 +27,7 @@
                 <a class="nav-link" href="blog">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="beauty-lounge" >The Beauty Lounge</a>
+              <a class="nav-link" href="" data-toggle="modal" data-target="#loginModal">The Beauty Lounge</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="shop">Shop</a>
@@ -40,16 +35,6 @@
             <li class="nav-item">
               <a class="nav-link" href="services">Services</a>
             </li>
-            <?php if (isset($_SESSION['Username'])) { ?>
-            <li class="nav-item">
-              <a class="nav-link" href="logout">Logout</a>
-            </li> 
-            <?php } ?>
-            <?php if (!isset($_SESSION['Username'])) { ?>
-            <li class="nav-item">
-              <a class="nav-link" href="logout">Login</a>
-            </li> 
-            <?php } ?>
         </ul>
     </div>
 
