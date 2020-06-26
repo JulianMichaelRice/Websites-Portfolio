@@ -60,64 +60,69 @@
     <!-- The Beauty Lounge -->
     <div class="spacer-s"></div>
     <div class="parallax cover-tall carousel-bg4 hidden-o"></div>
-    <div class="text-center hidden-o2 spacer-l">
-        <form action="payment" method="POST" id="paymentFrm">
-            <div class="">
-                <h3 class="">Join the Beauty Lounge</h3>
-                <div class="spacer-m"></div>
-                <!-- Plan Info -->
-                <p>
-                    <b>Plan </b>
-                    <select name="subscr_plan" id="subscr_plan">
-                        <?php foreach($plans as $id=>$plan){ ?>
-                            <option value="<?php echo $id; ?>"><?php echo $plan['name'].' [$'.$plan['price'].'/'.$plan['interval'].']'; ?></option>
-                        <?php } ?>
-                    </select>
-                </p>
-            </div>
-            <div class="">
-            <!-- Payment form -->
-            <div class="row">
-                <div class="form-group col-12 col-md-4">
-                <label>Full Name</label>
-                <input type="text" name="name" id="name" placeholder="Enter name" required="" autofocus="">
-                </div>
-                <div class="form-group col-12 col-md-4">
-                <label>Email</label>
-                <input type="email" name="email" id="email" placeholder="Enter email" required="">
-                </div>
-                <div class="form-group col-12 col-md-4">
-                <label>Password</label>
-                <input type="password" name="password" id="password" autocomplete="off" required="">
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-0 col-md-2"></div>
-                <div class="form-group col-12 col-md-8">
-                <label>Card Number</label>
-                <input type="text" name="card_number" id="card_number" placeholder="1234 1234 1234 1234" maxlength="16" autocomplete="off" required="">
-                </div>
-                <div class="col-0 col-md-2"></div>
-            </div>
-            <div class="row">
-                <div class="form-group col-12 col-md-7">
-                <label>Expiry Date</label>
-                <input type="text" name="card_exp_month" id="card_exp_month" placeholder="MM" maxlength="2" required="">
-                <input type="text" name="card_exp_year" id="card_exp_year" placeholder="YYYY" maxlength="4" required="">
-                </div>
-                <div class="form-group col-12 col-md-5">
-                <label>CVC</label>
-                <input type="text" name="card_cvc" id="card_cvc" placeholder="CVC" maxlength="3" autocomplete="off" required="">
-                </div>
-            </div>
-            <button type="submit" class="btn btn-gold" id="payBtn">Join the Beauty Lounge</button>
-        </div>
-    </form>
-    </div>
-
     <div class="spacer-l"></div>
-    <h3 class="text-center hidden-o">The Benefits of Joining the Beauty Lounge</h3>
+    <div class="container hidden-o">
+        <h2 class="text-center hidden-o">Welcome!</h2>
+        <p class="text-center hidden-o">The Beauty Lounge is a safe space for women looking to meet and be empowered by other women with the same pursuit of internal growth and transformation. Our mission is to be an armor of support, a place of comfort, and an inspiration amongst one another to unveil your best self.</p>
+    </div>
+    <div class="container">
+        <div class="text-center hidden-o2 spacer-l">
+            <form action="payment" method="POST" id="paymentFrm">
+                <div class="">
+                    <h3 class="">Join the Beauty Lounge</h3>
+                    <div class="spacer-m"></div>
+                    <!-- Plan Info -->
+                    <p>
+                        <b>Plan </b>
+                        <select name="subscr_plan" id="subscr_plan">
+                            <?php foreach($plans as $id=>$plan){ ?>
+                                <option value="<?php echo $id; ?>"><?php echo $plan['name'].' [$'.$plan['price'].'/'.$plan['interval'].']'; ?></option>
+                            <?php } ?>
+                        </select>
+                    </p>
+                </div>
+                <div class="">
+                <!-- Payment form -->
+                <div class="row">
+                    <div class="form-group col-12 col-md-4">
+                    <label>Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter name" required="" autofocus="">
+                    </div>
+                    <div class="form-group col-12 col-md-4">
+                    <label>Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter email" required="">
+                    </div>
+                    <div class="form-group col-12 col-md-4">
+                    <label>Password</label>
+                    <input type="password" name="password" id="password" autocomplete="off" required="">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-0 col-md-2"></div>
+                    <div class="form-group col-12 col-md-8">
+                    <label>Card Number</label>
+                    <input type="text" name="card_number" id="card_number" placeholder="1234 1234 1234 1234" maxlength="16" autocomplete="off" required="">
+                    </div>
+                    <div class="col-0 col-md-2"></div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-12 col-md-7">
+                    <label>Expiry Date</label>
+                    <input type="text" name="card_exp_month" id="card_exp_month" placeholder="MM" maxlength="2" required="">
+                    <input type="text" name="card_exp_year" id="card_exp_year" placeholder="YYYY" maxlength="4" required="">
+                    </div>
+                    <div class="form-group col-12 col-md-5">
+                    <label>CVC</label>
+                    <input type="text" name="card_cvc" id="card_cvc" placeholder="CVC" maxlength="3" autocomplete="off" required="">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-gold spacer-l" id="payBtn">Join the Beauty Lounge</button>
+            </div>
+        </form>
+        </div>
+    </div>
+    <h3 class="text-center hidden-o spacer-l">The Benefits of Joining the Beauty Lounge</h3>
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-12 text-center">
