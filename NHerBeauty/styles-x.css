@@ -50,7 +50,7 @@ html { scroll-behavior: smooth; }
 }
 body::-webkit-scrollbar { display: none; }
 body {
-    color: #FCC5B3;
+    color: #fbda61;
     /* font-family: 'Oxygen', sans-serif; */
     /* font-weight: 300; */
     /* letter-spacing: -0.75px; */
@@ -67,16 +67,16 @@ p, a, td {
     letter-spacing: -0.55px;
 }
 ul > li > a.nav-link {
-    color: #FCC5B3;
+    color: #fbda61;
     transition: 1s ease;
     padding: 3px 10px;
     margin: 15px 15px;
-    border-bottom: 1px solid #FCC5B3;
+    border-bottom: 1px solid #fbda61;
 }
 ul > li > a.nav-link:hover {
     color: white;
-    background-color: #E2AB9A;
-    border-bottom: 1px solid #E2AB9A;
+    background-color: rgb(248, 198, 118);
+    border-bottom: 1px solid rgb(248, 198, 118);
     transition: 0.3s ease;
 }
 .col-md-6, .col-md-5, .col-md-7 {
@@ -119,7 +119,7 @@ ul > li > a.nav-link:hover {
 }
 .quick {
     color: white;
-    background-color: #c89688;
+    background-color: #f4b73d;
     padding: 10px 25px;
     margin: 10px 25px;
     border-radius: 10px;
@@ -131,13 +131,13 @@ ul > li > a.nav-link:hover {
 }
 .quick:hover {
     color: whitesmoke;
-    background-color: #E2AB9A;
+    background-color: #f9d348;
     text-decoration: none;
     transition: 0.5s ease;
 }
 .quickhalf {
     color: white;
-    background-color: #E2AB9A;
+    background-color: #f9d348;
     padding: 5px 10px;
     margin: 5px 10px;
     border-radius: 5px;
@@ -149,18 +149,14 @@ ul > li > a.nav-link:hover {
 }
 .quickhalf:hover {
     color: whitesmoke;
-    background-color: #C89688;
+    background-color: #f4b73d;
     text-decoration: none;
     transition: 0.5s ease;
 }
-.quick60 { background-color: #E2AB9A; color: white; width: 177px; }
-.quick60:hover { background-color:#FCC5B3; color: white; width: 177px; }
+.quick60 { background-color: #f4b73d; color: white; width: 177px; }
+.quick60:hover { background-color:#fecb64; color: white; width: 177px; }
 .bg1 { background-image: url("img/c_shop.jpg"); }
 .bg-service { background-image: url("img/services.jpg"); }
-.bg3 { background-image: url("img/study3.jpg"); }
-.bg4 { background-image: url("img/study4.jpg"); }
-.bg5 { background-image: url("img/study5.jpg"); }
-.bg6 { background-image: url("img/study6.jpg"); }
 .cover-full { height: 100vh; }
 .cover-tall { height: 500px; }
 .cover-mid { height: 300px; }
@@ -182,7 +178,7 @@ ul > li > a.nav-link:hover {
 }
 .container-fluid { padding: 0 }
 .jumbotron { 
-    background: linear-gradient(270deg, #FCC5B3, #E2AB9A); 
+    background: linear-gradient(270deg, #fecb64, #f4b73d); 
     border-radius: 0;
     color: white;
     height: 100vh;
@@ -191,8 +187,8 @@ ul > li > a.nav-link:hover {
     color: white;
     padding: 50px;
     border-radius: 25px;
-    box-shadow: 10px 10px 4px 2px #FCC5B3;
-    background: linear-gradient(0deg, #E2AB9A,#f3c9bd);
+    box-shadow: 10px 10px 4px 2px #fecb64;
+    background: linear-gradient(0deg, #f4b73d,#fecb64);
 }
 .form-control:focus {
     border: #FCC5B3;
@@ -200,7 +196,7 @@ ul > li > a.nav-link:hover {
 }
 .modal-backdrop {
     color: white;
-    background: linear-gradient(0deg, #C89688, #E2AB9A);
+    background: linear-gradient(0deg, #f4b73d, #fecb64);
 }
 .modalPic {
     width: 100%;
@@ -255,7 +251,7 @@ ul > li > a.nav-link:hover {
 }
 .shop {
     border-radius: 10px;
-    border: 2px solid #E2AB9A;
+    border: 2px solid #fecb64;
     padding: 25px;
 }
 .smedia {
@@ -308,7 +304,7 @@ ul > li > a.nav-link:hover {
 }
 .enter-site {
     /* background: linear-gradient(0deg, #E2AB9A, #A67061); */
-    background-color: #c89688;
+    background-color: #fecb64;
     color: white;
     padding: 10px 65px;
     border-radius: 15px;
@@ -318,7 +314,7 @@ ul > li > a.nav-link:hover {
 }
 .enter-site:hover {
     /* background: linear-gradient(0deg, #ecb9a9, #c89688); */
-    background-color: #E2AB9A;
+    background-color: #fbda61;
     transition: 1s ease;
     text-decoration: none;
     color: white;

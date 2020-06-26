@@ -1,5 +1,6 @@
 <?php 
     session_start();
+    require_once 'pdoconfig.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -10,10 +11,14 @@
     <!-- Assistant -->
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;700&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/nav.png">
+    <link rel="icon" href="img/nav<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png">
     <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <?php if (isset($_SESSION['Username'])) { ?>
+        <link rel='stylesheet' href='styles-x.css'>
+    <?php } else { ?>
+        <link rel='stylesheet' href='styles.css'>
+    <?php } ?>
     <title>NHerBeauty | Official Website</title>
   </head>
   <body id="container">
@@ -27,7 +32,7 @@
                 <a class="nav-link" href="blog">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="" data-toggle="modal" data-target="#loginModal">The Beauty Lounge</a>
+              <a class="nav-link" href="beauty-lounge" >The Beauty Lounge</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="shop">Shop</a>
@@ -35,6 +40,16 @@
             <li class="nav-item">
               <a class="nav-link" href="services">Services</a>
             </li>
+            <?php if (isset($_SESSION['Username'])) { ?>
+            <li class="nav-item">
+              <a class="nav-link" href="logout">Logout</a>
+            </li> 
+            <?php } ?>
+            <?php if (!isset($_SESSION['Username'])) { ?>
+            <li class="nav-item">
+              <a class="nav-link" href="logout">Login</a>
+            </li> 
+            <?php } ?>
         </ul>
     </div>
 
@@ -51,7 +66,7 @@
         <div class="col-md-2 display-center"></div>
         <div class="col-md-4 col-12 display-center hidden-o">
           <!-- 1 on 1 Consultation -->
-          <img src="img/logo.png" width="100%" class="hidden">
+          <img src="img/logo<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" width="100%" class="hidden">
           <div class="spacer-s"></div>
           <h5 class="text-center hidden">1 on 1 Consultation</h5>
           <p class="text-center hidden">A personal session tailored to your individual goals.</p>
@@ -60,7 +75,7 @@
         </div>
         <div class="col-md-4 col-12 display-center hidden-o">
           <!-- Group Consultation -->
-          <img src="img/logo.png" width="100%" class="hidden">
+          <img src="img/logo<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" width="100%" class="hidden">
           <div class="spacer-s"></div>
           <h5 class="text-center hidden">Group Consultation</h5>
           <p class="text-center hidden">Sessions tailored to discuss achieving synonymous goals in a group setting. Maximum 5 Participants</p>
@@ -154,50 +169,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Form: Registration --> 
-    <div class="container form-container hidden-o">
-        <h1 class="text-center">Find Your Sprout Tutor Today</h1>
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-10 display-center">
-                <form action="registration.php" method="post">
-                    <div class="form-row">
-                        <div class="col">
-                            <label>First Name</label>
-                            <input type="text" name="firstname" class="form-control" required>
-                        </div>
-                        <div class="col">
-                            <label>Last Name</label>
-                            <input type="text" name="lastname" class="form-control" required>
-                        </div>
-                    </div>
-                    <div class="spacer-m"></div>
-                    <div class="form-row">
-                        <div class="col">
-                            <label>Username</label>
-                            <input type="text" name="user" class="form-control" required>
-                        </div>
-                        <div class="col">
-                            <label>Password</label>
-                            <input type="password" name="password" class="form-control" required>
-                        </div>
-                    </div>
-                    <div class="spacer-m"></div>
-                    <div class="form-row">
-                        <label>Email</label>
-                        <input type="email" name="email" class="form-control" required>
-                    </div>
-                    <div class="spacer-m"></div>
-                    <div class="form-row">
-                        <button type="submit" class="btn btn-light display-center">Sign Up</button>
-                    </div>
-                </form>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-    </div>
-
     <div class="spacer-x"></div>
     </div>
 
