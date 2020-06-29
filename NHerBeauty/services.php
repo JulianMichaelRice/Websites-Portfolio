@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Assistant -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;700&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
@@ -23,6 +24,7 @@
     <title>NHerBeauty | Official Website</title>
   </head>
   <body id="container">
+  <div class="text-center hidden-o"><img src="img/logo<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" width="250px;"></div>
     <!-- Nav -->
     <div class="hidden-o2" style="margin-top: -40px; z-index: 10;">
         <ul class="nav justify-content-center">
@@ -60,7 +62,7 @@
     </div>
 
     <!-- Login Modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-body">
@@ -89,6 +91,15 @@
       <h1 class="text-center hidden-o">Let's Grow Together</h1>
       <p class="text-center hidden-o2">We at NHerBeauty want you to maximize your growth possibilities with us. Want a more personalized stratagem? Schedule a consultation with our internal growth coach today to create a personal development plan based around where you specifically desire to experience growth.</p>
       <div class="spacer-s"></div>
+      <?php if (isset($_SESSION['notification'])) { ?>
+      <p class="text-center hidden-o" style="color: white;">Thanks! We'll get back to you shortly!</p>
+      <?php } ?>
+
+      <!-- Calendly link widget begin -->
+      
+      <div class="text-center">
+        <a href="" target="_blank" class="btn btn-gold hidden-o" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nherbeauty'});return false;">Book an appointment!</a>
+      </div>
       <button class="btn quick display-center hidden-o" style="width: 500px">Book your free trial consultation today!</button>
       <div class="row">
         <div class="col-md-2 display-center"></div>
@@ -124,39 +135,39 @@
             <h3 class="text-center">Book a Consultation</h3>
             <p class="text-center">You're only a form away from a wonder session ahead of you.</p>
             <div class="spacer-s"></div>
-            <form>
+            <form method="POST" action="send-email.php">
               <div class="form-group">
                 <div class="row">
                   <div class="col">
-                    <input type="text" class="form-control" placeholder="First name" required>
+                    <input type="text" class="form-control" placeholder="First name" required name="c_name">
                   </div>
                   <div class="col">
-                    <input type="text" class="form-control" placeholder="Last name" required>
+                    <input type="text" class="form-control" placeholder="Last name" required name="c_last">
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <div class="row">
                   <div class="col">
-                    <input type="email" class="form-control" placeholder="Email" required>
+                    <input type="email" class="form-control" placeholder="Email" required name="c_email">
                   </div>
                   <div class="col">
-                    <input type="text" class="form-control" placeholder="Phone number" required>
+                    <input type="text" class="form-control" placeholder="Phone number" required name="c_number">
                   </div>
                 </div>
               </div>
               <div class="form-group">
                 <div class="row">
                   <div class="col-6">           
-                    <select class="form-control form-control-md" id="cat">
-                      <option>1 on 1 Consultation</option>
-                      <option>Group Consultation</option>
+                    <select class="form-control form-control-md" id="cat" name="c_type">
+                      <option value="1 on 1 Consultation">1 on 1 Consultation</option>
+                      <option value="Group Consultation">Group Consultation</option>
                     </select>
                   </div>
                   <div class="col-6">      
-                    <select class="form-control form-control-md" id="tim">
-                      <option>30 Mins</option>
-                      <option>60 Mins</option>
+                    <select class="form-control form-control-md" id="tim" name="c_length">
+                      <option value="30 Mins">30 Mins</option>
+                      <option value="60 Mins">60 Mins</option>
                     </select>
                   </div>
                 </div>
@@ -173,8 +184,6 @@
         <p class="text-center" style="color: red;"><?php echo $error ?></p>
         <?php endforeach; ?>
     <?php endif; ?>
-
-    <div class="spacer-x"></div>
     
     <!-- Login Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -197,14 +206,12 @@
         </div>
       </div>
     </div>
-    <div class="spacer-x"></div>
     </div>
-
     <!-- Code -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
     <script src="animatedModal.min.js"></script>
     <script src="javascript.js" type="text/javascript"></script>
     <script>

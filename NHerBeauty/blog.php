@@ -24,10 +24,11 @@
   </head>
   <body id="container">
     <!-- Nav -->
+    <div class="text-center hidden-o"><img src="img/logo<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" width="250px;"></div>
     <div class="hidden-o2" style="margin-top: -40px; z-index: 10;">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="home">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="blog">Blog</a>
@@ -60,7 +61,7 @@
     </div>
 
     <!-- Login Modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-body">
@@ -88,6 +89,8 @@
     <div class="container-fluid">
       <h1 class="text-center hidden-o">Blog</h1>
       <div class="spacer-m"></div>
+      <!-- Grab lines 94 to 117 and copy and paste it below line 137 if you need to make more!
+             When you copy and paste it, make sure to make the number in priority(0,'on') increase as well! -->
       <div class="row">
         <div class="col-md-4 col-12 hidden-l hoverer" onmouseover="priority(0,'on');" onmouseout="priority(0,'off')" style="padding: 0;">
           <div class="blog blog-wallpaper-1 cover-mid" style="padding: 30px;">
@@ -113,9 +116,21 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 col-6 hidden-l hoverer" onmouseover="priority(3,'on');" onmouseout="priority(3,'off')" style="padding: 0;">
+        <div class="col-md-4 col-12 hidden-l hoverer" onmouseover="priority(3,'on');" onmouseout="priority(3,'off')" style="padding: 0;">
           <div class="blog blog-wallpaper-4 cover-mid" style="padding: 30px;">
             <h5 class="text-center">Blog Post 4</h5>
+            <a href="" class="btn quickhalf display-center" target="_blank">Read More</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 hidden hoverer" onmouseover="priority(4,'on');" onmouseout="priority(4,'off')" style="padding: 0;">
+          <div class="blog blog-wallpaper-1 cover-mid" style="padding: 30px;">
+            <h5 class="text-center">Blog Post 5</h5>
+            <a href="" class="btn quickhalf display-center" target="_blank">Read More</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 hidden-r hoverer" onmouseover="priority(5,'on');" onmouseout="priority(5,'off')" style="padding: 0;">
+          <div class="blog blog-wallpaper-2 cover-mid" style="padding: 30px;">
+            <h5 class="text-center">Blog Post 6</h5>
             <a href="" class="btn quickhalf display-center" target="_blank">Read More</a>
           </div>
         </div>
@@ -131,7 +146,7 @@
     <div class="spacer-x"></div>
     
     <!-- Login Modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-body">

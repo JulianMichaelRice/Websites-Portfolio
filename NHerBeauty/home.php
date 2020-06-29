@@ -33,6 +33,7 @@
         </div>
     </div>
     <div id='container' style='display:none;'>
+    <div class="text-center hidden-o"><img src="img/logo<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" width="250px;"></div>
     <!-- Nav -->
     <div class="hidden-o2" style="margin-top: -40px; z-index: 10;">
         <ul class="nav justify-content-center">
@@ -257,7 +258,7 @@
     <div class="spacer-x"></div>
     <h4 class="text-center hidden">Contact</h4>
     <div class="text-center d-flex justify-content-center">
-      <a href="https://www.instagram.com/nherbeauty.co/?hl=en" target="_blank"><img src="img/icon_fb<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" class="smedia hidden-l"></a>
+      <a href="https://m.facebook.com/nherbeauty.co" target="_blank"><img src="img/icon_fb<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" class="smedia hidden-l"></a>
       <a href="https://www.instagram.com/nherbeauty.co/?hl=en" target="_blank"><img src="img/icon_insta<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" class="smedia hidden"></a>
       <a href="mailto:nherbeauty.co@gmail.com" target="_blank"><img src="img/icon_email<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" class="smedia hidden-r"></a>
       <div class="spacer-m"></div>
