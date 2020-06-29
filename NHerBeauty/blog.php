@@ -11,6 +11,7 @@
     <!-- Assistant -->
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;700&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="icon" href="img/nav<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png">
     <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
@@ -23,10 +24,10 @@
   </head>
   <body id="container">
     <!-- Nav -->
-    <div class="hidden-o">
+    <div class="hidden-o2" style="margin-top: -40px; z-index: 10;">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link" href="home">Home</a>
+                <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="blog">Blog</a>
@@ -40,17 +41,22 @@
             <li class="nav-item">
               <a class="nav-link" href="services">Services</a>
             </li>
-            <?php if (isset($_SESSION['Username'])) { ?>
-            <li class="nav-item">
-              <a class="nav-link" href="logout">Logout</a>
-            </li> 
-            <?php } ?>
-            <?php if (!isset($_SESSION['Username'])) { ?>
-            <li class="nav-item">
-              <a class="nav-link" href="logout">Login</a>
-            </li> 
-            <?php } ?>
         </ul>
+    </div>
+
+    <div class="login">
+      <ul class="nav">
+        <?php if (isset($_SESSION['Username'])) { ?>
+        <li class="nav-item mr-2">
+          <a class="nav-link" href="logout">Logout</a>
+        </li> 
+        <?php } ?>
+        <?php if (!isset($_SESSION['Username'])) { ?>
+        <li class="nav-item my-2 my-sm-0">
+          <a class="nav-link" href="" data-toggle="modal" data-target="#loginModal">Login</a>
+        </li> 
+        <?php } ?>
+      </ul>
     </div>
 
     <!-- Login Modal -->

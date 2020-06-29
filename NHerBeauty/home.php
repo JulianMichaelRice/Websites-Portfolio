@@ -11,6 +11,7 @@
     <!-- Assistant -->
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;700&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="icon" href="img/nav<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png">
     <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
@@ -33,7 +34,7 @@
     </div>
     <div id='container' style='display:none;'>
     <!-- Nav -->
-    <div class="hidden-o2">
+    <div class="hidden-o2" style="margin-top: -40px; z-index: 10;">
         <ul class="nav justify-content-center">
             <li class="nav-item">
                 <a class="nav-link" href="#">Home</a>
@@ -50,17 +51,22 @@
             <li class="nav-item">
               <a class="nav-link" href="services">Services</a>
             </li>
-            <?php if (isset($_SESSION['Username'])) { ?>
-            <li class="nav-item">
-              <a class="nav-link" href="logout">Logout</a>
-            </li> 
-            <?php } ?>
-            <?php if (!isset($_SESSION['Username'])) { ?>
-            <li class="nav-item">
-              <a class="nav-link" href="" data-toggle="modal" data-target="#loginModal">Login</a>
-            </li> 
-            <?php } ?>
         </ul>
+    </div>
+
+    <div class="login">
+      <ul class="nav">
+        <?php if (isset($_SESSION['Username'])) { ?>
+        <li class="nav-item mr-2">
+          <a class="nav-link" href="logout">Logout</a>
+        </li> 
+        <?php } ?>
+        <?php if (!isset($_SESSION['Username'])) { ?>
+        <li class="nav-item my-2 my-sm-0">
+          <a class="nav-link" href="" data-toggle="modal" data-target="#loginModal">Login</a>
+        </li> 
+        <?php } ?>
+      </ul>
     </div>
 
     <?php if (isset($_SESSION['errors'])): ?>
@@ -75,9 +81,33 @@
         <div class="modal-content">
           <div class="modal-body">
             <div class="spacer-s"></div>
-            <h3 class="text-center">Receive special messages and stay up to date! Spin the wheel of fortune and win prizes when you sign up with your email or phone number!</h3>
+            <h5 class="text-center">Make NHerBeauty part of your daily routine, sign up to receive motivational messages and updates to keep you going throughout the week and receive 20% off your next order!</h5>
             <!-- ?? -->
             <div class="spacer-s"></div>
+            <div id="mc_embed_signup2" class="hidden-o">
+              <form action="https://nherbeauty.us10.list-manage.com/subscribe/post?u=582ecd78cc0d65ab6af717df5&amp;id=b87499b254" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll2" class="row text-center">
+                  <div class="mc-field-group col-md-4 col-12 hidden-l">
+                    <label for="mce-FNAME">First Name</label><br>
+                    <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+                  </div>
+                  <div class="mc-field-group col-md-4 col-12 hidden">
+                    <label for="mce-LNAME">Last Name</label><br>
+                    <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+                  </div>
+                  <div class="mc-field-group col-md-4 col-12 hidden-r">
+                    <label for="mce-EMAIL">Email Address</label><br>
+                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                  </div>
+                  <div id="mce-responses2" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_582ecd78cc0d65ab6af717df5_b87499b254" tabindex="-1" value=""></div>
+                  <div class="clear col-12 hidden"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe2" class="btn btn-pink spacer-m"></div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -192,31 +222,34 @@
     <!-- Form: Registration --> 
     <div class="spacer-m" id="register"></div>
     
-    <h3 class="text-center hidden-o">Subscribe to our mailing list!</h3>
+    <div class="container">
+      <h3 class="text-center hidden-o">Subscribe to our mailing list!</h3>
+      <p class="text-center hidden-o">Make NHerBeauty part of your daily routine, sign up to receive motivational messages and updates to keep you going throughout the week and receive 20% off your next order</p>
+    </div>
     <!-- Begin Mailchimp Signup Form -->
     <div id="mc_embed_signup" class="hidden-o">
-    <form action="https://nherbeauty.us10.list-manage.com/subscribe/post?u=582ecd78cc0d65ab6af717df5&amp;id=b87499b254" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <div id="mc_embed_signup_scroll" class="row">
-        <div class="mc-field-group col-md-3 col-12 hidden-l">
-          <label for="mce-FNAME">First Name</label><br>
-          <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+      <form action="https://nherbeauty.us10.list-manage.com/subscribe/post?u=582ecd78cc0d65ab6af717df5&amp;id=b87499b254" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll" class="row">
+          <div class="mc-field-group col-md-3 col-12 hidden-l">
+            <label for="mce-FNAME">First Name</label><br>
+            <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+          </div>
+          <div class="mc-field-group col-md-3 col-12 hidden">
+            <label for="mce-LNAME">Last Name</label><br>
+            <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+          </div>
+          <div class="mc-field-group col-md-3 col-12 hidden-r">
+            <label for="mce-EMAIL">Email Address</label><br>
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+          </div>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_582ecd78cc0d65ab6af717df5_b87499b254" tabindex="-1" value=""></div>
+          <div class="clear col-12 hidden"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-pink spacer-m"></div>
         </div>
-        <div class="mc-field-group col-md-3 col-12 hidden">
-          <label for="mce-LNAME">Last Name</label><br>
-          <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
-        </div>
-        <div class="mc-field-group col-md-3 col-12 hidden-r">
-          <label for="mce-EMAIL">Email Address</label><br>
-          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-        </div>
-        <div id="mce-responses" class="clear">
-          <div class="response" id="mce-error-response" style="display:none"></div>
-          <div class="response" id="mce-success-response" style="display:none"></div>
-        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_582ecd78cc0d65ab6af717df5_b87499b254" tabindex="-1" value=""></div>
-        <div class="clear col-12 hidden"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-pink spacer-m"></div>
-      </div>
-    </form>
+      </form>
     </div>
     <!--End mc_embed_signup-->
     <div class="spacer-m"></div>
@@ -224,9 +257,9 @@
     <div class="spacer-x"></div>
     <h4 class="text-center hidden">Contact</h4>
     <div class="text-center d-flex justify-content-center">
-      <a href="" target="_blank"><img src="img/icon_fb<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" class="smedia hidden-l"></a>
-      <a href="" target="_blank"><img src="img/icon_insta<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" class="smedia hidden"></a>
-      <a href="" target="_blank"><img src="img/icon_email<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" class="smedia hidden-r"></a>
+      <a href="https://www.instagram.com/nherbeauty.co/?hl=en" target="_blank"><img src="img/icon_fb<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" class="smedia hidden-l"></a>
+      <a href="https://www.instagram.com/nherbeauty.co/?hl=en" target="_blank"><img src="img/icon_insta<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" class="smedia hidden"></a>
+      <a href="mailto:nherbeauty.co@gmail.com" target="_blank"><img src="img/icon_email<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" class="smedia hidden-r"></a>
       <div class="spacer-m"></div>
     </div>
 
