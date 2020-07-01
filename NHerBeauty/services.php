@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;700&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
     <link rel="icon" href="img/nav<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png">
     <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
@@ -26,10 +27,10 @@
   <body id="container">
   <div class="text-center hidden-o"><img src="img/logo<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" width="250px;"></div>
     <!-- Nav -->
-    <div class="hidden-o2" style="margin-top: -40px; z-index: 10;">
+    <div class="hidden-o2" style="margin-top: -25px; z-index: 10;">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="home">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="blog">Blog</a>
@@ -87,21 +88,28 @@
     <div class="container-fluid">
       <div class="spacer-s"></div>
       <div class="parallax cover-tall bg-service hidden-o"></div>
-      <div class="spacer-m"></div>
-      <h1 class="text-center hidden-o">Let's Grow Together</h1>
-      <p class="text-center hidden-o2">We at NHerBeauty want you to maximize your growth possibilities with us. Want a more personalized stratagem? Schedule a consultation with our internal growth coach today to create a personal development plan based around where you specifically desire to experience growth.</p>
+      <div class="spacer-l"></div>
+      <div class="container">
+        <h1 class="text-center hidden-o">Let's Grow Together</h1>
+        <p class="text-center hidden-o2">We at NHerBeauty want you to maximize your growth possibilities with us.<br>Want a more personalized stratagem? Schedule a consultation with our internal growth coach today to create a personal development plan based around where you specifically desire to experience growth.</p>
+      </div>
       <div class="spacer-s"></div>
-      <?php if (isset($_SESSION['notification'])) { ?>
+      <?php if ($_SESSION['notification'] == "OK") { ?>
       <p class="text-center hidden-o" style="color: white;">Thanks! We'll get back to you shortly!</p>
       <?php } ?>
 
       <!-- Calendly link widget begin -->
-      
+      <?php if (!isset($_SESSION['Username'])) { ?>
       <div class="text-center">
-        <a href="" target="_blank" class="btn btn-gold hidden-o" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nherbeauty'});return false;">Book an appointment!</a>
+        <a href="" target="_blank" class="btn btn-pink hidden-o" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nherbeauty'});return false;" style="font-size: 32px;">Book an appointment today!</a>
       </div>
-      <button class="btn quick display-center hidden-o" style="width: 500px">Book your free trial consultation today!</button>
-      <div class="row">
+      <?php } else { ?>
+      <div class="text-center">
+        <a href="" target="_blank" class="btn btn-gold hidden-o" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nherbeauty'});return false;" style="font-size: 32px;">Book an appointment today!</a>
+      </div>
+      <?php } ?>
+      <!-- <button class="btn quick display-center hidden-o" style="width: 500px">Book your free trial consultation today!</button> -->
+      <div class="row spacer-x">
         <div class="col-md-2 display-center"></div>
         <div class="col-md-4 col-12 display-center hidden-o">
           <!-- 1 on 1 Consultation -->

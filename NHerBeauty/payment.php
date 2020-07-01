@@ -170,7 +170,7 @@ if(!empty($_POST['subscr_plan']) && !empty($_POST['stripeToken'])){
                     <p><b>Amount:</b> <?php echo $planAmount.' '.$planCurrency; ?></p>
                 <?php } ?>
             </div>
-            <a href="home" class="btn btn-gold">Back to Subscription Page</a>
+            <a href="home" class="btn btn-gold">Return to Home</a>
             <div class="spacer-xl"></div>
         </div>
     </body>

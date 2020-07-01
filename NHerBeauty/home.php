@@ -1,5 +1,10 @@
 <?php 
     session_start();
+    if (isset($_SESSION['notification'])) {
+      if ($_SESSION['notification'] == "OK") {
+        $_SESSION['notification'] = "NO";
+      }
+    }
     require_once 'pdoconfig.php';
 ?>
 <!doctype html>
@@ -12,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;700&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
     <link rel="icon" href="img/nav<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png">
     <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
@@ -35,7 +42,7 @@
     <div id='container' style='display:none;'>
     <div class="text-center hidden-o"><img src="img/logo<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" width="250px;"></div>
     <!-- Nav -->
-    <div class="hidden-o2" style="margin-top: -40px; z-index: 10;">
+    <div class="hidden-o2" style="margin-top: -25px; z-index: 10;">
         <ul class="nav justify-content-center">
             <li class="nav-item">
                 <a class="nav-link" href="#">Home</a>
@@ -81,8 +88,9 @@
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-body">
+            <img src="img/nav<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" class="d-block mr-auto ml-auto" width="100px">
             <div class="spacer-s"></div>
-            <h5 class="text-center">Make NHerBeauty part of your daily routine, sign up to receive motivational messages and updates to keep you going throughout the week and receive 20% off your next order!</h5>
+            <p class="text-center italian">Make NHerBeauty part of your daily routine, sign up to receive motivational messages and updates to keep you going throughout the week and receive 20% off your next order!</p>
             <!-- ?? -->
             <div class="spacer-s"></div>
             <div id="mc_embed_signup2" class="hidden-o">
@@ -105,7 +113,7 @@
                     <div class="response" id="mce-success-response" style="display:none"></div>
                   </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                   <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_582ecd78cc0d65ab6af717df5_b87499b254" tabindex="-1" value=""></div>
-                  <div class="clear col-12 hidden"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe2" class="btn btn-pink spacer-m"></div>
+                  <div class="clear col-12 hidden"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe2" class="btn quick spacer-m d-block mr-auto ml-auto"></div>
                 </div>
               </form>
             </div>
@@ -137,20 +145,30 @@
           </div>
           <div class="carousel-item">
             <div class="carousel-bg2 parallax d-flex justify-content-center align-items-center">
-              <h4 class="text-center lit-text"><i>Fashion to fit your force</i></h4>
-              <a href="shop" class="quick quick60 lit-text">Shop Now</a>
+              <h3 class="text-center lit-text"><i>Fashion to fit your force</i></h3>
+              <a href="shop" class="quick quick60 lit-text" style="margin-top: -15px;">Shop Now</a>
             </div>
           </div>
           <div class="carousel-item">
             <div class="carousel-bg3 parallax d-flex justify-content-center align-items-center">
-              <h4 class="text-center lit-text"><i>Blog of the Week</i></h4>
-              <a href="blog" class="quick quick60 lit-text">Watch Now</a>
+              <h3 class="text-center lit-text"><i>Blog of the Week</i></h3>
+              <a href="blog" class="quick quick60 lit-text" style="margin-top: -15px;">Watch Now</a>
             </div>
           </div>
           <div class="carousel-item">
             <div class="carousel-bg4 parallax d-flex justify-content-center align-items-center">
-              <h4 class="text-center lit-text"><i>Become a Lady of The Beauty Lounge today</i></h4>
-              <a href="#register" class="quick quick60 lit-text">Sign Me Up!</a>
+              <h3 class="text-center lit-text"><i>
+                <?php if (!isset($_SESSION['Username'])) { ?>
+                  Become a Lady of The Beauty Lounge today</i></h3>
+                <?php } else { ?>
+                  Thank you for being a part of the Beauty Lounge</i></h3>
+                <?php } ?>
+              <a href="#register" class="quick quick60 lit-text" style="margin-top: -15px;">
+                <?php if (!isset($_SESSION['Username'])) { ?>
+                  Sign Me Up!</i></h3>
+                <?php } else { ?>
+                  Visit the Lounge</i></h3>
+                <?php } ?></a>
             </div>
           </div>
         </div>
@@ -164,7 +182,7 @@
         </a>
       </div>
       <div class="container">
-        <p class="text-center hidden spacer-l">There is nothing like the solidarity of sisterhood amongst women. Welcome to a community focused on all things self love and internal transformation with the support to esteem one another, correct one another, and empower one another. We dare every woman to brazenly walk NHerBeauty.</p>
+        <p class="text-center hidden spacer-l" style="font-size: 30px;">There is nothing like the solidarity of sisterhood amongst women. Welcome to a community focused on all things self love and internal transformation with the support to esteem one another, correct one another, and empower one another. We dare every woman to brazenly walk NHerBeauty.</p>
       </div>
 
       <div id="customers" class="carousel hidden-o2 slide w-100 d-block ml-auto mr-auto" data-ride="carousel">
@@ -189,7 +207,7 @@
           </div>
           <div class="carousel-item">
             <div class="carousel-bg1 parallax d-flex justify-content-center align-items-center">
-              <h4 class="text-center lit-text container"><i>“Such a real brand, addressing real topics. Even the topics that are commonly avoided.”</i></h4>
+              <p class="text-center lit-text container italian"><i>“Such a real brand, addressing real topics. Even the topics that are commonly avoided.”</i></p>
             </div>
           </div>
           <div class="carousel-item">
@@ -248,7 +266,7 @@
             <div class="response" id="mce-success-response" style="display:none"></div>
           </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
           <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_582ecd78cc0d65ab6af717df5_b87499b254" tabindex="-1" value=""></div>
-          <div class="clear col-12 hidden"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-pink spacer-m"></div>
+          <div class="clear col-12 hidden "><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn quick spacer-m d-block mr-auto ml-auto"></div>
         </div>
       </form>
     </div>

@@ -60,14 +60,21 @@ body {
 }
 a, h1, h2, h3, h4, h5, h6, th {
     font-weight: 600;
-    letter-spacing: -1.5px;
-    font-family: 'Satisfy', cursive;
+    letter-spacing: -0.2px;
+    font-family: 'Italianno', cursive;
+}
+.italian {
+    font-family: 'Italianno', cursive;
+    font-size: 36px;
 }
 p, td {
     font-weight: 200;
     letter-spacing: -0.55px;
 }
 ul > li > a.nav-link {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 100;
+    letter-spacing: -1.5px;
     color: #FCC5B3;
     transition: 1s ease;
     padding: 3px 10px;
@@ -129,14 +136,16 @@ ul > li > a.nav-link:hover {
 .quick {
     color: white;
     background-color: #c89688;
-    padding: 10px 25px;
-    margin: 10px 25px;
+    padding: 0px 18px;
+    margin: 0px 24px;
     border-radius: 10px;
     text-decoration: none;
     text-align: center;
     display: block;
     width: 177px;
     transition: 0.5s ease;
+    font-size: 30px;
+    font-family: 'Italianno', cursive;
 }
 .quick:hover {
     color: whitesmoke;
@@ -153,7 +162,7 @@ ul > li > a.nav-link:hover {
     text-decoration: none;
     text-align: center;
     display: block;
-    width: 177px;
+    width: 214px;
     transition: 0.5s ease;
 }
 .quickhalf:hover {
@@ -162,8 +171,9 @@ ul > li > a.nav-link:hover {
     text-decoration: none;
     transition: 0.5s ease;
 }
-.quick60 { background-color: #E2AB9A; color: white; width: 177px; }
-.quick60:hover { background-color:#FCC5B3; color: white; width: 177px; }
+.quick60 { font-size: 30px;
+    font-family: 'Italianno', cursive; background-color: #E2AB9A; color: white; width: 214px; }
+.quick60:hover { background-color:#FCC5B3; color: white; width: 214px; }
 .bg1 { background-image: url("img/c_shop.jpg"); }
 .bg-service { background-image: url("img/services.jpg"); }
 .bg3 { background-image: url("img/study3.jpg"); }

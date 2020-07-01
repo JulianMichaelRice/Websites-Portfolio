@@ -21,6 +21,6 @@
     $headers = 'From: $to \r\n';
     $headers .= 'Reply-To: $email \r\n';
     mail($to,$email_subject,$email_body,$headers);
-    $_SESSION['notification'] = "We will get back to you soon!";
+    $_SESSION['notification'] = "OK";
     header('location:services');
 ?>

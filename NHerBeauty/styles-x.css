@@ -58,9 +58,14 @@ body {
     /* font-family: 'Martel', serif; */
     -ms-overflow-style: none;
 }
-h1, h2, h3, h4, h5, h6, th {
+a, h1, h2, h3, h4, h5, h6, th {
     font-weight: 600;
-    letter-spacing: -1.5px;
+    letter-spacing: -0.2px;
+    font-family: 'Italianno', cursive;
+}
+.italian {
+    font-family: 'Italianno', cursive;
+    font-size: 36px;
 }
 p, a, td {
     font-weight: 200;
@@ -72,6 +77,7 @@ ul > li > a.nav-link {
     padding: 3px 10px;
     margin: 15px 15px;
     border-bottom: 1px solid #fbda61;
+    font-family: 'Assistant', sans-serif;
 }
 ul > li > a.nav-link:hover {
     color: white;
@@ -128,14 +134,16 @@ ul > li > a.nav-link:hover {
 .quick {
     color: white;
     background-color: #f4b73d;
-    padding: 10px 25px;
-    margin: 10px 25px;
+    padding: 0px 18px;
+    margin: 0px 24px;
     border-radius: 10px;
     text-decoration: none;
     text-align: center;
     display: block;
-    width: 177px;
+    width: 214px;
     transition: 0.5s ease;
+    font-size: 30px;
+    font-family: 'Italianno', cursive;
 }
 .quick:hover {
     color: whitesmoke;
@@ -152,7 +160,7 @@ ul > li > a.nav-link:hover {
     text-decoration: none;
     text-align: center;
     display: block;
-    width: 177px;
+    width: 214px;
     transition: 0.5s ease;
 }
 .quickhalf:hover {
@@ -161,8 +169,9 @@ ul > li > a.nav-link:hover {
     text-decoration: none;
     transition: 0.5s ease;
 }
-.quick60 { background-color: #f4b73d; color: white; width: 177px; }
-.quick60:hover { background-color:#fecb64; color: white; width: 177px; }
+.quick60 { font-size: 30px;
+    font-family: 'Italianno', cursive; background-color: #f4b73d; color: white; width: 214px; }
+.quick60:hover { background-color:#fecb64; color: white; width: 214px; }
 .bg1 { background-image: url("img/c_shop.jpg"); }
 .bg-service { background-image: url("img/services.jpg"); }
 .cover-full { height: 100vh; }
@@ -187,9 +196,20 @@ ul > li > a.nav-link:hover {
 .container-fluid { padding: 0 }
 .jumbotron { 
     background: linear-gradient(270deg, #fecb64, #f4b73d); 
-    border-radius: 0;
+    border-radius: 5px;
     color: white;
-    height: 100vh;
+    cursor: pointer;
+    padding: 30px;
+}
+.jumbotron:hover {
+    background: linear-gradient(180deg, #fecb64, #f4b73d); 
+    cursor: grab;
+}
+.special-pad-l {
+    margin: 10px 30px 10px 10px;
+}
+.special-pad-r {
+    margin: 10px 10px 10px 30px;
 }
 .form-container {
     color: white;
@@ -365,4 +385,27 @@ input, option {
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+/* TAB in BEAUTY LOUNGE */
+ul.nav-tabs, ul.nav {
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul.nav-tabs > li > a {
+    color: white;
+    font-size: 30px;
+    transition: 1s ease;
+    text-decoration: none;
+    font-family: 'Italianno', cursive;
+}
+
+ul.nav-tabs > li > a:hover {
+    color: #f9d348;
+    transition: 1s ease;
+    text-decoration: none;
+}
+
+.tab-content {
+    text-align: center;
 }
