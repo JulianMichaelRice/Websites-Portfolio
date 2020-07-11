@@ -17,6 +17,9 @@
         //Is the password right? If so, log in!
         if (password_verify($pass, mysqli_fetch_assoc($result)['password'])) {
             $_SESSION['Username'] = $email;
+            if (isset($_SESSION['errors'])) {
+                unset($_SESSION['errors']);
+            }
             header('location:beauty-lounge');
         } else {
             //Incorrect Password

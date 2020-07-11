@@ -1,5 +1,10 @@
 <?php 
     session_start();
+    if (isset($_SESSION['notification'])) {
+      if ($_SESSION['notification'] == "OK") {
+        $_SESSION['notification'] = "NO";
+      }
+    }
     require_once 'pdoconfig.php';
 ?>
 <!doctype html>
@@ -12,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;700&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
     <link rel="icon" href="img/nav<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png">
     <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
@@ -25,10 +32,10 @@
   <body id="container">
     <div class="text-center hidden-o"><img src="img/logo<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" width="250px;"></div>
     <!-- Nav -->
-    <div class="hidden-o2" style="margin-top: -40px; z-index: 10;">
+    <div class="hidden-o2" style="margin-top: -25px; z-index: 10;">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="home">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="blog">Blog</a>
@@ -119,7 +126,7 @@
                 <div class="text-center hidden-r">
                     <a href="" data-toggle="modal" data-target="#payModal" class="btn btn-gold">Join Now!</a>
                 </div>
-                <img src="img/b_table.jpg" class="d-block ml-auto mr-auto hidden-o w-100 beauty">
+                <img src="img/c_lounge_og.jpg" class="d-block ml-auto mr-auto hidden-o w-100 beauty">
 
                 <div id="customers" class="carousel hidden-o2 slide w-100 d-block ml-auto mr-auto" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -172,7 +179,7 @@
                     </a>
                 </div>
 
-                <img src="img/b_night.jpg" class="d-block ml-auto mr-auto hidden-o w-100 beauty">
+                <img src="img/b_table.jpg" class="d-block ml-auto mr-auto hidden-o w-100 beauty">
                 
             </div>
         </div>
@@ -255,9 +262,44 @@
     <div class="container-fluid">
         <div class="spacer-s"></div>
         <div class="parallax cover-tall carousel-bg4 hidden-o"></div>
-        <div class="spacer-s"></div>
-        <h1 class="text-center hidden-o">The Beauty Lounge</h1>
-        <div class="spacer-s"></div>
+        <h1 class="text-center hidden-o spacer-l">The Beauty Lounge</h1>
+        <!-- CURRENT STUFF -->
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div class="jumbotron special-pad-r">
+              <h2 class="text-center spacer-s">Weekly Video</h2>
+              <img src="img/lounge_video.png" width="200px" class="d-block ml-auto mr-auto">
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="jumbotron special-pad-l">
+              <h2 class="text-center spacer-s">Teachable</h2>
+              <img src="img/icon_teachable.png" width="200px" class="d-block ml-auto mr-auto">
+            </div>
+          </div>
+        </div>
+        <div class="spacer-l"></div>
+        <!-- PAST STUFF -->
+        <div class="container">
+          <h4 class="text-center">Check out meetings and more things we have done in the past here!</h4>
+          <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#videos">Videos</a></li>
+            <li><a data-toggle="tab" href="#zoom">Conferences</a></li>
+          </ul>
+          
+          <div class="tab-content">
+            <div id="videos" class="tab-pane fade in active">
+              <div class="spacer-m"></div>
+              <h3>Past Videos</h3>
+              <p>Click a link to see the appropriate video!</p>
+            </div>
+            <div id="zoom" class="tab-pane fade">
+              <div class="spacer-m"></div>
+              <h3>Past Conferences</h3>
+              <p>Click a link to see the appropriate Zoom conference!</p>
+            </div>
+          </div>
+        </div>
     </div>
         
     <?php } ?>

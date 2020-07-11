@@ -51,20 +51,26 @@ html { scroll-behavior: smooth; }
 body::-webkit-scrollbar { display: none; }
 body {
     color: #FCC5B3;
-    /* font-family: 'Oxygen', sans-serif; */
-    /* font-weight: 300; */
-    /* letter-spacing: -0.75px; */
     font-family: 'Assistant', sans-serif;
-    /* font-family: 'Martel', serif; */
     -ms-overflow-style: none;
+}
+.close {
+    color: #fff;
+    opacity: 1;
+    transition: 1s ease;
+}
+.close:hover {
+    color: #FCC5B3;
+    opacity: 1;
+    transition: 1s ease;
 }
 a, h1, h2, h3, h4, h5, h6, th {
     font-weight: 600;
     letter-spacing: -0.2px;
-    font-family: 'Italianno', cursive;
+    font-family: cursive;
 }
 .italian {
-    font-family: 'Italianno', cursive;
+    font-family: cursive;
     font-size: 36px;
 }
 p, td {
@@ -306,7 +312,6 @@ ul > li > a.nav-link:hover {
 }
 #container {
     background-color: #111111;
-    /* font-family: 'Nothing You Could Do', cursive; */
     font-family: 'Assistant', sans-serif;
 }
 .image-centered-v {

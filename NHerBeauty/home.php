@@ -88,6 +88,9 @@
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
             <img src="img/nav<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" class="d-block mr-auto ml-auto" width="100px">
             <div class="spacer-s"></div>
             <p class="text-center italian">Make NHerBeauty part of your daily routine, sign up to receive motivational messages and updates to keep you going throughout the week and receive 20% off your next order!</p>
