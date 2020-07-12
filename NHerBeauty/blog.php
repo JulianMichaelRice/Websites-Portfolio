@@ -1,5 +1,10 @@
 <?php 
     session_start();
+    if (isset($_SESSION['notification'])) {
+      if ($_SESSION['notification'] == "OK") {
+        $_SESSION['notification'] = "NO";
+      }
+    }
     require_once 'pdoconfig.php';
 ?>
 <!doctype html>
@@ -12,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;700&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
     <link rel="icon" href="img/nav<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png">
     <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
@@ -25,7 +31,7 @@
   <body id="container">
     <!-- Nav -->
     <div class="text-center hidden-o"><img src="img/logo<?php if (isset($_SESSION['Username'])) { ?>-g<?php } ?>.png" width="250px;"></div>
-    <div class="hidden-o2" style="margin-top: -40px; z-index: 10;">
+    <div class="hidden-o2" style="margin-top: -25px; z-index: 10;">
         <ul class="nav justify-content-center">
             <li class="nav-item">
                 <a class="nav-link" href="home">Home</a>
@@ -84,6 +90,46 @@
 
     <!-- Home -->
     <div class="spacer-s"></div>
+    
+    <!-- NOTE: WHEN MAKING A NEW BLOG POST... 
+      1. Make sure that you just copy and paste the Blog Post 1 stuff
+      2. Change the id="blogPost1" to id="blogPost2" or whatever # your post is
+      3. In the Blog section, get rid of the <!-- and - -> stuff so that it becomes visible
+      4. You need to update the button (or <a> tag) with data-target="#blogPost2" or whatever # your post is
+      5. That should be it!
+    -->
+    <!-- This is Blog Post 1: START -->
+    <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="blogPost1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="spacer-m"></div>
+          <h1>Type your blog post title here</h1>
+          <div class="spacer-m"></div>
+          <p>You can write a p tag as seen here (or just copy and paste) to make a new paragraph block of text</p>
+          <br>
+          <p>The br tag above this is used to add a new line between paragraphs and whatnot</p>
+          <div class="spacer-m"></div>
+          <p>Whenever you want to add space between two tags, add the line above this. There are a couple sizes (spacer-s, spacer-m, spacer-l, spacer-x)</p>
+          <div class="spacer-s"></div>
+          <h3>If you put h# for the tag (like h3 for this one), then you can create a subheading. It's good for categorizing your blog post into separate parts for ease of reading. The larger the number, the smaller the text! (6 is the smallest)</h3>
+          <br>
+          <!-- This is a bit harder ;) -->
+          <div class="row">
+            <div class="col-md-5 col-12">
+              <a href="img/c_blog_og.jpg" target="_blank">
+                <!-- Send me an image you want to put in the database or put a link that ends with .jpg or .png within the src section to set the image -->
+                <img src="img/c_blog_og.jpg" class="beauty w-100 d-block ml-auto mr-auto">
+              </a>
+            </div>
+            <div class="col-md-7 col-12" style="padding: 10px;">
+              <!-- You can add text here -->
+              <p>This is a simple split that I've prepared. Image on the left, text on the right. If you want to swap the two, then move line 113-116 to the line RIGHT BELOW 109</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- This is Blog Post 1: END -->
 
     <!-- Blog -->
     <div class="container-fluid">
@@ -96,11 +142,11 @@
           <div class="blog blog-wallpaper-1 cover-mid" style="padding: 30px;">
             <h5 class="text-center">Blog Post 1</h5>
             <div class="text-center">
-              <a href="" class="btn quickhalf display-center" target="_blank">Read More</a>
+              <a href="" data-toggle="modal" data-target="#blogPost1" class="btn quickhalf display-center" target="_blank">Read More</a>
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-12 hidden hoverer" onmouseover="priority(1,'on');" onmouseout="priority(1,'off')" style="padding: 0;">
+        <!-- <div class="col-md-4 col-12 hidden hoverer" onmouseover="priority(1,'on');" onmouseout="priority(1,'off')" style="padding: 0;">
           <div class="blog blog-wallpaper-2 cover-mid" style="padding: 30px;">
             <h5 class="text-center">Blog Post 2</h5>
             <div class="text-center">
@@ -113,9 +159,9 @@
             <h5 class="text-center">Blog Post 3</h5>
             <a href="" class="btn quickhalf display-center" target="_blank">Read More</a>
           </div>
-        </div>
+        </div> -->
       </div>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-md-4 col-12 hidden-l hoverer" onmouseover="priority(3,'on');" onmouseout="priority(3,'off')" style="padding: 0;">
           <div class="blog blog-wallpaper-4 cover-mid" style="padding: 30px;">
             <h5 class="text-center">Blog Post 4</h5>
@@ -134,7 +180,7 @@
             <a href="" class="btn quickhalf display-center" target="_blank">Read More</a>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <?php if (isset($_SESSION['errors'])): ?>

@@ -193,6 +193,7 @@ ul > li > a.nav-link:hover {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .display-center {
     display: block;
     margin-left: auto;
