@@ -94,8 +94,10 @@
         <p class="text-center hidden-o2">We at NHerBeauty want you to maximize your growth possibilities with us.<br>Want a more personalized stratagem? Schedule a consultation with our internal growth coach today to create a personal development plan based around where you specifically desire to experience growth.</p>
       </div>
       <div class="spacer-s"></div>
-      <?php if ($_SESSION['notification'] == "OK") { ?>
-      <p class="text-center hidden-o" style="color: white;">Thanks! We'll get back to you shortly!</p>
+      <?php if (isset($_SESSION['notification'])) { ?>
+        <?php if ($_SESSION['notification'] == "OK") { ?>
+        <p class="text-center hidden-o" style="color: white;">Thanks! We'll get back to you shortly!</p>
+        <?php } ?>
       <?php } ?>
 
       <!-- Calendly link widget begin -->
@@ -117,8 +119,8 @@
           <div class="spacer-s"></div>
           <h5 class="text-center hidden">1 on 1 Consultation</h5>
           <p class="text-center hidden">A personal session tailored to your individual goals.</p>
-          <button class="btn quick display-center hidden-o" data-category="1 on 1 Consultation" data-time="30 Mins" data-toggle="modal" data-target="#fillprofile">30 Mins</button>
-          <button class="btn quick60 display-center hidden-o" data-category="1 on 1 Consultation" data-time="60 Mins" data-toggle="modal" data-target="#fillprofile">60 Mins</button>
+          <button class="btn quick display-center hidden-o" data-category="1 on 1 Consultation" data-time="30 Mins" data-toggle="modal" data-target="#fillprofile">30 Mins</button><br>
+          <button class="btn quick display-center hidden-o" data-category="1 on 1 Consultation" data-time="60 Mins" data-toggle="modal" data-target="#fillprofile">60 Mins</button>
         </div>
         <div class="col-md-4 col-12 display-center hidden-o">
           <!-- Group Consultation -->
@@ -126,8 +128,8 @@
           <div class="spacer-s"></div>
           <h5 class="text-center hidden">Group Consultation</h5>
           <p class="text-center hidden">Sessions tailored to discuss achieving synonymous goals in a group setting. Maximum 5 Participants</p>
-          <button type="button" class="btn quick display-center hidden-o" data-category="Group Consultation" data-time="30 Mins" data-toggle="modal" data-target="#fillprofile">30 Mins</button>
-          <button type="button" class="btn quick60 display-center hidden-o" data-category="Group Consultation" data-time="60 Mins" data-toggle="modal" data-target="#fillprofile">60 Mins</button>
+          <button type="button" class="btn quick display-center hidden-o" data-category="Group Consultation" data-time="30 Mins" data-toggle="modal" data-target="#fillprofile">30 Mins</button><br>
+          <button type="button" class="btn quick display-center hidden-o" data-category="Group Consultation" data-time="60 Mins" data-toggle="modal" data-target="#fillprofile">60 Mins</button>
         </div>
         <div class="col-md-2 display-center"></div>
       </div>

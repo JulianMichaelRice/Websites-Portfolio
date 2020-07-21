@@ -1,0 +1,205 @@
+@keyframes fade-in {
+    from {opacity: 0; transform: translateY(150px);}
+    to {opacity: 1; transform: translateY(0);} }
+@keyframes fade-right {
+    from {opacity: 0; transform: translateX(1000px);}
+    to {opacity: 1; transform: translateX(0);} }
+@keyframes fade-left {
+    from {opacity: 0; transform: translateX(-1000px);}
+    to {opacity: 1; transform: translateX(0);} }
+@keyframes jump-in-s {
+    0% {opacity: 0; transform: scale(0.6);}
+    50% {opacity: 0; transform: scale(0.6);}
+    100% {opacity: 1; transform: scale(1);} }
+@keyframes jump-in-f {
+    0% {opacity: 0; transform: scale(0.6);}
+    100% {opacity: 1; transform: scale(1);}
+}
+@keyframes fade-opac {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fade-opac-slow {
+    0%   { opacity: 0; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fromTop {
+    0% { top: -500px; }
+    20% { top: -500px; }
+    100% { top: 0px; }
+}
+#top-video {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: brightness(0.5);
+}
+.hidden, .hidden-r, .hidden-l, .hidden-jF, .hidden-jS, .hidden-o, .hidden-o2 { opacity: 0; }
+#map {
+    height: 700px;
+}
+  
+.fade-in-element { animation: fade-in 2s; }
+.fade-in-element-r { animation: fade-right 2s; }
+.fade-in-element-l { animation: fade-left 2s; }
+.jump-in-element-f { animation: jump-in-f 2s; }
+.jump-in-element-s { animation: jump-in-s 4s; }
+.opac { animation: fade-opac 3s; }
+.opac2 { animation: fade-opac-slow 4s; }
+.comeDown {
+    position: relative;
+    animation: 2.5s fromTop forwards;
+    z-index: 1;
+}
+html {
+    scroll-behavior: smooth;
+}
+.icon {
+    
+}
+body::-webkit-scrollbar { display: none; }
+body {
+    background: linear-gradient(180deg, white, #ecf4f4, white);
+    color: #222222;
+    font-family: "MuliLight";
+    letter-spacing: -1.15px;
+    -ms-overflow-style: none;
+    height: 100%;
+}
+@font-face {
+    font-family: "MuliLight";
+    src: url("fonts/Light.ttf");
+}
+h1, h2, h3, h4, h5 {
+    font-family: "MuliNormal";
+}
+@font-face {
+    font-family: "MuliNormal";
+    src: url("fonts/Normal.ttf");
+}
+
+ul > li > a.nav-link {
+    color: #222222;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transition: 1s ease;
+}
+ul > li > a.nav-link:hover {
+    color: #222222;
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    transition: 1s ease;
+}
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lax-bg1 {
+    background-image: url("img/Comet1D.jpg");
+    background-color: black;
+    height: 92vh;
+}
+.container-fluid {
+    padding: 0
+}
+@media screen and (max-width: 768px) {
+    .parallax {
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 800px;
+    }
+    .cover-full { height: 800px; }
+    .cover-tall { height: 700px; }
+        .col-md-6, .col-md-5, .col-md-7 {
+        padding: 20px;
+    }
+    .container-fluid {
+        padding: 20px;
+    }
+}
+.spacer { margin-top: 15px; margin-bottom: 15px; }
+.spacer-xl { margin-top: 100px; margin-bottom: 100px; }
+.spacer-lg { margin-top: 50px; margin-bottom: 50px; }
+.spacer-md { margin-top: 30px; margin-bottom: 30px; }
+.spacer-sm { margin-top: 10px; margin-bottom: 10px; }
+.center-pos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.center-posb {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.center-posc {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.a_learnmore {
+    padding: 12px 24px 18px 24px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    transition: 1s ease;
+}
+.a_learnmore:hover {
+    color: #ecf4f4;
+    background-color: #1d2121;
+    text-decoration: none;
+    transition: 1s ease;
+}
+/* AVATAR */
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.avatar {
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image responsive */
+.av-icon {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 4px solid #e2f1f6;
+  border-radius: 50px;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, #dafdfd3e, #000000cc); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  transition: 1s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 15px 10px;
+  text-align: center;
+  padding-top: 95px;
+  border-radius: 50px;
+  border-top: none;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.avatar:hover .overlay {
+  opacity: 1;
+}
+/* ------ */

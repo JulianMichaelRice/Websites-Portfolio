@@ -143,7 +143,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="carousel-bg1 parallax d-flex justify-content-center align-items-center">
-              <h4 class="text-center lit-text"><i>"Discovering our beauty inwards and emanating it outwards"</i></h4>
+              <h3 class="text-center lit-text"><i>"Discovering our beauty inwards and emanating it outwards"</i></h3>
             </div>
           </div>
           <div class="carousel-item">
@@ -155,7 +155,7 @@
           <div class="carousel-item">
             <div class="carousel-bg3 parallax d-flex justify-content-center align-items-center">
               <h3 class="text-center lit-text"><i>Blog of the Week</i></h3>
-              <a href="blog" class="quick quick60 lit-text" style="margin-top: -15px;">Watch Now</a>
+              <a href="blog" class="quick quick60 lit-text" style="margin-top: -15px;">Read Now</a>
             </div>
           </div>
           <div class="carousel-item">
@@ -166,7 +166,7 @@
                 <?php } else { ?>
                   Thank you for being a part of the Beauty Lounge</i></h3>
                 <?php } ?>
-              <a href="#register" class="quick quick60 lit-text" style="margin-top: -15px;">
+              <a href="beauty-lounge" class="quick quick60 lit-text" style="margin-top: -15px;">
                 <?php if (!isset($_SESSION['Username'])) { ?>
                   Sign Me Up!</i></h3>
                 <?php } else { ?>
@@ -200,32 +200,32 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="carousel-bg1 parallax d-flex justify-content-center align-items-center">
-              <h4 class="text-center lit-text container"><i>“I always felt like there were no women like me in my age group (fresh out of college) who’s primary focus right now was to get right within. NHerBeauty made me feel like I was welcomed into an exclusive group of young women exactly like me”</i></h4>
+              <h3 class="text-center lit-text container"><i>“I always felt like there were no women like me in my age group (fresh out of college) who’s primary focus right now was to get right within. NHerBeauty made me feel like I was welcomed into an exclusive group of young women exactly like me”</i><br>- Dana H.</h3>
             </div>
           </div>
           <div class="carousel-item">
             <div class="carousel-bg1 parallax d-flex justify-content-center align-items-center">
-              <h4 class="text-center lit-text container"><i>“I love being apart of the Beauty Lounge. Nyah is the most down to earth person and really makes you feel like your journey is her journey as well.”</i></h4>
+              <h3 class="text-center lit-text container"><i>“I love being apart of the Beauty Lounge. Nyah is the most down to earth person and really makes you feel like your journey is her journey as well.”</i><br>- Leandra G.</h3>
             </div>
           </div>
           <div class="carousel-item">
             <div class="carousel-bg1 parallax d-flex justify-content-center align-items-center">
-              <p class="text-center lit-text container italian"><i>“Such a real brand, addressing real topics. Even the topics that are commonly avoided.”</i></p>
+              <h3 class="text-center lit-text container italian"><i>“Such a real brand, addressing real topics. Even the topics that are commonly avoided.”</i><br>- Anonymous</h3>
             </div>
           </div>
           <div class="carousel-item">
             <div class="carousel-bg1 parallax d-flex justify-content-center align-items-center">
-              <h4 class="text-center lit-text container"><i>“The Beauty Lounge gave me sisters I never had. We’ll be in there laughing one minute then crying the next. To be in a room where the respect for one another is mutual and our goals are similar is such a breath of fresh air”</i></h4>
+              <h3 class="text-center lit-text container"><i>“The Beauty Lounge gave me sisters I never had. We’ll be in there laughing one minute then crying the next. To be in a room where the respect for one another is mutual and our goals are similar is such a breath of fresh air”</i><br>- Ciara P.</h3>
             </div>
           </div>
           <div class="carousel-item">
             <div class="carousel-bg1 parallax d-flex justify-content-center align-items-center">
-              <h4 class="text-center lit-text container"><i>“I look forward to my solo consultations with Nyah. It feels like a free flowing conversation, nothing is forced or comes off as inauthentic. My self awareness has increased and I actually enjoy doing the work needed to find my best self.”</i></h4>
+              <h3 class="text-center lit-text container"><i>“I look forward to my solo consultations with Nyah. It feels like a free flowing conversation, nothing is forced or comes off as inauthentic. My self awareness has increased and I actually enjoy doing the work needed to find my best self.”</i><br>- Anonymous</h3>
             </div>
           </div>
           <div class="carousel-item">
             <div class="carousel-bg1 parallax d-flex justify-content-center align-items-center">
-              <h4 class="text-center lit-text container"><i>“I wear my NHerBeauty shirts when I need a reminder of how amazing I am!”</i></h4>
+              <h3 class="text-center lit-text container"><i>“I wear my NHerBeauty shirts when I need a reminder of how amazing I am!”</i><br>- Ana S.</h3>
             </div>
           </div>
         </div>
