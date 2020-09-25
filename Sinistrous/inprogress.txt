@@ -1,0 +1,47 @@
+ <!-- Story -->
+      <!-- <div class="container-fluid bg1" style="height: 100vh; z-index: 0; position: relative">
+        <div class="bg1b" style="height: 100vh; z-index: 1; ">
+            <div class="d-flex justify-content-center align-content-center" style="height: 100%;">
+              <img src="img/test-b.png" width="auto" class="hidden-o" style="align-self: ce;" >
+            </div>
+      </div>
+      </div> -->
+      
+      <!-- Gameplay -->
+      <!-- <div class="container-fluid">
+        <h2>Gameplay</h2>
+        <div class="row">
+          <div class="col l6">
+            Test
+          </div>
+          <div class="col l6">
+            Test
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Screenshots -->
+      <!-- <div class="container-fluid">
+        <h2>Screenshots</h2>
+        <div class="row">
+          <div class="col l6">
+            Test
+          </div>
+          <div class="col l6">
+            Test
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Buy Now -->
+      <!-- <div class="container-fluid">
+        <h2>Buy Now</h2>
+        <div class="row">
+          <div class="col l6">
+            Test
+          </div>
+          <div class="col l6">
+            Test
+          </div>
+        </div>
+      </div> -->
