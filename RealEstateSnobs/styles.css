@@ -58,12 +58,30 @@ ul > li > a {
     /* transform: scale(1); */
 }
 ul > li > a:hover {
-    color: #CCA853;
+    color: #e6c16b;
     transition: 1s ease;
     /* transform: scale(1.05); */
 }
 .nav-link {
     padding: 6px 12px;
+}
+.nav-link-s {
+    padding: 5px 10px;
+}
+.contain {
+    color: white;
+    background-color:#5a5a5a;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: 0.2s ease;
+    transform: scale(1);
+}
+.contain:hover {
+    color: white;
+    background-color:#7c766d;
+    transition: 0.2s ease;
+    transform: scale(1.05);
 }
 .top-link {
     border-top: 1px solid transparent;
@@ -71,21 +89,40 @@ ul > li > a:hover {
     transition: 1s ease;
 }
 .top-link:hover {
-    border-top: 1px solid #CCA853;
-    border-bottom: 1px solid #CCA853;
+    border-top: 1px solid #e6c16b;
+    border-bottom: 1px solid #e6c16b;
+    transition: 1s ease;
+}
+.top-link-active {
+    color: #e6c16b;
+    border-top: 1px solid #e6c16b;
+    border-bottom: 1px solid #e6c16b;
+    transition: 1s ease;
+}
+.zoom {
+    transform: scale(1);
+    transition: 1s ease;
+}
+.zoom:hover {
+    transform: scale(1.05);
     transition: 1s ease;
 }
 .spacer-s { margin-top: 10px; margin-bottom: 10px; }
 .spacer { margin-top: 25px; margin-bottom: 25px; }
 .spacer-m { margin-top: 40px; margin-bottom: 40px; }
 .spacer-l { margin-top: 50px; margin-bottom: 50px; }
+.spacer-l-t { margin-top: 100px; }
 .v-center-container {
     position: relative;
     height: 100vh;
 }
 h5, h2 {
-    color: #CCA853;
+    color: #e6c16b;
 }
+.bronze { color: #bb994f; }
+.platinum { color: #f0ffff; }
+.gold2 {color: #fcd477; }
+.gold { color: #e6c16b; }
 .v-center {
     margin: 0;
     position: absolute;
