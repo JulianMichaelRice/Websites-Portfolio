@@ -99,6 +99,16 @@ ul > li > a:hover {
     border-bottom: 1px solid #e6c16b;
     transition: 1s ease;
 }
+.link {
+    color: white;
+    text-decoration: none;
+    transition: 1s ease;
+}
+.link:hover {
+    color: #e6c16b;
+    text-decoration: none;
+    transition: 1s ease;
+}
 .zoom {
     transform: scale(1);
     transition: 1s ease;
@@ -107,10 +117,12 @@ ul > li > a:hover {
     transform: scale(1.05);
     transition: 1s ease;
 }
+.neg-spacer-t { margin-top: -200px; }
 .spacer-s { margin-top: 10px; margin-bottom: 10px; }
 .spacer { margin-top: 25px; margin-bottom: 25px; }
 .spacer-m { margin-top: 40px; margin-bottom: 40px; }
 .spacer-l { margin-top: 50px; margin-bottom: 50px; }
+.spacer-xl { margin-top: 100px; margin-bottom:100px; }
 .spacer-l-t { margin-top: 100px; }
 .v-center-container {
     position: relative;
