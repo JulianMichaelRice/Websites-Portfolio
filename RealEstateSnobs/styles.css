@@ -42,6 +42,9 @@
     animation: 2.5s fromTop forwards;
     z-index: 1;
 }
+p, ul > li > a, a {
+    font-size: 26px;
+}
 
 body::-webkit-scrollbar { display: none; }
 body {
