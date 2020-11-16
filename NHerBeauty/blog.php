@@ -140,20 +140,21 @@
       <div class="row">
         <div class="col-md-4 col-12 hidden-l hoverer" onmouseover="priority(0,'on');" onmouseout="priority(0,'off')" style="padding: 0;">
           <div class="blog blog-wallpaper-1 cover-mid" style="padding: 30px;">
-            <h5 class="text-center">Blog Post 1</h5>
+            <h5 class="text-center">Divine Direction</h5>
             <div class="text-center">
-              <a href="" data-toggle="modal" data-target="#blogPost1" class="btn quickhalf display-center" target="_blank">Read More</a>
+              <a href="https://nherbeauty.blogspot.com/2020/10/i-think-this-is-my-hidden-season-what.html" class="btn quickhalf display-center" target="_blank">Read More</a>
             </div>
           </div>
         </div>
-        <!-- <div class="col-md-4 col-12 hidden hoverer" onmouseover="priority(1,'on');" onmouseout="priority(1,'off')" style="padding: 0;">
+        <div class="col-md-4 col-12 hidden hoverer" onmouseover="priority(1,'on');" onmouseout="priority(1,'off')" style="padding: 0;">
           <div class="blog blog-wallpaper-2 cover-mid" style="padding: 30px;">
-            <h5 class="text-center">Blog Post 2</h5>
+            <h5 class="text-center">'I Am Proud of You' All That I Am</h5>
             <div class="text-center">
-              <a href="" class="btn quickhalf display-center" target="_blank">Read More</a>
+              <a href="https://nherbeauty.blogspot.com/2020/10/i-am-proud-of-you-all-that-i-am-1.html" class="btn quickhalf display-center" target="_blank">Read More</a>
             </div>
           </div>
         </div>
+        <!--
         <div class="col-md-4 col-12 hidden-r hoverer" onmouseover="priority(2,'on');" onmouseout="priority(2,'off')" style="padding: 0;">
           <div class="blog blog-wallpaper-3 cover-mid" style="padding: 30px;">
             <h5 class="text-center">Blog Post 3</h5>
