@@ -68,17 +68,23 @@ h1, h2, h3, h4, h5 {
     font-weight: 100;
     letter-spacing: -0.75px;
 }
-ul > li > a.nav-link {
+ul > li > a.nav-link, a.list-group-item {
     color: white;
     font-weight: 100;
     letter-spacing: 1.5px;
     transition: 0.25s ease;
+    text-decoration: none;
 }
-ul > li > a.nav-link:hover {
+ul > li > a.nav-link:hover, a.list-group-item:hover {
     color: rgb(61, 208, 61);
     font-weight: 100;
     letter-spacing: 1.5px;    
     transition: 0.25s ease;
+    text-decoration: none;
+}
+.list-group, .list-group-item {
+    background-color: black;
+    color: white;
 }
 @media only screen and (max-width: 600px) {
     .dynamicFont {
@@ -96,6 +102,8 @@ ul > li > a.nav-link:hover {
     }
 }
 .carousel-item {
-    text-align: center;
-    
+    text-align: center;   
+}
+a.sub {
+    color: grey;
 }

@@ -13,7 +13,7 @@
   <body>
     <div class="container-fluid">
       <div class="row align-items-center">
-        <div class="col-md-9 col-sm-12">
+        <div class="col-md-9 d-none d-sm-block">
           <!-- Photos are here -->
           <div id="indicator" class="carousel slide" data-ride="carousel">
             <!-- Carousel Icons (at the bottom) -->
@@ -54,11 +54,21 @@
             </div>
 
             <!-- Navigation -->
-            <li class="nav-item grow"><a class="nav-link dynamicFont" href="index.html">HOME</a></li>
-            <li class="nav-item grow"><a class="nav-link dynamicFont" href="about.html">ABOUT</a></li>
-            <li class="nav-item grow"><a class="nav-link dynamicFont" href="gallery.html">GALLERY</a></li>
-            <li class="nav-item grow"><a class="nav-link dynamicFont" href="contact.html">CONTACT</a></li>
-            <li class="nav-item grow"><a class="nav-link dynamicFont" href="testimony.html">TESTIMONY</a></li>
+            <div id="main-menu" class="list-group">
+              <a href="#" class="list-group-item">HOME</a>
+              <a href="#sub-menu" class="list-group-item" data-toggle="collapse" data-parent="#main-menu">GALLERY<span class="caret"></span></a>
+              <div class="collapse list-group-level1" id="sub-menu">
+                  <a href="#" class="list-group-item sub" data-parent="#sub-menu">COMMERCIAL</a>
+                  <a href="#" class="list-group-item sub" data-parent="#sub-menu">RESIDENTIAL</a>
+                  <a href="#" class="list-group-item sub" data-parent="#sub-menu">EXECUTIVE SUITE</a>
+                  <a href="#" class="list-group-item sub" data-parent="#sub-menu">DUPLEX APARTMENT</a>
+                  <a href="#" class="list-group-item sub" data-parent="#sub-menu">HOSPITALITY</a>
+                  <a href="#" class="list-group-item sub" data-parent="#sub-menu">RETAIL</a>
+              </div>
+              <a href="#" class="list-group-item">ABOUT</a>
+              <a href="#" class="list-group-item">CONTACT</a>
+              <a href="#" class="list-group-item">TESTIMONY</a>
+            </div>
           </ul>
         </div>
       </div>
