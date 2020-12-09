@@ -92,7 +92,7 @@ ul > li > a.nav-link, a.list-group-item, a {
 }
 ul > li > a.nav-link:hover, a.list-group-item:hover, a:hover {
     /* color: rgb(61, 208, 61); */
-    color: rgb(225, 198, 23);
+    color: rgb(239, 179, 228);
     font-weight: 100;
     letter-spacing: 1.5px;    
     transition: 0.25s ease;
