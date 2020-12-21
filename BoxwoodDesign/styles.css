@@ -123,3 +123,7 @@ ul > li > a.nav-link:hover, a.list-group-item:hover, a:hover {
 a.sub {
     color: grey;
 }
+.gallery-wp {
+    height: 100vh; display:flex;
+    align-items:center; overflow: hidden; position: relative;
+}
