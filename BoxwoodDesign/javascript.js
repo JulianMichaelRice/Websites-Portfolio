@@ -90,6 +90,7 @@
 // ToDo: Refactor after the deadline lol
 function activateQuote(quote) {
     setTimeout(function() {
+        // quote = quote.toUpperCase();
         $("#leftQuote").removeClass('fade-out-element');
         $("#leftQuote").html(quote);
         var classList = $('#leftQuote').attr('class').split(/\s+/);

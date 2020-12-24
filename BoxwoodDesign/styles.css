@@ -90,16 +90,17 @@ h1, h2, h3, h4, h5 {
 .left-mid {
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 32%;
     z-index: 100;
-    width: 50%;
+    width: 23%;
     text-align: center;
     padding: 15px;
-    background-color: black;
+    /* background-color: black; */
 }
 #leftQuote {
-    box-shadow: 4px 4px rgba(75, 75, 75, 0.3);
-    font-size: 24px;
+    /* box-shadow: 4px 4px rgba(75, 75, 75, 0.3); */
+    font-weight: 300;
+    font-size: 32px;
 }
 ul > li > a.nav-link, a.list-group-item, a {
     color: white;
