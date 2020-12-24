@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5 {
 #leftQuote {
     /* box-shadow: 4px 4px rgba(75, 75, 75, 0.3); */
     font-weight: 300;
-    font-size: 32px;
+    font-size: 28px;
 }
 ul > li > a.nav-link, a.list-group-item, a {
     color: white;
