@@ -1,6 +1,9 @@
 @keyframes fade-in {
     from {opacity: 0; transform: translateY(150px);}
     to {opacity: 1; transform: translateY(0);} }
+@keyframes fade-out {
+    from {opacity: 1; transform: translateY(0px);}
+    to {opacity: 0; transform: translateY(0);} }
 @keyframes fade-right {
     from {opacity: 0; transform: translateX(1000px);}
     to {opacity: 1; transform: translateX(0);} }
@@ -29,12 +32,13 @@
     20% { top: -500px; }
     100% { top: 0px; }
 }
-.hidden, .hidden-r, .hidden-l, .hidden-jF, .hidden-jS, .hidden-o, .hidden-o2 { opacity: 0; }
+.hidden, .hidden-r, .hidden-l, .hidden-jF, .hidden-jS, .hidden-o, .hidden-o2, .hidden-fadeOut { opacity: 0; }
 .fade-in-element { animation: fade-in 2s; }
+.fade-out-element { animation: fade-out 2s; }
 .fade-in-element-r { animation: fade-right 2s; }
 .fade-in-element-l { animation: fade-left 2s; }
 .jump-in-element-f { animation: jump-in-f 2s; }
-.jump-in-element-s { animation: jump-in-s 4s; }
+.jump-in-element-s { animation: jump-in-s 2s; }
 .opac { animation: fade-opac 3s; }
 .opac2 { animation: fade-opac-slow 4s; }
 .comeDown {
@@ -82,6 +86,20 @@ body {
 h1, h2, h3, h4, h5 {
     font-weight: 100;
     letter-spacing: -0.45px;
+}
+.left-mid {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 100;
+    width: 50%;
+    text-align: center;
+    padding: 15px;
+    background-color: black;
+}
+#leftQuote {
+    box-shadow: 4px 4px rgba(75, 75, 75, 0.3);
+    font-size: 24px;
 }
 ul > li > a.nav-link, a.list-group-item, a {
     color: white;

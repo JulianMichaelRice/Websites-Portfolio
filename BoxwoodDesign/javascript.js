@@ -86,3 +86,36 @@
     init();
     checkPosition();
 })();
+
+// ToDo: Refactor after the deadline lol
+function activateQuote(quote) {
+    setTimeout(function() {
+        $("#leftQuote").removeClass('fade-out-element');
+        $("#leftQuote").html(quote);
+        var classList = $('#leftQuote').attr('class').split(/\s+/);
+        $.each(classList, function(index, item) {
+            if (item === 'hidden-jS') {
+                $("#leftQuote").removeClass('hidden-jS');
+                $("#leftQuote").addClass('jump-in-element-s');
+            }
+            if (item === 'jump-in-element-s') {
+                $("#leftQuote").removeClass('jump-in-element-s');
+                $("#leftQuote").addClass('hidden-jS');
+            }
+        });
+        setTimeout(function() {
+            var classList = $('#leftQuote').attr('class').split(/\s+/);
+            $.each(classList, function(index, item) {
+                if (item === 'hidden-jS') {
+                    $("#leftQuote").removeClass('hidden-jS');
+                    $("#leftQuote").addClass('jump-in-element-s');
+                }
+                if (item === 'jump-in-element-s') {
+                    $("#leftQuote").removeClass('jump-in-element-s');
+                    $("#leftQuote").addClass('fade-out-element');
+                    setTimeout(function() { $("#leftQuote").addClass('hidden-jS'); $("#leftQuote").removeClass('fade-out-element'); }, 1000)
+                }
+            });
+        }, 4000)
+    }, 200)
+}
