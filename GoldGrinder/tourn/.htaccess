@@ -1,0 +1,3 @@
+<IfModule output.xml>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>

@@ -1,0 +1,4329 @@
+<data>
+  <Jackpots>
+    <Jackpot>
+      <Name>Gokibusagi</Name>
+      <Current-Point>0.0</Current-Point>
+    </Jackpot>
+    <Jackpot>
+      <Name>Neconu</Name>
+      <Current-Point>60.0</Current-Point>
+    </Jackpot>
+    <Jackpot>
+      <Name>Scipulor</Name>
+      <Current-Point>744.0</Current-Point>
+    </Jackpot>
+    <Jackpot>
+      <Name>Combibo-Berycled</Name>
+      <Current-Point>762.0</Current-Point>
+    </Jackpot>
+    <Jackpot>
+      <Name>General</Name>
+      <Current-Point>1741.5</Current-Point>
+    </Jackpot>
+    <Jackpot>
+      <Name>Atrox</Name>
+      <Current-Point>2008.0</Current-Point>
+    </Jackpot>
+  </Jackpots>
+  <Players>
+    <Player>
+      <Name>#2021 - IV</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>9.0</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>400</Experience-Point>
+    </Player>
+    <Player>
+      <Name>***FOSS4200***</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>-Saphire of Dark-</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>ALEXEY SYgYZ ERMILOV</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Abomb Abomb ThePeoplesChamp</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>15.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>1000</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Ace Lucky Dude</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Ade Baha0x Ade</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Adi Biliwen Wen</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>24.5</Base-Point>
+      <Karma-Point>7.0</Karma-Point>
+      <Experience-Point>1125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Adjusted DrPaddo Getast</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Affe Aframo Mr Afroman</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>111.5</Base-Point>
+      <Karma-Point>32.0</Karma-Point>
+      <Experience-Point>10875</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Akon TrusT Konvicted</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>425</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Akura Vhyre Asmodaeus</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Aleksiane Mrs-Zap Greadon</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Alex Andrea White</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>4.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Alex Grafu Rowe</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Alexa Anaitis Landstrom</Name>
+      <Total-Won>2</Total-Won>
+      <Base-Point>1291.0</Base-Point>
+      <Karma-Point>7.0</Karma-Point>
+      <Experience-Point>1425</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Alexander Buck Wyld</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>1.5</Karma-Point>
+      <Experience-Point>175</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Alexander Seven Seven</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Alexis AlexW W3i</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>1.5</Karma-Point>
+      <Experience-Point>200</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Amalie Iz Eternal</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Amanda Modified T-X</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Amaury NamoKiller Puma</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Amelia Millie Ambrosine</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Amen Cool Breeze Blackheart</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Anders Andzoy Malmros</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>9.0</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Andre Hofi Hofstetter</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Andreas Andy Gamble</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>14.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>2050</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Andreas xxXBurzumXxx Brandt</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Andrew agalvayne Galvayne</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>475</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Andy Darknimert Potter</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Anthony Malcom Denton</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>45.5</Base-Point>
+      <Karma-Point>13.0</Karma-Point>
+      <Experience-Point>6925</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Apollos Abadon TheAssyrian</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Aqua Frost Star</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>28.0</Base-Point>
+      <Karma-Point>8.0</Karma-Point>
+      <Experience-Point>2700</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Araina Loki Chang</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>8.0</Base-Point>
+      <Karma-Point>2.5</Karma-Point>
+      <Experience-Point>300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Arathorn XX Dugesclin</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Arckaf Arckaf One</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Arnold abv Rimmer</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Arven Arven Smith</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>1375</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Aryanna Arja Skogh</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Askellard Aske Hallard</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>20.5</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>2375</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Astinius Ashy Gorbarrin</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>28.0</Base-Point>
+      <Karma-Point>8.0</Karma-Point>
+      <Experience-Point>3200</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Atrox Atrox Killer</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>13.5</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>1025</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Autistical TherryTard Creature</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Avaloonix Ava Hendrix</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>425</Experience-Point>
+    </Player>
+    <Player>
+      <Name>AxelRod Trample Gunnarson</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>21.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>950</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Bad Girl PlayBoy</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Baelrahyn Bael Riverwind</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>178.5</Base-Point>
+      <Karma-Point>51.0</Karma-Point>
+      <Experience-Point>13775</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Bafegox Assault Dragontear</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>2725</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Balam heals Graff</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Balder Viking Vikingsson</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>1725</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Balint Bleib Papp</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Baradhuhr Baradhuhr Berendt</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Baxter Bugsy Ewing</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Ben Rumsponge Rumson</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Bendorian Aedonisz Persgilyan</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>51.0</Base-Point>
+      <Karma-Point>17.0</Karma-Point>
+      <Experience-Point>3750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Benevolent 3J Afterdark</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Biatch Von Focker</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Biggus wookie Wookus</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Billy Blu Horse</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Bjorn Daniel Danielsson</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Blade Blade Daywalker</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>14.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>1150</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Blixt Flash Gordon</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>1.5</Karma-Point>
+      <Experience-Point>200</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Bob C3rberu5 Smith</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Bob beechbum da'mon</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Boo Boooya ya</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Boo Who You</Name>
+      <Total-Won>2</Total-Won>
+      <Base-Point>2327.5</Base-Point>
+      <Karma-Point>118.0</Karma-Point>
+      <Experience-Point>24100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Book Dad LBB</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.5</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>225</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Boriss Borius BG</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>96.0</Base-Point>
+      <Karma-Point>32.0</Karma-Point>
+      <Experience-Point>7400</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Borken Iron Cannibal</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>21.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>950</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Bowdownagain OneTRUEking Beforehim</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>925</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Brastem Sendaran Funkaros</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>21.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>2450</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Bregi Ardorj-Njarr Fnorj Fjark</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Bubba Silverbackwolf Jones</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Bubba Slicker Crowley</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Budo Munchies Chophop</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>B&#195;&#182;sHunterZ</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>4.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>CZ Jane CZ</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>9.0</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>400</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Caldonicus Fade Lore</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>775</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Captain Jack Daniels</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>87.5</Base-Point>
+      <Karma-Point>25.0</Karma-Point>
+      <Experience-Point>7425</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Carrier CarrierZero Zero</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Chantra TheProfit Moneymaker</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>14.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>550</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Cheese Jay Smooth</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>24.5</Base-Point>
+      <Karma-Point>7.0</Karma-Point>
+      <Experience-Point>2425</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Chellinni Tr3i Fumuri</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>12.5</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>2525</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Chloe Cashmere Noire</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Chris Falcon Braveheart</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Chris Ferial Book</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>2275</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Chris Lonewolf NS</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Christian Dker Simonsen</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>21.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>950</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Christopher Meshfire Jones</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>725</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Clear Midnight Sky</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>45.5</Base-Point>
+      <Karma-Point>13.0</Karma-Point>
+      <Experience-Point>6425</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Cognitive Bas Dissident</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>475</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Col Crazy B Wells</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Coleridge Cole Milton</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>14.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>2100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Conquistador Conq45 45</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>109.5</Base-Point>
+      <Karma-Point>32.0</Karma-Point>
+      <Experience-Point>8875</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Cosmo Kram3r Kramer</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>31.0</Base-Point>
+      <Karma-Point>9.0</Karma-Point>
+      <Experience-Point>3300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Count Sinner Gism</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>925</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Covid Christmas HoF 2020</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Crazy Madmax Hellraizer</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>12.5</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>975</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Crazy RatCat Beast</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>1800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Crikey!</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Crni AlexSandi Labod</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>34.0</Base-Point>
+      <Karma-Point>9.5</Karma-Point>
+      <Experience-Point>2900</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Crow DaCrow Moi</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Dan XDandunnX Dunn</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>14.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>2550</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Daniel Predator Skelland</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>139.5</Base-Point>
+      <Karma-Point>40.0</Karma-Point>
+      <Experience-Point>16125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Daniel Taoseeker Steps</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Dante Artorius Inferno</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Dave from Accounting</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>1975</Experience-Point>
+    </Player>
+    <Player>
+      <Name>David Highmoon Winterhearth</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>122.0</Base-Point>
+      <Karma-Point>40.5</Karma-Point>
+      <Experience-Point>9200</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Deathstalker Atrox Killer Juggernaut</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>55.0</Base-Point>
+      <Karma-Point>16.0</Karma-Point>
+      <Experience-Point>5900</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Deceased DeadeX Hidour</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Denis Deniss Sustak</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>2250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Desperate Stoners team</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Deux Pelleman Ex</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>15.5</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>525</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Devon Deeveon Knight</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Dino IComeForMoney Taleb</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>1.5</Karma-Point>
+      <Experience-Point>150</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Dix Trencherman Handley</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Dizzy Mentos Mepu</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Doncent green Greenlife</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Dr GreeNThumB ChiLLiBiLL</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Dragon DSR Sador</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Dryjar Sotar Smith</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Duchess Of Duke</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>33.0</Base-Point>
+      <Karma-Point>9.0</Karma-Point>
+      <Experience-Point>2850</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Dunfjall TheNaughtyViking Thorbrands</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Dutch Blood Inside</Name>
+      <Total-Won>1</Total-Won>
+      <Base-Point>16.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>225</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Eck uHh Straat</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Ekkvarr rach sergei</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Elle eSoul Beast</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>38.5</Base-Point>
+      <Karma-Point>11.0</Karma-Point>
+      <Experience-Point>2075</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Elora Elora valentine</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Empress Em Sword</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>12.5</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>975</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Eoden Asmodeus Rydar</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>21.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>1950</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Erhan Essex Gokensel</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>22.0</Base-Point>
+      <Karma-Point>5.5</Karma-Point>
+      <Experience-Point>700</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Eric Anubis Missche</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>1.5</Karma-Point>
+      <Experience-Point>200</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Estere Stels Wowa</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>59.5</Base-Point>
+      <Karma-Point>17.0</Karma-Point>
+      <Experience-Point>6175</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Eterrnal JustFineAzIz SkyPharaoh</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Evade Inc.</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>15.0</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>1200</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Ezio Nofasad Spacedone</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>4.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>FIRST Panpetoianer Wind</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Fabio DEFENDER White</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>1250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Fanan Head Shot</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.5</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>1725</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Fatfox Majwor Karlsson</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Felangur FEEL Wish</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Ferenc hfec Hoppal</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Fire Firemaiden Starter</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>9.0</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>400</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Fisk TheDead Fiskus</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Forgorth Forgo Lundain</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>157.5</Base-Point>
+      <Karma-Point>45.0</Karma-Point>
+      <Experience-Point>10575</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Forrian Thunderstruck Tenjin</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>1.5</Karma-Point>
+      <Experience-Point>200</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Frank Iceman Springstead</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Franky Franky Baumann</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Franz The safe Jaeger</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Franz xxx Futerman</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Freddie Twilight Twilight</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Funky eax rockstaR</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>2275</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Gabi Gaby Girly</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>4.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Gabriel Zeus Nostradamus</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>5.5</Base-Point>
+      <Karma-Point>1.5</Karma-Point>
+      <Experience-Point>675</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Gary Massa Speed</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Gavin JAX Jackson</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>5.5</Base-Point>
+      <Karma-Point>1.5</Karma-Point>
+      <Experience-Point>175</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Gechka Gechka Gencinis</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>24.5</Base-Point>
+      <Karma-Point>7.0</Karma-Point>
+      <Experience-Point>2475</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Gemini Gem Heart</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>14.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>550</Experience-Point>
+    </Player>
+    <Player>
+      <Name>George Hitman Gargano</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>37.5</Base-Point>
+      <Karma-Point>11.0</Karma-Point>
+      <Experience-Point>3025</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Gibborim Gibby Avatar</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Goldbaron Goldbaron357 Maximus</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>12.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>1000</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Goose Mad Hunter</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Gorik Spud Vego</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>200</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Graden Switch Foss</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>21.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>4350</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Grale Gurra Pilsner</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Granny Rowan Render</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>2250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Gredrrik Alhakekhist Malgar</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>59.5</Base-Point>
+      <Karma-Point>17.0</Karma-Point>
+      <Experience-Point>4175</Experience-Point>
+    </Player>
+    <Player>
+      <Name>GreeNThumB &amp; zee</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>1775</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Green toker 1987</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Gregorie Grengoshi trester</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Griffindor Shadow Oldlander</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Grom Widowmaker Hellscream</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>24.5</Base-Point>
+      <Karma-Point>7.0</Karma-Point>
+      <Experience-Point>2575</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Gun KimBoom Kim</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>154.0</Base-Point>
+      <Karma-Point>44.0</Karma-Point>
+      <Experience-Point>11200</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Gunch GunchLV LV</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Gustav Tempus Hellbourne</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Gyorgy Mukac Makka</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Hadlen Immortal Deity</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Hank mchammer Hammer</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>24.5</Base-Point>
+      <Karma-Point>7.0</Karma-Point>
+      <Experience-Point>2975</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Harry Hoob Hoobler</Name>
+      <Total-Won>1</Total-Won>
+      <Base-Point>99.0</Base-Point>
+      <Karma-Point>29.0</Karma-Point>
+      <Experience-Point>5750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Hayaksi Miki Su</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Heaven Amanda-Ra Angel</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>9.0</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>350</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Helen Quant Winterwolf</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Helene Helena Fra</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>227.5</Base-Point>
+      <Karma-Point>65.0</Karma-Point>
+      <Experience-Point>13275</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Helios Hunter Merodach</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>HellSpawn HellSpawn Satans</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>31.5</Base-Point>
+      <Karma-Point>9.0</Karma-Point>
+      <Experience-Point>3425</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Henry BabyOxide Ha</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Hexos Taifoon Saigan</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>21.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>2450</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Highmoon &amp; Bella</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>200</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Highmoon &amp; Bella Love Atrox</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>9.0</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>400</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Hiro Case Henderson</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Hitman and Co.</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>13.5</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>1075</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Hitman's Crew</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>975</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Howard Nkil Lee</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>116.0</Base-Point>
+      <Karma-Point>34.0</Karma-Point>
+      <Experience-Point>8500</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Hunter Greyford Page</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Iam AlfaOmega WinterWolf</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>In Lootius We Trust....</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>9.0</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>400</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Inguts Sokolade Spurz</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>42.0</Base-Point>
+      <Karma-Point>12.0</Karma-Point>
+      <Experience-Point>3800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Iris Ice Thorn</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>18.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Iron Deuce Storm</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>18.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Isabella Isabella Sweetgirl</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>2775</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Isfin Failivrin Meleth</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>4.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Ivan SaintP Bespredeloff</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Jabez JAG Groove</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>56.0</Base-Point>
+      <Karma-Point>16.0</Karma-Point>
+      <Experience-Point>4550</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Jack Wuzi Daniels</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.5</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>225</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Jack mansky Mansky</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>87.5</Base-Point>
+      <Karma-Point>27.0</Karma-Point>
+      <Experience-Point>5825</Experience-Point>
+    </Player>
+    <Player>
+      <Name>James Francis Cameron</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>James Jim O'Neill</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>James Jimbo Gumb</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>2225</Experience-Point>
+    </Player>
+    <Player>
+      <Name>James phatal Error</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Jamppa jamppa16 spurgu</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Jan van Darra</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>375</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Janek tux74 Armulik</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Janice Bernehli Joppppline</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.0</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>900</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Janne Eman emanuelsson</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>2275</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Jar Jasis Sismondi</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>24.0</Base-Point>
+      <Karma-Point>7.0</Karma-Point>
+      <Experience-Point>1000</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Jarkko DJjake Korhonen</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Jason Angellic Rage</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>38.5</Base-Point>
+      <Karma-Point>11.0</Karma-Point>
+      <Experience-Point>2675</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Jay VeNgeNce Spitzel</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>35.0</Base-Point>
+      <Karma-Point>10.0</Karma-Point>
+      <Experience-Point>2450</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Jayce Jaymp Emphy</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Jeff ieme Hood</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>4.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Jeppe lillfya falk</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Jinixinne Jinx Jingo</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Jo Aloisius Smith</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>1750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Jock JB Bond</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>25.0</Base-Point>
+      <Karma-Point>7.5</Karma-Point>
+      <Experience-Point>2550</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Joda Krown Sanford</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>425</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Johan Kris Zatorski</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>John Black Knight</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>1.5</Karma-Point>
+      <Experience-Point>200</Experience-Point>
+    </Player>
+    <Player>
+      <Name>John Erastothenes Bluetail</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>4.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>John Maverick Castle</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>24.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>825</Experience-Point>
+    </Player>
+    <Player>
+      <Name>John Pliskin Brown</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>1.5</Karma-Point>
+      <Experience-Point>200</Experience-Point>
+    </Player>
+    <Player>
+      <Name>John SonicHero1 Wick</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>30.0</Base-Point>
+      <Karma-Point>8.5</Karma-Point>
+      <Experience-Point>3250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>John TheHitcher Ryder</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>238.0</Base-Point>
+      <Karma-Point>67.0</Karma-Point>
+      <Experience-Point>16625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>John chaoz Anderson</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>38.5</Base-Point>
+      <Karma-Point>11.0</Karma-Point>
+      <Experience-Point>2725</Experience-Point>
+    </Player>
+    <Player>
+      <Name>John n1ghtmare1 Ridinger</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>2275</Experience-Point>
+    </Player>
+    <Player>
+      <Name>John qwerty White</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Johnathan JC Constantine</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>11.0</Base-Point>
+      <Karma-Point>3.5</Karma-Point>
+      <Experience-Point>350</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Johnny MacOway Renian</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Jojo Genlyk Jones</Name>
+      <Total-Won>2</Total-Won>
+      <Base-Point>4050.5</Base-Point>
+      <Karma-Point>184.0</Karma-Point>
+      <Experience-Point>36925</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Jon Mike Michaels</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Jon excutioner Cox</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>30.0</Base-Point>
+      <Karma-Point>7.5</Karma-Point>
+      <Experience-Point>2475</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Jonny Jet Rockett</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Jordan Arkon Fultz</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>168.0</Base-Point>
+      <Karma-Point>48.0</Karma-Point>
+      <Experience-Point>9750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Jorgen LightStar Eriksson</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Juizzy Skittles Chesterfield</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>JuliaMary Ju Mary</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Juljka Saya Vukolova</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Kahlan Kahlan Rahl</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Kaiser Kaiser Soze</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>49.5</Base-Point>
+      <Karma-Point>16.0</Karma-Point>
+      <Experience-Point>4025</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Kara RavenJade SummerWind</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>243.5</Base-Point>
+      <Karma-Point>69.5</Karma-Point>
+      <Experience-Point>13075</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Kasha Kasha Cymraeg</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>14.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>2100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Katie Katy Chalmers</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Kava Rory Lan</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>31.5</Base-Point>
+      <Karma-Point>9.0</Karma-Point>
+      <Experience-Point>3325</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Kayla Mystique Sinclair</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>725</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Kenpachi SilentCrow BlackFalcon</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>31.5</Base-Point>
+      <Karma-Point>9.0</Karma-Point>
+      <Experience-Point>1425</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Killarious K-Max Maximillion</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>59.5</Base-Point>
+      <Karma-Point>17.0</Karma-Point>
+      <Experience-Point>4075</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Kitana Desto Mudock</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Koli Moribund Blockhead</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Kolor kolorwody Wody</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Komeiv Gigante Iner</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>24.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>775</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Kuchiki Byakuya Sama</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Kygon shr00m Infraction</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.0</Base-Point>
+      <Karma-Point>2.5</Karma-Point>
+      <Experience-Point>325</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Kyleran Crystal Golem Tower</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Kyron Kyron Mister</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>LIGHTNING KING IRON HAMMER</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>2325</Experience-Point>
+    </Player>
+    <Player>
+      <Name>La Zasha dB</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>LaShawn Lavinian McGhee</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>12.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>1000</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Lady Anna Bulu89</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>41.0</Base-Point>
+      <Karma-Point>13.0</Karma-Point>
+      <Experience-Point>4300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Lady Mysteria Nevrqwit</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Laimonas Hacking Naradauskas</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>675</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Lamia Majora Pechunter</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>1800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Lars Mr Lars Sebra</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>1.5</Karma-Point>
+      <Experience-Point>200</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Le nez qui trompette plus</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Leana Del De Lugana</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>9.0</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>350</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Leavara Lea Silberstern</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>9.0</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>400</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Leir'hy Leon Ension</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Lemmy Rocker Dickinson</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Lena&amp;First</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Leshrac Holynight Brevin</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>3175</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Level 1eve1 Up</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Lilu Dallas Nikolaevna</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Linda LML Larsen</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Linda Lin Washington</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Linus Zip Lindstr&#195;&#182;m</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>475</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Lizeth Kenzi Carrizo</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>4.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Logan Runner Grey</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.0</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>1900</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Lone Eagle Hawk</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Looser and Sara</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Lootius....Hear Our Prayers...</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>9.0</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>400</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Lord Loki Romeo156</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>9.0</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>350</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Lord Tormund Ulrich</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>35.0</Base-Point>
+      <Karma-Point>10.0</Karma-Point>
+      <Experience-Point>5400</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Loren Lorry Potter</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>63.0</Base-Point>
+      <Karma-Point>18.0</Karma-Point>
+      <Experience-Point>6700</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Lucho MUCHO Ireton</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Lucky Sky Vodka</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Lukas 4ealien Czech Rep</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>21.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>3400</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Luri UncleMo Nightshade</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>134.5</Base-Point>
+      <Karma-Point>38.5</Karma-Point>
+      <Experience-Point>9625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>MARCIN kosa kosik1978-1</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Maboz Bo Daez</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Mace mace9 Window</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>1800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Madam Salto Mortale</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>1975</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Madmartigan Maxell Maximus</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>28.0</Base-Point>
+      <Karma-Point>8.0</Karma-Point>
+      <Experience-Point>4750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Maikel Suderon Andrew</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Malus Conty Brodus</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>14.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>2100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Maria JustABabe Mariana</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Maria Tsunade Magdalena</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Marshal Mavrik Mathers</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>1800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Master Lumar Shadow</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Mat browN Johnson</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Mateusz Mefju Zwiadowca</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Max Furiosa Carnator</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>425</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Meagon Cento Centoon</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Meloveyou LongTime FiveDolla</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>31.5</Base-Point>
+      <Karma-Point>9.0</Karma-Point>
+      <Experience-Point>3375</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Merlin von Eulenland</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Messica Loots Lootius on Neconu</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Michael Mike Duval</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>35.0</Base-Point>
+      <Karma-Point>10.0</Karma-Point>
+      <Experience-Point>1600</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Michael Number19 Scofield</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>725</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Michael23 JK Park</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>137.0</Base-Point>
+      <Karma-Point>42.0</Karma-Point>
+      <Experience-Point>10500</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Miguel Migi Nykvist</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Mikael Slazor Kamin</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Mike BigD Hunt</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Miko Venom Blackflame</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>MiliJane zeehond Milic</Name>
+      <Total-Won>1</Total-Won>
+      <Base-Point>2673.5</Base-Point>
+      <Karma-Point>37.0</Karma-Point>
+      <Experience-Point>9075</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Mina La Lee</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Mindark Stimulus Package 2021</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>18.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>1300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Miss Gloria Hugo</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Mista Jagwarr Flayer</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>119.0</Base-Point>
+      <Karma-Point>34.0</Karma-Point>
+      <Experience-Point>6550</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Misty Dressto Kill</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Mitchy Sir Moo</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Mizz Kwanie Loca</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>5.0</Base-Point>
+      <Karma-Point>1.5</Karma-Point>
+      <Experience-Point>150</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Monkey Lou-Cifer Lou</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>150.5</Base-Point>
+      <Karma-Point>44.0</Karma-Point>
+      <Experience-Point>12675</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Monroe Zetec Mance</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Moore Cheapbier Bier</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Moraine Lynn Troskald</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>2225</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Morene Bolleke Wezenbeek</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>1725</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Mr Kearvek McKnight</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Mr Kleb Jr</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>70.0</Base-Point>
+      <Karma-Point>20.0</Karma-Point>
+      <Experience-Point>5000</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Mr Mo Scotland</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Mr Sergey Vladimirovich</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>127.5</Base-Point>
+      <Karma-Point>37.0</Karma-Point>
+      <Experience-Point>13875</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Myk Scott Adanstar</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Mytale Mytale Snoodle</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>NBK - Freddie and Calluna</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>NOS Missile Express</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>14.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>1600</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Neo The-One Baan</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>4.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>NeoPsion Unit NPU-1</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Nicci Kayly Starr</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>447.0</Base-Point>
+      <Karma-Point>128.0</Karma-Point>
+      <Experience-Point>38300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Nicholas Laser Ash</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Niklas Negolas Hedlund</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>31.5</Base-Point>
+      <Karma-Point>9.0</Karma-Point>
+      <Experience-Point>3825</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Nite Niteflite Flite</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>38.5</Base-Point>
+      <Karma-Point>11.0</Karma-Point>
+      <Experience-Point>1725</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Nosov kolyan35rus Nikolaevich</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>NovaTech Spongey Bob</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>1975</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Nuno pombinho Zezere</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>21.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>950</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Oj Great Snygging</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Olav Olaven Spire</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>92.5</Base-Point>
+      <Karma-Point>27.0</Karma-Point>
+      <Experience-Point>6675</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Olaven &amp; Crystal</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Ole-Andre Ole1234 Bratberg</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Orpheus wildcuts Kurosawa</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Ostrander Ostrander Popp</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Overcooked OC Panda</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>21.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>2900</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Pamela MC-Brotaufstrich Brantsch</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>14.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>1100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Pate Twiffo Pallinaama</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Patrick Pennywise Mcshakerz</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>28.0</Base-Point>
+      <Karma-Point>8.0</Karma-Point>
+      <Experience-Point>2750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Patrizia Pandemic Giano</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Paulo Foto Macedo</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>12.0</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>400</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Pavol Svako Giertl</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>77.0</Base-Point>
+      <Karma-Point>22.0</Karma-Point>
+      <Experience-Point>5800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Penethol Junkman Bloodsteel</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>28.0</Base-Point>
+      <Karma-Point>8.0</Karma-Point>
+      <Experience-Point>1300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Pericle Perseu Dominic</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Petunia Banana Vader</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Phy Oe Pagh</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.5</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>225</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Physical Graff Graffiti</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>178.0</Base-Point>
+      <Karma-Point>51.0</Karma-Point>
+      <Experience-Point>11150</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Pr OXY Me</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>28.0</Base-Point>
+      <Karma-Point>8.0</Karma-Point>
+      <Experience-Point>3700</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Prestige Worldwide</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Princess Aurora Starzinger</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>14.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>2050</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Princess Fiona of Amber</Name>
+      <Total-Won>1</Total-Won>
+      <Base-Point>4010.0</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>850</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Princess Nika Paun</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Princess of Hell</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Prophet the Prophet from Planet Zen</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Prototype Hunter Legendary</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>45.5</Base-Point>
+      <Karma-Point>13.0</Karma-Point>
+      <Experience-Point>1925</Experience-Point>
+    </Player>
+    <Player>
+      <Name>R4 1M 31</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>38.5</Base-Point>
+      <Karma-Point>11.0</Karma-Point>
+      <Experience-Point>6725</Experience-Point>
+    </Player>
+    <Player>
+      <Name>RAHJAR RAR RANDOM</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>45.0</Base-Point>
+      <Karma-Point>13.0</Karma-Point>
+      <Experience-Point>3850</Experience-Point>
+    </Player>
+    <Player>
+      <Name>RDX70Killer Dagger Dagger</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>925</Experience-Point>
+    </Player>
+    <Player>
+      <Name>RF Alexandr SSSR</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>2775</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Raccoon RaccoonBrand Brand</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Rachel MsPudding Hawkins</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>171.5</Base-Point>
+      <Karma-Point>49.0</Karma-Point>
+      <Experience-Point>12825</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Ragin RaginCajun Cajun</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>55.0</Base-Point>
+      <Karma-Point>16.0</Karma-Point>
+      <Experience-Point>2350</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Randy Randy Getz</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>52.5</Base-Point>
+      <Karma-Point>15.0</Karma-Point>
+      <Experience-Point>5825</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Rash Rash Doh</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>21.0</Base-Point>
+      <Karma-Point>7.0</Karma-Point>
+      <Experience-Point>850</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Raven Lunchbox Palehorse</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Rays Ray Raymond</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>59.5</Base-Point>
+      <Karma-Point>17.0</Karma-Point>
+      <Experience-Point>4675</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Rebekah Beki Viera</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>21.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>2450</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Renate Doc Schneider</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>16.0</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>1200</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Rhagnar Rhag Thormilium</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Ricardo Ricky Laginha</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.0</Base-Point>
+      <Karma-Point>2.5</Karma-Point>
+      <Experience-Point>325</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Richard Rpm McKellev</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Robert Lophophoria Wulff</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>925</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Robold Rummbolzer Rammbock</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Rock Grudge Glorbinox</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.5</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>225</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Roland Shin K-Aloha</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>16.0</Base-Point>
+      <Karma-Point>4.5</Karma-Point>
+      <Experience-Point>1550</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Ruori GreatSin Kenshin</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>SC newbs</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>SHIVA SHAN SHANTI</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>SPENCER SMIC MICHELS</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Sailor Abbra-Cadaver Moonspell</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Sam Zamarin Mariner</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>24.0</Base-Point>
+      <Karma-Point>7.5</Karma-Point>
+      <Experience-Point>975</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Sam ivoscsavo Cross</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Samiel Ratt Darrenger</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>14.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>600</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Sara Rellik Calypso</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>475</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Sarah SS Schlager</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>2250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Saurn Acolade Cerillas</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Scipulor Tester Win54</Name>
+      <Total-Won>1</Total-Won>
+      <Base-Point>159.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Sebastian Basti Sarich</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Sebastian HeadshooterGT Matkowski</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>SgtL Joat Mount-Islet</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>217.0</Base-Point>
+      <Karma-Point>62.0</Karma-Point>
+      <Experience-Point>12350</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Shamshe Shamshe Shamadarak</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.5</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>725</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Shin Tha Nin</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.0</Base-Point>
+      <Karma-Point>2.5</Karma-Point>
+      <Experience-Point>325</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Shlong Ripper</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Simeon SteeL-4o Yankov</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Simon Great Great</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>63.0</Base-Point>
+      <Karma-Point>18.0</Karma-Point>
+      <Experience-Point>5200</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Siu Lim Tao</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>1750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>SleePy Angel Chick</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>425</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Smexy Virgo Nugget</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>1225</Experience-Point>
+    </Player>
+    <Player>
+      <Name>SnoHxan Haxan Rimmer</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>14.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>2050</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Sokona Selanae Cepila</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>1.5</Karma-Point>
+      <Experience-Point>175</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Soldier Tomashar TomiX</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>1625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Soumal Thewebbie Darksky</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Spatariu Bacchus Ionut</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Speedy The Bouncer</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>1800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Spud Goalie Crasher</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Stan Sky Kazakh</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>80.0</Base-Point>
+      <Karma-Point>23.0</Karma-Point>
+      <Experience-Point>8300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Star Natalia Power</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Star StarDrifter Drifter</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>38.5</Base-Point>
+      <Karma-Point>11.0</Karma-Point>
+      <Experience-Point>2225</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Star TRADING Precious</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Static Static173 Longstar</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>12.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>550</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Steel SteelyMcplinker Plinker</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Steeve Brown STM</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Sten ViV Rock</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Storm Spawn Bootcamp</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>8.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>275</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Stu Sylo McFly</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Sub-Zero The Killer</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Sungam Sun Nosskire</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>44.5</Base-Point>
+      <Karma-Point>12.5</Karma-Point>
+      <Experience-Point>2325</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Super Greenmonkey Man</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Surijan Ixtos Amaurotis</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Sven Melbus Christensen</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>14.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>1000</Experience-Point>
+    </Player>
+    <Player>
+      <Name>TCS Matty AA</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>THE Armor Shop</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>9.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>875</Experience-Point>
+    </Player>
+    <Player>
+      <Name>TRE-BRON RAT SON</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>4.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Tacutting Father Gs</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>168.0</Base-Point>
+      <Karma-Point>48.0</Karma-Point>
+      <Experience-Point>11500</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Talisker Ironbar Swede</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Tally Talanz DeClaw</Name>
+      <Total-Won>1</Total-Won>
+      <Base-Point>265.5</Base-Point>
+      <Karma-Point>37.0</Karma-Point>
+      <Experience-Point>6825</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Tauezee P-O-C Feaurmei</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Teli GoodRich Fresh</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Temptress Hakalugi Ripper</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>28.0</Base-Point>
+      <Karma-Point>8.0</Karma-Point>
+      <Experience-Point>1250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>The Amazing Weirdo's</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>The Blue Thunder</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>28.0</Base-Point>
+      <Karma-Point>8.0</Karma-Point>
+      <Experience-Point>3200</Experience-Point>
+    </Player>
+    <Player>
+      <Name>The DeathFire Man</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>The Doctor Who</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>The Gangster Girl</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>66.5</Base-Point>
+      <Karma-Point>19.0</Karma-Point>
+      <Experience-Point>5425</Experience-Point>
+    </Player>
+    <Player>
+      <Name>The Goddess Artemis</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>18.0</Base-Point>
+      <Karma-Point>4.5</Karma-Point>
+      <Experience-Point>475</Experience-Point>
+    </Player>
+    <Player>
+      <Name>The Long Dong</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>The Sleepingtowel Towelie</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>14.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>1050</Experience-Point>
+    </Player>
+    <Player>
+      <Name>The biggest global</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Theo RedDragon Ferraris</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Thomas Neoglific Anderson</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>12.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>1050</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Tiberius Spowy Vakarian</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Tiless Ti Watanabe</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Timmy The MadMan</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>200</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Titos Copia Tito Cis</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Toast Toast CHG</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>14.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>600</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Token Lyzard Cloud</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>4.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Tom Archy Bald</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>24.5</Base-Point>
+      <Karma-Point>7.0</Karma-Point>
+      <Experience-Point>3475</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Tomas Dark angel Kubicka</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>14.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>1000</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Tomi jupiajo Digital</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Tonny TcooL Svan</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>9.0</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>400</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Torene Tor Alaranth</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>59.5</Base-Point>
+      <Karma-Point>17.0</Karma-Point>
+      <Experience-Point>4425</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Trainer Genesis MF</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Travis Fforest Cutter</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>28.0</Base-Point>
+      <Karma-Point>8.5</Karma-Point>
+      <Experience-Point>3075</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Tress Fun Windrider</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Twilight Smoking Holland Circus</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Tyr Wolf Fenris</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>24.5</Base-Point>
+      <Karma-Point>7.0</Karma-Point>
+      <Experience-Point>2525</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Uni chronos planar</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>21.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>2950</Experience-Point>
+    </Player>
+    <Player>
+      <Name>United States Constitution</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Usurper Adamas Sheridan</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>65.0</Base-Point>
+      <Karma-Point>18.5</Karma-Point>
+      <Experience-Point>7150</Experience-Point>
+    </Player>
+    <Player>
+      <Name>VaLeuhWie Lyly Strafkin</Name>
+      <Total-Won>1</Total-Won>
+      <Base-Point>4266.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>475</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Vandal VandalHand Hand</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>52.5</Base-Point>
+      <Karma-Point>15.0</Karma-Point>
+      <Experience-Point>2725</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Vanilla Nilla Wafer</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>18.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>2150</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Vellu Rufus Leinonen</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>15.0</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>1100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Velma GayneWretzky Baggins</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>4.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Vendy Zachariel Zachariel</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Venus Ro Mi</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>300.0</Base-Point>
+      <Karma-Point>91.0</Karma-Point>
+      <Experience-Point>19025</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Vex Solar Vortex</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>87.5</Base-Point>
+      <Karma-Point>25.0</Karma-Point>
+      <Experience-Point>7025</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Victoria Vaak Mindful</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Vincentino Vincent Galbarda</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>21.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>2900</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Vontang Kwanyi Kwan</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>1625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Wangxiang WangXiang Tuxing</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Wazari Wazari Vulf</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>WezteN Lakritsrem Godisp&#195;&#165;se</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>White GHOST AngeL</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>4.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Wilburforce ColonelBuckshot Buckshot</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>200</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Willard Phule Phule</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>365.0</Base-Point>
+      <Karma-Point>110.0</Karma-Point>
+      <Experience-Point>18925</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Woedy woedy Gotcha</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>21.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>950</Experience-Point>
+    </Player>
+    <Player>
+      <Name>WuFei WuFei Chang</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>925</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Xendar Xen Xal</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>45.5</Base-Point>
+      <Karma-Point>13.0</Karma-Point>
+      <Experience-Point>1975</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Yeux Bleu et Moins de Cheveux</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>16.0</Base-Point>
+      <Karma-Point>4.5</Karma-Point>
+      <Experience-Point>1650</Experience-Point>
+    </Player>
+    <Player>
+      <Name>YinPaula YinTheseus Theseus</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>925</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Yoel SoldadoDeDios Szkilled</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>ZBANGHIU maRIUS GIGEL</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>ZOLI FFL1987 GAZ</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Zeina Zetan Zee</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>28.0</Base-Point>
+      <Karma-Point>8.0</Karma-Point>
+      <Experience-Point>2700</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Zero no Louise</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>24.5</Base-Point>
+      <Karma-Point>7.0</Karma-Point>
+      <Experience-Point>975</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Ziminar Zim Darksoul</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>800</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Zitti Bonjack Kaspelsky</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>185.5</Base-Point>
+      <Karma-Point>53.0</Karma-Point>
+      <Experience-Point>11825</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Zohar Zah Gunman</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>91.0</Base-Point>
+      <Karma-Point>26.0</Karma-Point>
+      <Experience-Point>6000</Experience-Point>
+    </Player>
+    <Player>
+      <Name>Zyloc Zyloc Mist</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>14.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>600</Experience-Point>
+    </Player>
+    <Player>
+      <Name>aka deathro executioner</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>66.5</Base-Point>
+      <Karma-Point>19.0</Karma-Point>
+      <Experience-Point>5075</Experience-Point>
+    </Player>
+    <Player>
+      <Name>alam Leakael EFRE</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>amanda Alissanos robinson</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>775</Experience-Point>
+    </Player>
+    <Player>
+      <Name>angelo ang frazzini</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>anthony pepe pepe</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>425</Experience-Point>
+    </Player>
+    <Player>
+      <Name>apallo sincros neverweave</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>33.0</Base-Point>
+      <Karma-Point>8.5</Karma-Point>
+      <Experience-Point>2575</Experience-Point>
+    </Player>
+    <Player>
+      <Name>athina thea athina</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>avian crow black</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>5.5</Base-Point>
+      <Karma-Point>1.5</Karma-Point>
+      <Experience-Point>175</Experience-Point>
+    </Player>
+    <Player>
+      <Name>backstabber twelve hit combo dropkic</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>56.0</Base-Point>
+      <Karma-Point>17.0</Karma-Point>
+      <Experience-Point>5750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>be b3ngyy edw</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>825</Experience-Point>
+    </Player>
+    <Player>
+      <Name>bernhard berni weiss</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>1625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>blood star raven</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>bujako Xvirus bujako</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>81.0</Base-Point>
+      <Karma-Point>24.0</Karma-Point>
+      <Experience-Point>5600</Experience-Point>
+    </Player>
+    <Player>
+      <Name>calvin Lui choi</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>14.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>2050</Experience-Point>
+    </Player>
+    <Player>
+      <Name>cecax3 CecaX3 cecax3</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>21.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>1850</Experience-Point>
+    </Player>
+    <Player>
+      <Name>charley moondog 1969</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>24.5</Base-Point>
+      <Karma-Point>8.0</Karma-Point>
+      <Experience-Point>1025</Experience-Point>
+    </Player>
+    <Player>
+      <Name>cold sintex stone</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>225</Experience-Point>
+    </Player>
+    <Player>
+      <Name>damien icewind claybourne</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>darth dariuz vader</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>dffd</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>dynamage voltage assasin</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>eevee eevee28 alex</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>emma jessy crow</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>error no identity</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>9.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>375</Experience-Point>
+    </Player>
+    <Player>
+      <Name>fire firen svensson</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>17.5</Base-Point>
+      <Karma-Point>5.0</Karma-Point>
+      <Experience-Point>2275</Experience-Point>
+    </Player>
+    <Player>
+      <Name>fred griffey cheese</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>60.0</Base-Point>
+      <Karma-Point>20.0</Karma-Point>
+      <Experience-Point>5100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>fun</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>georgie cheese smoker</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>12.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>550</Experience-Point>
+    </Player>
+    <Player>
+      <Name>gina nova sabrina</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>girl lena pro</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>38.5</Base-Point>
+      <Karma-Point>11.0</Karma-Point>
+      <Experience-Point>5575</Experience-Point>
+    </Player>
+    <Player>
+      <Name>goose goose jacobus</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>goran boss22 golub</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>grower growerXblower blower</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>happy swanpool gilmore</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>77.0</Base-Point>
+      <Karma-Point>22.0</Karma-Point>
+      <Experience-Point>5750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>harry RAVEN jackson</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>high iceleytor collector</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>18.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>1300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>hokage manhokage pokerman</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>hvwardick Mr S Swe</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>igorek09 igorek09 igorek09</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>ilani the rabbit</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>james tinker delver</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>jani SerialKillah unknow</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>31.5</Base-Point>
+      <Karma-Point>9.0</Karma-Point>
+      <Experience-Point>3425</Experience-Point>
+    </Player>
+    <Player>
+      <Name>jason copperbird lee</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>399.5</Base-Point>
+      <Karma-Point>129.0</Karma-Point>
+      <Experience-Point>18525</Experience-Point>
+    </Player>
+    <Player>
+      <Name>jeff evil221 rules</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>jimmy mcmarty hoffa</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>68.0</Base-Point>
+      <Karma-Point>19.0</Karma-Point>
+      <Experience-Point>5400</Experience-Point>
+    </Player>
+    <Player>
+      <Name>jo pedhunter smith</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>4.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>john lofty brown</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>josef OHYZD pepanec</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>1625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>kerri krazy blaing</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>87.5</Base-Point>
+      <Karma-Point>25.0</Karma-Point>
+      <Experience-Point>5125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>kuo darkness darkness</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>lets team hof</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>ll Mythbuster ll</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.0</Base-Point>
+      <Karma-Point>2.5</Karma-Point>
+      <Experience-Point>300</Experience-Point>
+    </Player>
+    <Player>
+      <Name>lori loriijo jo</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>23.5</Base-Point>
+      <Karma-Point>6.5</Karma-Point>
+      <Experience-Point>925</Experience-Point>
+    </Player>
+    <Player>
+      <Name>love</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.5</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>225</Experience-Point>
+    </Player>
+    <Player>
+      <Name>malick mac malstrom</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>mathias mattydre deruy</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>melitoiu cerno adrian</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>mindaugas laafaa23 karecka</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>14.0</Base-Point>
+      <Karma-Point>4.0</Karma-Point>
+      <Experience-Point>1550</Experience-Point>
+    </Player>
+    <Player>
+      <Name>new SANDAX hunter</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>norua norua cain</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>425</Experience-Point>
+    </Player>
+    <Player>
+      <Name>obi wan marius</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>4.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>ohdean heyyy taylor</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>olda Oldousek macalik</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>4.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>ombre silencieuse vive</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>orik eragon knurla</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>119.0</Base-Point>
+      <Karma-Point>34.0</Karma-Point>
+      <Experience-Point>7550</Experience-Point>
+    </Player>
+    <Player>
+      <Name>oz bestebes kay</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>pATRICK xXSnoopyXx bAGUES</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>pablo pablo jasdfdsa</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>21.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>2450</Experience-Point>
+    </Player>
+    <Player>
+      <Name>panda kuddoo poo</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>patrick max voltage</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>paul MT TR</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>21.0</Base-Point>
+      <Karma-Point>6.0</Karma-Point>
+      <Experience-Point>950</Experience-Point>
+    </Player>
+    <Player>
+      <Name>paul pauber robert</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>pavel rozikp rozenbaum</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>45.5</Base-Point>
+      <Karma-Point>13.0</Karma-Point>
+      <Experience-Point>7775</Experience-Point>
+    </Player>
+    <Player>
+      <Name>penelope bibo pop</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>9.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>875</Experience-Point>
+    </Player>
+    <Player>
+      <Name>per strakkan kollebolle</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>1625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>peters wuffzel toon</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>poppy mothiaa yahwany</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>quin perv amorim</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>remove your body</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>rogerriver68 river river</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>4.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>rookie bluu 12</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>10.5</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>425</Experience-Point>
+    </Player>
+    <Player>
+      <Name>roy bigaman nassier</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>ryu rorrito smith</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>35.0</Base-Point>
+      <Karma-Point>10.0</Karma-Point>
+      <Experience-Point>1600</Experience-Point>
+    </Player>
+    <Player>
+      <Name>sasha sale stormy</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>setu0 daC laMono</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>2.0</Base-Point>
+      <Karma-Point>0.5</Karma-Point>
+      <Experience-Point>50</Experience-Point>
+    </Player>
+    <Player>
+      <Name>sexyRudolf SexyR THEporno</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+    <Player>
+      <Name>slize0 slize0 ifjuts</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>4.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>slupor slupor slupor</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>89.5</Base-Point>
+      <Karma-Point>25.5</Karma-Point>
+      <Experience-Point>5925</Experience-Point>
+    </Player>
+    <Player>
+      <Name>snel hest</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>6.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>star stunkcuf child</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>45.5</Base-Point>
+      <Karma-Point>13.0</Karma-Point>
+      <Experience-Point>2975</Experience-Point>
+    </Player>
+    <Player>
+      <Name>taz manian devil</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>750</Experience-Point>
+    </Player>
+    <Player>
+      <Name>team</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>the 9tailed fox</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>white psycho beast</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>9.0</Base-Point>
+      <Karma-Point>3.0</Karma-Point>
+      <Experience-Point>350</Experience-Point>
+    </Player>
+    <Player>
+      <Name>winnie110 winnie marklar</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>21.0</Base-Point>
+      <Karma-Point>7.0</Karma-Point>
+      <Experience-Point>2400</Experience-Point>
+    </Player>
+    <Player>
+      <Name>worldhom worldhom worldhom</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>wylly111 wylly111 wylly111</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>7.0</Base-Point>
+      <Karma-Point>2.0</Karma-Point>
+      <Experience-Point>250</Experience-Point>
+    </Player>
+    <Player>
+      <Name>xXx MrUnderCover xXx</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>49.0</Base-Point>
+      <Karma-Point>14.0</Karma-Point>
+      <Experience-Point>2500</Experience-Point>
+    </Player>
+    <Player>
+      <Name>xXx Samuraj Mod2x</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>xXx Ultimate xXx</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>24.5</Base-Point>
+      <Karma-Point>7.0</Karma-Point>
+      <Experience-Point>3125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>yooooooooooooooooooooooooooooooo</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>125</Experience-Point>
+    </Player>
+    <Player>
+      <Name>zzz DISABLED zzz</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.0</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>100</Experience-Point>
+    </Player>
+    <Player>
+      <Name>&#226;&#132;&#162;SUF&#226;&#132;&#162; Anno 2002</Name>
+      <Total-Won>0</Total-Won>
+      <Base-Point>3.5</Base-Point>
+      <Karma-Point>1.0</Karma-Point>
+      <Experience-Point>625</Experience-Point>
+    </Player>
+  </Players>
+</data>
+

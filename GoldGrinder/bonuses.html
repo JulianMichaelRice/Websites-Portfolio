@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/fav.png">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
+    <title>Entropia Gold</title>
+  </head>
+  <body onLoad="loadXMLDocBonus()">
+    <div class="cover">
+      <ul class="nav justify-content-center comeDown">
+          <li class="nav-item">
+              <a class="nav-link" href="index.html"><img src="img/logo-w.png" height="50px"></a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle highlight" href="lootius.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Lootius Mayhem
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="lootius.html">How to Participate</a>
+                <a class="dropdown-item" href="https://www.youtube.com/watch?v=ELQIgdgROVA" target="_blank">Teaser Trailer</a>
+                <a class="dropdown-item" href="classes.html">Character Classes</a>
+                <a class="dropdown-item" href="prizes.html">Prize Pool</a>
+                <a class="dropdown-item" href="hof.html">Hall of Fame</a>
+                <a class="dropdown-item" href="https://www.entropiagold.com/register ">Register</a>
+              </div>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle highlight" href="leaderboard.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Leaderboard
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="leaderboard.html">Overall Ranking</a>
+                <a class="dropdown-item" href="bonuses.html">HSL Bonuses</a>
+              </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle highlight" href="areas.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Land Areas
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="areas.html">Deino Island</a>
+              <a class="dropdown-item" href="areas.html">OLA#02 Atrox Paradise</a>
+              <a class="dropdown-item" href="areas.html">OLA#30 Bibo n' Bery Stalkers</a>
+              <a class="dropdown-item" href="areas.html">OLA#50 That Freaking Cold Place</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle highlight" href="mission.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="mission.html">Mission Statement</a>
+                <a class="dropdown-item" href="mystory.html">My Story</a>
+                <a class="dropdown-item" href="eula.html">EULA 2.1 Compliance</a>
+              </div>
+          </li>
+      </ul>
+      <div class="parallax fade">
+          <img src="img/logo-w.png" width="400px" class="centered">
+      </div>
+  </div>
+    <!-- "Entropia" font name is Josefin Sans and "Gold" font name is Montserrat.
+        Black Color = #393938
+        Gold Color = #F5921F 
+        Link: https://julianmichaelrice.github.io/Websites-Portfolio/EntropiaGold/home.html
+    -->
+    <div class="spacer"></div>
+    <ul class="nav nav-tabs d-flex justify-content-center">
+        <li><a data-toggle="tab" href="#day" style="padding: 20px">Daily</a></li>
+        <li><a data-toggle="tab" href="#week" style="padding: 20px">Weekly</a></li>
+        <li><a data-toggle="tab" href="#month" style="padding: 20px">Monthly</a></li>
+    </ul>
+    <div class="spacer"></div>
+    <div class="tab-content container-fluid">
+        <div class="spacer"></div>
+        <div id="day" class="tab-pane fade in active">
+            <h2 class="text-center hidden-o">Daily</h2>
+            <div class="spacer"></div>
+            <div class="row">
+                <div class="col-md-1 col-0"></div>
+                <div class="col-md-10 col-12">
+                    <table id="daily" class="hidden-o2" style="width: 100%"></table>
+                </div>
+                <div class="col-md-1 col-0"></div>
+            </div>
+        </div>
+        <div id="week" class="tab-pane fade">
+            <h2 class="text-center hidden-o">Weekly</h2>
+            <div class="spacer"></div>
+            <div class="row">
+                <div class="col-md-1 col-0"></div>
+                <div class="col-md-10 col-12">
+                    <table id="weekly" class="hidden-o2" style="width: 100%"></table>
+                </div>
+                <div class="col-md-1 col-0"></div>
+            </div>
+        </div>
+        <div id="month" class="tab-pane fade">
+            <h2 class="text-center hidden-o">Monthly</h2>
+            <div class="spacer"></div>
+            <div class="row">
+                <div class="col-md-1 col-0"></div>
+                <div class="col-md-10 col-12">
+                    <table id="monthly" class="hidden-o2" style="width: 100%"></table>
+                </div>
+                <div class="col-md-1 col-0"></div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+    </div>
+
+    <footer>
+        <h4 class="text-center hidden">Rediscover Entropia</h4>
+        <p class="text-center hidden">EntropiaGold is in no way connected to MindArk PE AB® or any of MindArks' Planet Partners™ Entropia Universe™ is a registered trademark of MindArk PE AB®. All logos, brand names and concepts are the sole property of their respective owners</p>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="leaderboard.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="julian.js" type="text/javascript"></script>
+  </body>
+</html>

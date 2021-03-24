@@ -1,0 +1,266 @@
+.spacer { margin-top: 50px; margin-bottom: 50px; }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    20% {opacity: 0;}
+    100% { opacity: 1; }
+}
+@keyframes fromTop {
+    0% { top: -500px; }
+    20% { top: -500px; }
+    100% { top: 0px; }
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+body {
+    scroll-behavior: auto;
+    -ms-overflow-style: none;
+    background: linear-gradient(45deg, #101010, #010101);
+}
+ul > li > a {
+    color: white;
+    transition: 1s ease;
+    text-decoration: none;
+}
+ul > li > a:hover {
+    color: #F5921F;
+    transition: 1s ease;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, th {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: white;
+}
+a, p, .card-body, td {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    letter-spacing: -0.2px;
+    color: white;
+}
+.jumbotron, footer {
+    background: linear-gradient(0deg, #F5921F, rgb(250, 182, 40));
+    border-radius: 0;
+}
+footer {
+    padding: 35px 25px 25px 25px;
+}
+footer p, h4 {
+    color: black;
+}
+.jumbotron p {
+    letter-spacing: -1.25px;
+}
+.highlight {
+    background-color: transparent;
+    transition: 1s ease;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin: 10px 5px;
+}
+.highlight:hover {
+    background-color: #393938;
+    transition: 1s ease;
+    border-radius: 8px;
+}
+.parallax {
+    background-image: url("img/b_atrox_zone_d.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+.bg2 {
+    background-image: url("img/b_biboberyola30.jpg");
+    height: 720px;
+}
+.centered {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.smaller {
+    font-size: 16px;
+}
+.fade {
+    animation: 2.5s fadeIn forwards;
+    z-index: 1;
+}
+.comeDown {
+    position: relative;
+    animation: 3.5s fromTop forwards;
+    z-index: 1;
+}
+.dropdown-item {
+    font-weight: 200;
+    padding: 10px 15px;
+    font-size: 1.5vw;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    transition: 1s ease;
+    margin: 5px 0px;
+}
+.dropdown-item:hover {
+    color: black;
+    background-color: #F5921F;
+    transition: 1s ease;
+}
+.adjusted { font-size: 1.65vw; }
+.container-fluid { padding: 0px; }
+.dropdown-menu {
+    padding: 0;
+    margin-top: 0;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 0px solid transparent;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+@keyframes fade-in {
+    from {opacity: 0; transform: translateY(150px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+@keyframes fade-right {
+    from {opacity: 0; transform: translateX(1000px);}
+    to {opacity: 1; transform: translateX(0);}
+}
+@keyframes fade-left {
+    from {opacity: 0; transform: translateX(-1000px);}
+    to {opacity: 1; transform: translateX(0);}
+}
+@keyframes jump-in-s {
+    0% {opacity: 0; transform: scale(0.6);}
+    50% {opacity: 0; transform: scale(0.6);}
+    100% {opacity: 1; transform: scale(1);}
+}
+@keyframes jump-in-f {
+    0% {opacity: 0; transform: scale(0.6);}
+    100% {opacity: 1; transform: scale(1);}
+}
+@keyframes fade-opac {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fade-opac-slow {
+    0%   { opacity: 0; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+.hidden, .hidden-r, .hidden-l, .hidden-jF, .hidden-jS, .hidden-o, .hidden-o2 { opacity: 0; }
+.opac { animation: fade-opac 3s; }
+.opac2 { animation: fade-opac-slow 3s; }
+.fade-in-element { animation: fade-in 2s; }
+.fade-in-element-r { animation: fade-right 2s; }
+.fade-in-element-l { animation: fade-left 2s; }
+.jump-in-element-f { animation: jump-in-f 2s; }
+.jump-in-element-s { animation: jump-in-s 4s; }
+.front {z-index: 100;}
+
+#headingOne {
+    background-image: url(img/b_deino_island.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#headingTwo {
+    background-image: url(img/b_atrox_zone_d.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#headingThree {
+    background-image: url(img/b_biboberyola30.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#headingFour {
+    background-image: url(img/b_ola50.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.land {
+    color: white;
+    text-decoration: none;
+}
+.land:hover {
+    color: #F5921F;
+    text-decoration: none;
+}
+.card-body {
+    opacity: 1;
+}
+.btn {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 0;
+    font-size: 40px;
+}
+.c-white { color: white; }
+.c-black { color: black; }
+.card-body img {
+    border-radius: 10px;
+}
+#accordion { text-align: center; }
+.card {background-color: black;}
+tr:nth-child(odd) {
+    background-color: #2c2c2c;
+}
+tr:first-child {
+    background-color: #F5921F;
+}
+td > a {
+    text-decoration: none;
+    transition: 1s ease;
+}
+td > a:hover {
+    transition: 1s ease;
+    color: #F5921F;
+    text-decoration: none;
+}
+th {
+    color: white;
+    padding: 10px 10px;
+    transition: 1s ease;
+    text-align: center;
+    font-size: 20px;
+}
+#daily td, #weekly td, #monthly td, #goomba td {
+    color: white;
+    padding: 10px 10px;
+    transition: 1s ease;
+    text-align: center;
+    font-size: 20px;
+}
+#goomba > tr:nth-child(n+16) td {
+    padding: 0px;
+}
+tr {
+    background-color: transparent;
+    transition: 1s ease;
+}
+tr:hover {
+    background-color: rgb(28, 28, 28);
+    transition: 1s ease;
+}
+#monthly table, #monthly > tr, #monthly > tbody {
+    width: 100%;
+}
+#goomba tr:nth-child(3) td, #goomba tr:nth-child(4) td, #goomba tr:nth-child(6) td {
+    padding: 25px 10px;
+    color: #F5921F;
+}
+.mobSquare {
+    width: 100px;
+    padding: 10px;
+}
+tr.gifImage > th > img {
+    width: 100%;
+}
