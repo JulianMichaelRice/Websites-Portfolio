@@ -122,20 +122,33 @@ class Winner {
         this.rank = rank;
         this.isWeekly = isWeekly;
         this.user = user;
-        this.globals = globals;
+        // If contains decimal, opt for decimal, else turn it into an int
+        this.globals = globals % 1 > 0 && globals % 1 < 1 ? globals : parseInt(globals);
     }
 }
 
 var weeklyHtml = {
-    'Prefix': `<div class="col-md-1">
-    <button class="btn btn-gold" type="button" data-toggle="collapse" data-target="#weekCollapse`,
+    'Prefix': `<div class="col-md-1 p-1">
+    <button class="btn btn-gold w-100" type="button" data-toggle="collapse" data-target="#weekCollapse`,
     'Suffix': `</button>
     </div>`,
     'PrefixCollapse': `<div class="collapse text-center spacer" id ="weekCollapse`,
     'SuffixCollapse': `</table>
     </div>`
 }
+
+var monthlyHtml = {
+    'Prefix': `<div class="col-md-2 p-1">
+    <button class="btn btn-gold w-100" type="button" data-toggle="collapse" data-target="#monthCollapse`,
+    'Suffix': `</button>
+    </div>`,
+    'PrefixCollapse': `<div class="collapse text-center spacer" id ="monthCollapse`,
+    'SuffixCollapse': `</table>
+    </div>`
+}
+
 var weeklyDict = {}
+var monthlyDict = {}
 
 function getWeekTable(week, oneArray) {
     var prefix = `<h3>Ranking for ` + week + `</h3>`;
@@ -156,12 +169,16 @@ function getWeekTable(week, oneArray) {
     return tableBase;
 }
 
-function displaySilver(xml) {
-    // Weekly
+function displayTables(xml, isWeekly) {
     var i;
+    var core = isWeekly ? "Weekly-Distribution" : "Monthly-Distribution";
+    var coreTag = isWeekly ? "week" : "Month";
+    var corePrefix = isWeekly ? "weekly" : "monthly";
+    var coreUnit = isWeekly ? "Week" : "Month";
+    var selectedDict = isWeekly ? weeklyDict : monthlyDict;
     var xmlDoc = xml.responseXML;
-    var weeklyWinners = xmlDoc.getElementsByTagName("Weekly-Distribution")[0].getElementsByTagName("week");
-    var oneWeek = [];
+    var allWinners = xmlDoc.getElementsByTagName(core)[0].getElementsByTagName(coreTag);
+    var oneSet = [];
 
     var tableBase = `<tr>
                         <th>Rank</th>
@@ -170,63 +187,67 @@ function displaySilver(xml) {
                         <th>Silver Awarded</th>
                     </tr>`
 
-    for (i = weeklyWinners.length-1; i >= 0; i--) {
-        oneWeek = [];
-        for (w = 0; w < weeklyWinners[i].getElementsByTagName("rank").length; w++) {
-            specificWinner = weeklyWinners[i].getElementsByTagName("rank")[w];
+    for (i = allWinners.length-1 ; i >= 0; i--) {
+        oneSet = [];
+        for (w = 0; w < allWinners[i].getElementsByTagName("rank").length; w++) {
+            specificWinner = allWinners[i].getElementsByTagName("rank")[w];
             var user = new Winner(
                 specificWinner.childNodes[0].nodeValue,
-                true,
+                isWeekly,
                 specificWinner.getElementsByTagName("user")[0].childNodes[0].nodeValue,
                 specificWinner.getElementsByTagName("Karma-Points")[0].childNodes[0].nodeValue,
             );
-            oneWeek.push(user);
+            oneSet.push(user);
         }
-        weeklyDict[weeklyWinners[i].childNodes[0].nodeValue] = oneWeek;
-        console.log("Added Week " + weeklyWinners[i].childNodes[0].nodeValue);
+        selectedDict[allWinners[i].childNodes[0].nodeValue] = oneSet;
         
-        // Display only First Week
-        if (i == weeklyWinners.length-1) {
-            document.getElementById("weeklyNowTitle").innerHTML = "Week Ending on " + weeklyWinners[i].childNodes[0].nodeValue;
-            for (s = 0; s < oneWeek.length; s++) {
+        // Display the most recent week or month
+        if (i == allWinners.length-1) {
+            document.getElementById(corePrefix + "NowTitle").innerHTML = coreUnit + " Ending on " + allWinners[i].childNodes[0].nodeValue;
+            for (s = 0; s < oneSet.length; s++) {
                 tableBase += `<tr>`
                 tableBase += `<th class="standardFont">` + (s+1) + `</th>`;
-                tableBase += `<th class="standardFont">` + oneWeek[s].user + `</th>`;
-                tableBase += `<th class="standardFont">` + oneWeek[s].globals + `</th>`;
-                tableBase += `<th class="standardFont">` + (oneWeek[s].isWeekly ? 500 : 1000) + `</th>`;
+                tableBase += `<th class="standardFont">` + oneSet[s].user + `</th>`;
+                tableBase += `<th class="standardFont">` + oneSet[s].globals + `</th>`;
+                tableBase += `<th class="standardFont">` + (isWeekly ? 500 : 1000) + `</th>`;
                 tableBase += `</tr>`
             }
         }
-        document.getElementById("weeklyNow").innerHTML = tableBase;
+        document.getElementById(corePrefix + "Now").innerHTML = tableBase;
     }
 
-    // Setup buttons for every week
-    var weeklyWinnerHTML = ``;
+    // Set up buttons for every week or month
+    var winnerHTML = ``;
+    var htmlDict = isWeekly ? weeklyHtml : monthlyHtml;
     var counter = 0;
-    for (var key in weeklyDict) {
-        console.log(key);
-        if (weeklyDict.hasOwnProperty(key)) {
-            weeklyWinnerHTML += weeklyHtml['Prefix'];
-            weeklyWinnerHTML += counter + `" aria-expanded="false" >` + key + weeklyHtml['Suffix'];
+    for (var key in selectedDict) {
+        if (selectedDict.hasOwnProperty(key)) {
+            winnerHTML += htmlDict['Prefix'];
+            // Format the date (depending on week or month) for better aesthetics and consistesncy
+            var newDate = isWeekly ? key.split('-')[1] + "/" + key.split('-')[2] + "\n" + key.split('-')[0]
+                                   : key.split('-')[1] + " / " + key.split('-')[0];
+            winnerHTML += counter + `" aria-expanded="false" >` + newDate + htmlDict['Suffix'];
         }
         counter += 1;
     }
-    document.getElementById("weeklyWinners").innerHTML = weeklyWinnerHTML;
+    document.getElementById(corePrefix + "Winners").innerHTML = winnerHTML;
 
-    // Setup collapses for every week
-    var weeklyCollapseHTML = ``;
+    // Set up collapses for every week or month
+    var winnerHTML = ``;
     var counter = 0;
-    for (var key in weeklyDict) {
-        console.log(key);
-        if (weeklyDict.hasOwnProperty(key)) {
-            weeklyCollapseHTML += weeklyHtml['PrefixCollapse'] + counter + `"><table class="mx-auto">`;
-            weeklyCollapseHTML += getWeekTable(key, weeklyDict[key]) + weeklyHtml['SuffixCollapse'];
+    for (var key in selectedDict) {
+        if (selectedDict.hasOwnProperty(key)) {
+            winnerHTML += htmlDict['PrefixCollapse'] + counter + `"><table class="mx-auto">`;
+            winnerHTML += getWeekTable(key, selectedDict[key]) + htmlDict['SuffixCollapse'];
         }
         counter += 1;
     }
-    document.getElementById("weeklyTables").innerHTML = weeklyCollapseHTML;
+    document.getElementById(corePrefix + "Tables").innerHTML = winnerHTML;
+}
 
-    // Monthly
+function displaySilver(xml) {
+    displayTables(xml, true);   // Weekly
+    displayTables(xml, false);  // Monthly
 }
 
 function displayWinners(xml) {
