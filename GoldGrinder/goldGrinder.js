@@ -44,6 +44,30 @@ function loadXML(xmlLink, local) {
     xmlhttp.send();
 }
 
+function loadXMLWinners(local) {
+    var xmlhttp = new XMLHttpRequest();
+    var link = local ? linksLocal['winners'] : links['winners'];
+    xmlhttp.onload = function() {
+        displayWinners(this);
+        // if (this.readyState == 4 && this.status == 200) {
+        //     alert("READY");
+        //     switch (xmlLink) {
+        //         case 'data':
+        //             displayData(this);
+        //             break;
+        //         case "silver":
+        //             displaySilver(this);
+        //             break;
+        //         case "winners":
+        //             displayWinners(this);
+        //             break;
+        //     }
+        // }
+    };  
+    xmlhttp.open("GET", link, true);
+    xmlhttp.send();
+}
+
 var jackpotHtml = {
     'Atrox': `<div class="row text-center">
     <div class="col-md-6">
@@ -85,7 +109,8 @@ function displayData(xml) {
     var jackpots = xmlDoc.getElementsByTagName("Jackpot");
     var preHtml = "";
     var arrayOfNames = [];
-
+    
+    // Handle the Jackpots
     for (i = 0; i < jackpots.length; i++) {
         var mob = new MobName(
             jackpots[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue,
@@ -253,4 +278,19 @@ function displaySilver(xml) {
 function displayWinners(xml) {
     var i;
     var xmlDoc = xml.responseXML;
+
+    // Handle the Jackpot Winners
+    var tableHTML = `<tr>
+                        <th>Name</th>
+                        <th>Jackpot Paid Out</th>
+                    </tr>`;
+    var winners = xmlDoc.getElementsByTagName("User");
+    for (i = 0; i < winners.length; i++) {
+        var name = winners[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue;
+        var score = winners[i].getElementsByTagName("Jackpot")[0].childNodes[0].nodeValue;
+        score = score % 1 != 0 ? score : parseInt(score);
+        tableHTML += `<tr><th class="standardFont">` + name + `</th>`
+        tableHTML += `<th class="standardFont">` + score + `</th></tr>`;
+    }
+    document.getElementById("jackpotWinners").innerHTML = tableHTML;
 }

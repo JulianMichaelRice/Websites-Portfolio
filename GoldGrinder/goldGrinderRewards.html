@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
     <title>Entropia Gold</title>
   </head>
-  <body onLoad="loadXML('silver', true);">
+  <body onLoad="loadXML('silver', true); loadXMLWinners(true)">
     <div class="cover">
       <ul class="nav justify-content-center comeDown">
           <li class="nav-item">
@@ -155,36 +155,47 @@
 
         <div id="jackpot" class="container hidden-o2"></div>
 
-        <div class="container hidden-o2 text-center" style="padding: 0 0px">
-          <div>
-            <h3 class="text-center" id="weeklyNowTitle"></h3>
-            <table id ="weeklyNow" class="standardFont mx-auto"></table>
+        <div class="container-fluid text-center">
+          <h1><span class="titleText">Jackpot</span> Winners</h1>
+          <h3>Hall of <span class="titleText">Fame</span></h3>
+          <table id="jackpotWinners" class="container hidden-o2 spacer w-50"></table>
+        </div>
+
+        <h1 class="text-center">Weekly &amp; Monthly Silver Bonus Winners</h1>
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12 spacer">
+            <div class="container hidden-o2 text-center" style="padding: 0 0px">
+              <div>
+                <h3 class="text-center" id="weeklyNowTitle"></h3>
+                <table id ="weeklyNow" class="standardFont mx-auto"></table>
+              </div>
+              <div class="container-fluid text-center">
+                <button class="btn btn-gold spacer" style="width:750px" type="button" data-toggle="collapse" data-target="#pastWeeks" aria-expanded="false" aria-controls="pastWeeks">
+                    PAST WEEKS
+                </button>
+                <div class="collapse text-center mx-auto" id="pastWeeks" style="width:750px">
+                  <div class="row mx-0 text-center" id="weeklyWinners"></div>
+                  <div id="weeklyTables"></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="container-fluid text-center">
-            <button class="btn btn-gold spacer" style="width:750px" type="button" data-toggle="collapse" data-target="#pastWeeks" aria-expanded="false" aria-controls="pastWeeks">
-                PAST WEEKS
-            </button>
-            <div class="collapse text-center mx-auto" id="pastWeeks" style="width:750px">
-              <div class="row mx-0 text-center" id="weeklyWinners"></div>
-              <div id="weeklyTables"></div>
+          <div class="col-lg-6 col-md-12 col-sm-12 spacer">
+            <div class="container hidden-o2 text-center" style="padding: 0 -12px">
+              <div>
+                <h3 class="text-center" id="monthlyNowTitle"></h3>
+                <table id ="monthlyNow" class="standardFont mx-auto"></table>
+              </div>
+              <button class="btn btn-gold spacer" style="width:750px" type="button" data-toggle="collapse" data-target="#pastMonths" aria-expanded="false" aria-controls="pastMonths">
+                PAST MONTHS
+              </button>
+              <div class="collapse text-center mx-auto" style="width:750px" id="pastMonths">
+                <div class="row mx-0 text-center" id="monthlyWinners"></div>
+                <div id="monthlyTables"></div>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="container hidden-o2 spacer text-center" style="padding: 0 -12px">
-          <div>
-            <h3 class="text-center" id="monthlyNowTitle"></h3>
-            <table id ="monthlyNow" class="standardFont mx-auto"></table>
-          </div>
-          <button class="btn btn-gold spacer" style="width:750px" type="button" data-toggle="collapse" data-target="#pastMonths" aria-expanded="false" aria-controls="pastMonths">
-            PAST MONTHS
-          </button>
-          <div class="collapse text-center mx-auto" style="width:750px" id="pastMonths">
-            <div class="row mx-0 text-center" id="monthlyWinners"></div>
-            <div id="monthlyTables"></div>
-          </div>
-        </div>
-
       </div>
       <div class="spacer"></div>
       
