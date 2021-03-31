@@ -20,12 +20,12 @@ body {
 }
 ul > li > a {
     color: white;
-    transition: 1s ease;
+    transition: 0.5s ease;
     text-decoration: none;
 }
 ul > li > a:hover {
     color: #F5921F;
-    transition: 1s ease;
+    transition: 0.5s ease;
     text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6, th {
@@ -55,14 +55,14 @@ footer p, h4 {
 }
 .highlight {
     background-color: transparent;
-    transition: 1s ease;
+    transition: 0.5s ease;
     border-radius: 8px;
     padding: 10px 15px;
     margin: 10px 5px;
 }
 .highlight:hover {
     background-color: #393938;
-    transition: 1s ease;
+    transition: 0.5s ease;
     border-radius: 8px;
 }
 .parallax {
@@ -217,26 +217,26 @@ tr:nth-child(odd) {
 tr:first-child {
     background-color: #F5921F;
 }
-td > a {
+td > a, a {
     text-decoration: none;
-    transition: 1s ease;
+    transition: 0.5s ease;
 }
-td > a:hover {
-    transition: 1s ease;
+td > a:hover, a:hover {
+    transition: 0.5s ease;
     color: #F5921F;
     text-decoration: none;
 }
 th {
     color: white;
     padding: 10px 10px;
-    transition: 1s ease;
+    transition: 0.5s ease;
     text-align: center;
     font-size: 20px;
 }
 #daily td, #weekly td, #monthly td, #goomba td {
     color: white;
     padding: 10px 10px;
-    transition: 1s ease;
+    transition: 0.5s ease;
     text-align: center;
     font-size: 20px;
 }
@@ -245,11 +245,11 @@ th {
 }
 tr {
     background-color: transparent;
-    transition: 1s ease;
+    transition: 0.5s ease;
 }
 tr:hover {
     background-color: rgb(28, 28, 28);
-    transition: 1s ease;
+    transition: 0.5s ease;
 }
 #monthly table, #monthly > tr, #monthly > tbody {
     width: 100%;
@@ -277,7 +277,28 @@ tr.gifImage > th > img {
     padding: 6px 0px;
     margin: 5px -10px;
 }
+.btn-dark {
+    background-color: #222222;
+    color: #F5921F;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 6px 14px;
+    margin: 5px 10px;
+}
+.btn-dark:hover {
+    color: #F5921F;
+}
 .standardFont {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
+}
+.sortable {
+    cursor: auto;
+}
+.sortable:hover {
+    cursor: pointer;
+    background-color: rgb(148, 24, 24, 155);
+    transition: ease 0.5s;
 }

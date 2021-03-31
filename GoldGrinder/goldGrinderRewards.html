@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
     <title>Entropia Gold</title>
   </head>
-  <body onLoad="loadXML('silver', true); loadXMLWinners(true)">
+  <body onLoad="loadXML('data', true); loadXMLWinners(true)">
     <div class="cover">
       <ul class="nav justify-content-center comeDown">
           <li class="nav-item">
@@ -196,6 +196,24 @@
             </div>
           </div>
         </div>
+
+        <div class="container text-center">
+          <h1>My Rewards</h1>
+          <p>Learn more about each type of reward by hovering over the icon, or click an icon to learn about it in detail.</p>
+          <div class="d-inline-flex">
+            <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Please give me a 1-2 sentences about this reward, and I will fill it in place of this placeholder."><a href="" target="_blank">Gold Redemption</a></button>
+            <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Please give me a 1-2 sentences about this reward, and I will fill it in place of this placeholder."><a href="" target="_blank">Silver Redemption</a></button>
+            <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Please give me a 1-2 sentences about this reward, and I will fill it in place of this placeholder."><a href="" target="_blank">Level Bonuses</a></button>
+            <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="bottom" title="Please give me a 1-2 sentences about this reward, and I will fill it in place of this placeholder."><a href="" target="_blank">Jackpot Winners</a></button>
+          </div>
+          <div class="spacer">
+            <p id="displayingCount"></p>
+            <div class="input-group w-50 mx-auto">
+              <input id="nameSearch" type="text" class="form-control" placeholder="Filter by avatar name">
+            </div>
+          </div>
+          <table class="mx-auto spacer" id="rewards"></table>
+        </div>
       </div>
       <div class="spacer"></div>
       
@@ -207,6 +225,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+          $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
     <script src="goldGrinder.js" type="text/javascript"></script>
     <script src="julian.js" type="text/javascript"></script>
   </body>
