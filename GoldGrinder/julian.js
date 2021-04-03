@@ -1,30 +1,102 @@
+// -------------------------------------
+// ENTROPIA-ONLY
+const Events = Object.freeze({ LootiusMayhem: 0, GoldGrinder: 1 });
+eventDict = {
+    [Events.LootiusMayhem]: "lootiusMayhem.png",
+    [Events.GoldGrinder]: "goldGrinder.png"
+}
+
+const nav = `<div class="text-right" style="margin-bottom: -24px"><li id="currentEvent" class="nav-item"></li></div>
+<div class="cover">
+  <ul class="nav justify-content-center comeDown">
+      <li class="nav-item"><a class="nav-link" href="index.html"><img src="img/logo-w.png" height="50px"></a></li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle highlight" href="lootius.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Lootius Mayhem
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="nav-item dropright">
+              <a class="nav-link dropdown-item dropdown-toggle highlight" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">How to Participate</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="lootius.html">Rules</a>
+                <a class="dropdown-item" href="classes.html">Character Classes</a>
+                <a class="dropdown-item" href="prizes.html">Prize Pool</a>
+                <a class="dropdown-item" href="https://www.entropiagold.com/register">Register</a>
+              </div>
+            </div>
+            <a class="dropdown-item" href="leaderboard.html">Leaderboard</a>
+            <a class="dropdown-item" href="bonuses.html">HSL Bonuses</a>
+            <a class="dropdown-item" href="https://www.youtube.com/watch?v=ELQIgdgROVA" target="_blank">Teaser Trailer</a>
+            <a class="dropdown-item" href="hof.html">Hall of Fame</a>
+          </div>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle highlight" href="goldGrinder.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            GoldGrinder
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="goldGrinder.html">How to Participate</a>
+            <a class="dropdown-item" href="goldGrinderJackpots.html">Progressive Jackpots</a>
+            <a class="dropdown-item" href="goldGrinderWinners.html">Bonus Winners</a>
+            <a class="dropdown-item" href="goldGrinderRewards.html">My Rewards</a>
+          </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle highlight" href="areas.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Land Areas
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="areas.html">Deino Island</a>
+        <a class="dropdown-item" href="areas.html">OLA#02 Atrox Paradise</a>
+        <a class="dropdown-item" href="areas.html">OLA#30 Bibo n' Bery Stalkers</a>
+        <a class="dropdown-item" href="areas.html">OLA#50 That Freaking Cold Place</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle highlight" href="mission.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="mission.html">Mission Statement</a>
+            <a class="dropdown-item" href="mystory.html">My Story</a>
+            <a class="dropdown-item" href="eula.html">EULA 2.1 Compliance</a>
+          </div>
+      </li>
+  </ul>
+</div>`
+
+if (document.getElementById('entropiaNav') !== null) {
+    document.getElementById("entropiaNav").innerHTML = nav;
+}
+if (document.getElementById('currentEvent') !== null) {
+    document.getElementById("currentEvent").innerHTML = `<img class="activeEvent" src="logo/${eventDict[Events.GoldGrinder]}">`;
+}
+//---------------------------------------
 const $dropdown = $(".dropdown");
 const $dropdownToggle = $(".dropdown-toggle");
 const $dropdownMenu = $(".dropdown-menu");
 const showClass = "show";
 
 $(window).on("load resize", function() {
-if (this.matchMedia("(min-width: 768px)").matches) {
-    $dropdown.hover(
-    function() {
-        const $this = $(this);
-        $this.addClass(showClass);
-        $this.find($dropdownToggle).attr("aria-expanded", "true");
-        $this.find($dropdownMenu).addClass(showClass);
-    },
-    function() {
-        const $this = $(this);
-        $this.removeClass(showClass);
-        $this.find($dropdownToggle).attr("aria-expanded", "false");
-        $this.find($dropdownMenu).removeClass(showClass);
+    if (this.matchMedia("(min-width: 768px)").matches) {
+        $dropdown.hover(
+        function() {
+            const $this = $(this);
+            $this.addClass(showClass);
+            $this.find($dropdownToggle).attr("aria-expanded", "true");
+            $this.find($dropdownMenu).addClass(showClass);
+        },
+        function() {
+            const $this = $(this);
+            $this.removeClass(showClass);
+            $this.find($dropdownToggle).attr("aria-expanded", "false");
+            $this.find($dropdownMenu).removeClass(showClass);
+        }
+        );
+    } else {
+        $dropdown.off("mouseenter mouseleave");
     }
-    );
-} else {
-    $dropdown.off("mouseenter mouseleave");
-}
 });
-
-  
 
 (function() {
     var elements;
