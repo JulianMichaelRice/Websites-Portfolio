@@ -559,12 +559,12 @@ function displayRewardsTable(list) {
     var tableHTML = `<tr>
                         <th onclick="filterRewards('Rank')" class="sortable">Rank</th>
                         <th onclick="filterRewards('Level')" class="sortable">Level</th>
-                        <th onclick="filterRewards('Avatar')" class="sortable">Avatar <input</th>
+                        <th onclick="filterRewards('Avatar')" class="sortable">Avatar / Team Name<input</th>
                         <th onclick="filterRewards('Gold')" class="sortable">Gold Balance</th>
                         <th onclick="filterRewards('Silver')" class="sortable">Silver Balance</th>
                     </tr>`
     for (i = 0; i < list.length; i++) {
-        tableHTML += `<tr><th class="standardFont"><img src="img/rank/${list[i].rankIconNum}.jpg" style="width: 70px"></th>`
+        tableHTML += `<tr><th class="standardFont"><img src="img/rank/${list[i].rankIconNum}.png" style="width: 70px"></th>`
         tableHTML += `<th class="standardFont">` + list[i].level + `</th>`;
         tableHTML += `<th class="standardFont">` + list[i].name + `</th>`;
         tableHTML += `<th class="standardFont">` + list[i].gold + `</th>`;
