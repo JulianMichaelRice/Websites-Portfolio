@@ -302,3 +302,6 @@ tr.gifImage > th > img {
     background-color: rgb(148, 24, 24, 155);
     transition: ease 0.5s;
 }
+table.padded-td > tr {
+    padding: 15px;
+}
