@@ -299,7 +299,7 @@ karmaToRank = {
     0: new RankLevel(1, 1),
     10: new RankLevel(2, 2),
     15: new RankLevel(3, 2),
-    20: new RankLevel(4, 3),
+    20: new RankLevel(4, 2),
     26: new RankLevel(5, 3),
     31: new RankLevel(6, 3),
     37: new RankLevel(7, 4),
@@ -514,7 +514,7 @@ class RewardWinner {
             if (this.karma > Object.keys(karmaToRank)[i]) {
                 continue;
             } else {
-                return karmaToRank[Object.keys(karmaToRank)[i]];
+                return karmaToRank[Object.keys(karmaToRank)[i-1]];
             }
         }
     }
