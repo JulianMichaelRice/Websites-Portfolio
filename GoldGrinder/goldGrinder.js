@@ -1,11 +1,13 @@
 var links = {
     "data": "https://www.entropiagold.com/goldgrinder/data.xml",
+    "jackpot": "https://www.entropiagold.com/goldgrinder/data.xml",
     "silver": "https://www.entropiagold.com/goldgrinder/halloffame.xml",
     "winners": "https://www.entropiagold.com/goldgrinder/jackpotwinners.xml"
 }
 
 var linksLocal = {
     "data": "goldgrinder/data.xml",
+    "jackpot": "goldgrinder/data.xml",
     "silver": "goldgrinder/halloffame.xml",
     "winners": "goldgrinder/jackpotwinners.xml"
 }
@@ -16,8 +18,10 @@ function loadXML(xmlLink, local) {
     xmlhttp.onload = function() {
         switch (xmlLink) {
             case 'data':
-                displayData(this);
                 displayRewards(this);
+                break;
+            case 'jackpot':
+                displayData(this);
                 break;
             case "silver":
                 displaySilver(this);
@@ -26,20 +30,7 @@ function loadXML(xmlLink, local) {
                 displayWinners(this);
                 break;
         }
-        // if (this.readyState == 4 && this.status == 200) {
-        //     alert("READY");
-        //     switch (xmlLink) {
-        //         case 'data':
-        //             displayData(this);
-        //             break;
-        //         case "silver":
-        //             displaySilver(this);
-        //             break;
-        //         case "winners":
-        //             displayWinners(this);
-        //             break;
-        //     }
-        // }
+        // if (this.readyState == 4 && this.status == 200) 
     };
     xmlhttp.open("GET", link, true);
     xmlhttp.send();
@@ -71,21 +62,21 @@ function loadXMLWinners(local) {
 
 var jackpotHtml = {
     'Atrox': `<div class="row text-center">
-    <div class="col-md-6">
-      <img src="img/gif/AtroxJackpot.gif" width="250px"><br>
+    <div class="col-md-3">
+      <img src="img/gif/AtroxJackpot.gif" width="250px" class="gif"><br>
       <h3 class="spacer-s">`,
-    'Scipulor': `<div class="col-md-6">
-    <img src="img/gif/ScipulorJackpot.gif" width="250px">
+    'Scipulor': `<div class="col-md-3">
+    <img src="img/gif/ScipulorJackpot.gif" width="250px" class="gif">
     <h3 class="spacer-s">`,
-    'General': `<div class="text-center">
-    <img src="img/gif/EntropiaGoldJackpot.gif" width="400px">
+    'General': `<div class="text-center spacer">
+    <img src="img/gif/EntropiaGoldJackpot.gif" width="400px" class="gif">
     <h3 class="spacer-s">`,
-    'Combibo-Berycled': `<div class="col-md-6">
-    <img src="img/gif/BibonBeryJackpot.gif" width="250px">
+    'Combibo-Berycled': `<div class="col-md-3">
+    <img src="img/gif/BibonBeryJackpot.gif" width="250px" class="gif">
     <h3 class="spacer-s">`,
-    'Neconu': `<div class="row text-center">
-    <div class="col-md-6">
-      <img src="img/gif/NeconuJackpot.gif" width="250px"><br>
+    'Neconu': `
+    <div class="col-md-3">
+      <img src="img/gif/NeconuJackpot.gif" width="250px" class="gif"><br>
       <h3 class="spacer-s">`
 }
 
@@ -135,12 +126,13 @@ function displayData(xml) {
             preHtml += `<h2>` + arrayOfNames[i].points + ` Gold </h2>`
             preHtml += `<h3 class="titleText"> Current ` + arrayOfNames[i].mobName + ` Jackpot</h3>
             </div>`
-            if (arrayOfNames[i].mobName == "Scipulor")
-                preHtml += `</div>`
+            // if (arrayOfNames[i].mobName == "Scipulor")
+            //     preHtml += `</div>`
         }
     }
     preHtml += `</div>`;
-    document.getElementById("jackpot").innerHTML = preHtml;
+    if (document.getElementById("jackpot") !== null)
+        document.getElementById("jackpot").innerHTML = preHtml;
 }
 
 class Winner {
@@ -550,9 +542,11 @@ const filter = function(e) {
     filterRewards('Name', e.target.value);
 }
 
-var nameSearch = document.getElementById('nameSearch');
-nameSearch.addEventListener('input', filter);
-nameSearch.addEventListener('propertychange', filter); // IE
+if (document.getElementById('nameSearch') !== null) {
+    var nameSearch = document.getElementById('nameSearch');
+    nameSearch.addEventListener('input', filter);
+    nameSearch.addEventListener('propertychange', filter); // IE
+}
 
 function displayRewardsTable(list) {
     // Assume that list is of type RewardWinner
