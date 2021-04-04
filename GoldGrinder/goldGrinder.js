@@ -514,7 +514,7 @@ class RewardWinner {
             if (this.karma > Object.keys(karmaToRank)[i]) {
                 continue;
             } else {
-                return karmaToRank[Object.keys(karmaToRank)[i-1]];
+                return karmaToRank[Object.keys(karmaToRank)[i-1 < 0 ? 0 : i-1]];
             }
         }
     }
