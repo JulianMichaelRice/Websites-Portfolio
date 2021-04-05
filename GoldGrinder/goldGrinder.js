@@ -39,23 +39,7 @@ function loadXML(xmlLink, local) {
 function loadXMLWinners(local) {
     var xmlhttp = new XMLHttpRequest();
     var link = local ? linksLocal['winners'] : links['winners'];
-    xmlhttp.onload = function() {
-        displayWinners(this);
-        // if (this.readyState == 4 && this.status == 200) {
-        //     alert("READY");
-        //     switch (xmlLink) {
-        //         case 'data':
-        //             displayData(this);
-        //             break;
-        //         case "silver":
-        //             displaySilver(this);
-        //             break;
-        //         case "winners":
-        //             displayWinners(this);
-        //             break;
-        //     }
-        // }
-    };
+    xmlhttp.onload = function() { displayWinners(this); };
     xmlhttp.open("GET", link, true);
     xmlhttp.send();
 }
@@ -553,7 +537,7 @@ function displayRewardsTable(list) {
     var tableHTML = `<tr>
                         <th onclick="filterRewards('Rank')" class="sortable">Rank</th>
                         <th onclick="filterRewards('Level')" class="sortable">Level</th>
-                        <th onclick="filterRewards('Avatar')" class="sortable">Avatar / Team Name<input</th>
+                        <th onclick="filterRewards('Avatar')" class="sortable w-50">Avatar / Team Name<input</th>
                         <th onclick="filterRewards('Gold')" class="sortable">Gold Balance</th>
                         <th onclick="filterRewards('Silver')" class="sortable">Silver Balance</th>
                     </tr>`
@@ -570,10 +554,7 @@ function displayRewardsTable(list) {
     document.getElementById("rewards").innerHTML = tableHTML;
 }
 
-
-
 var greater = false;
-
 function filterRewards(filterType, name = "") {
     greater = !greater;
     var min = greater ? -1 : 1;
